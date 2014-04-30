@@ -26,7 +26,7 @@ Web Development - Building games with JavaScript
 
 ###Example work
 
-The conlcusion of the project, is to produce a Web Page for displaying digital badfges that have been earned by the student.
+The conlcusion of the project, is to produce a Web Page for displaying digital badges that have been earned by the student.
 ![image](resources/Example.png)
 
 ###Glossary
@@ -36,39 +36,61 @@ The conlcusion of the project, is to produce a Web Page for displaying digital b
 |Script tag|Variable|Declare  |Assign     |
 |Strings   |Boolean |Console  |Conditional|
 |Operator  |Loop    |For      |Iteration  |
-|Function  |        |         |           |
+|Function  |DOM     |         |           |
 
 ###Self-assessment questions
 
-Self-assessment questions, such as **'What was I most successful with in this module?'** are useful for pupil reflection.  List the questions you will ask as part of this module.
-
-###Theory Questions
-
-List the theory questions you would like to ask as part of this module.  The purpose of these will be to check whether pupils have gained the understanding required of them for the module.
+_How many badges did I obtain?_
+_What was the easiest thing to do in JavaScript?_
+_What was the hardest thing to do in JavaScript?_
+_What was the thing I enjoyed the most about this topic?_
+_If I had to do this topic again, what would I do differently?_
 
 ###Work-criteria check-list
 
-These questions will be useful for checking that pupils have completed certain work related tasks such as 'Have you included an IF ELSE block as part of your scratch animation?'
+| Badge |
+| 1     |
 
 ###Homework
 
-If you wish to set homework for this module either include a general description here or in each specific lesson.
+This module is self-paced. Students should continue to work on the problems both inside and outside of lessons.
+Depending on lesson length, student ability and time spent outside of lessons, I have found that each activity takes the students between 1 and 2 hours to complete.
 
-###DfE Computing Curriculum mapping
+###[DfE Computing Curriculum mapping]((https://www.gov.uk/government/publications/national-curriculum-in-england-computing-programmes-of-study)
 
-How does this module map to the [DfE Computing Curriculum](https://www.gov.uk/government/publications/national-curriculum-in-england-computing-programmes-of-study)?
 
-###CaS Progression Pathways mapping
+###[CaS Progression Pathways mapping](http://community.computingatschool.org.uk/resources/1692)
 
-How does this module map to the [CaS Progression Pathways](http://community.computingatschool.org.uk/resources/1692) developed by Mark Dorling?
 
-###Lessons
+###Lessons - Student resources
 
-Use the separate lesson template to design each of the lessons in the module and then link to them from here.
+[Lesson 1 - An Introduction to Javascript]()
+[Lesson 2 - Conditionals and the Console]()
+[Lesson 3 - The Value of Variables]()
+[Lesson 4 - Dominating the DOM]()
+[Lesson 5 - Loopy JavaScript]()
+[Lesson 6 - A Functional Project]()
 
-A lesson template is available [here](https://github.com/sharland/ComputingModule/blob/master/lesson_template.md)
+### Lessons - Teacher resources
+
+[Lesson 1 - An Introduction to Javascript]()
+[Lesson 2 - Conditionals and the Console]()
+[Lesson 3 - The Value of Variables]()
+[Lesson 4 - Dominating the DOM]()
+[Lesson 5 - Loopy JavaScript]()
+[Lesson 6 - A Functional Project]()
 
 ###Resources
 
-List all of the website resources and other software and hardware which pupils might need.
+Computers with a web-browser and a text-editor installed are all that are needed.
+
+Recommended web-browsers are as follows:
+1. Anything but I.E.
+2. Seriously, try [FireFox](http://www.mozilla.org/en-GB/firefox/new/)
+3. It's Fast, Secure and Open Source
+
+Recommended text-editors are as follows
+:bowtie: [Sublime Text is an excellent text editor](http://www.sublimetext.com)
+:sunglasses: [GitHub have an excellent clone of ST](https://atom.io)
+:neckbeard: [If you're hardcore and want to edit the source files, then try Emacs](http://www.gnu.org/software/emacs/)
 
