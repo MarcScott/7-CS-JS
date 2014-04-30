@@ -1,0 +1,69 @@
+#+STARTUP:indent
+#+STYLE: <link rel="stylesheet" type="text/css" href="css/main.css"/>
+#+STYLE: <link rel="stylesheet" type="text/css" href="css/lesson.css"/>
+
+#+TITLE: Creating a page for your badges.
+#+AUTHOR: Marc Scott
+
+#+BEGIN_HTML
+<div class=ribbon>
+<a href="https://github.com/MarcScott/KS3_Curriculum">Fork me on GitHub</a>
+</div>
+#+END_HTML
+
+* COMMENT Use as a template
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+** Try It:
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+* An HTML page for your badges
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+- By now you should have collected three blue badges, but other than your file system or your email inbox, you have no where to keep them.
+- In this section, you're going to create a webpage to store all your badges, and then use some JavaScript to provide a little more information to a viewer.
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+- There's quite a lot of HTML and CSS you need for this one, so just download the compresses folder below and unzip it into your home directory.
+- [[file:Badges-Portfolio.zip][Zipped Badges Files]]
+#+BEGIN_SRC html
+
+#+END_SRC
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+** Try It:
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+* Badge It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Task
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
+:END:
+To earn your fourth *Blue JavaScript Badge*, complete the tasks below. Once you have finished, ask your teacher to check your code to make sure it runs correctly.
