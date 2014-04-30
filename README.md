@@ -48,8 +48,12 @@ _If I had to do this topic again, what would I do differently?_
 
 ###Work-criteria check-list
 
-| Badge |
-| 1     |
+|1|2|
+|Asks for name|
+|Uses name in reply|
+|Asks for age|
+|Uses in calculation|
+
 
 ###Homework
 
@@ -57,10 +61,11 @@ This module is self-paced. Students should continue to work on the problems both
 Depending on lesson length, student ability and time spent outside of lessons, I have found that each activity takes the students between 1 and 2 hours to complete.
 
 ###[DfE Computing Curriculum mapping]((https://www.gov.uk/government/publications/national-curriculum-in-england-computing-programmes-of-study)
-
+* design, use and evaluate computational abstractions that model the state and behaviour of real-world problems and physical systems
+* use two or more programming languages, at least one of which is textual, to solve a variety of computational problems; make appropriate use of data structures [for example, lists, tables or arrays]; design and develop modular programs that use procedures or functions
 
 ###[CaS Progression Pathways mapping](http://community.computingatschool.org.uk/resources/1692)
-
+* Understands the difference between, and appropriately uses if and if, then and else statements. Uses a variable and relational operators within a loop to govern termination. Designs, writes and debugs modular programs using procedures. Knows that a procedure can be used to hide the detail with sub-solution (procedural abstraction).
 
 ###Lessons - Student resources
 
@@ -85,12 +90,13 @@ Depending on lesson length, student ability and time spent outside of lessons, I
 Computers with a web-browser and a text-editor installed are all that are needed.
 
 Recommended web-browsers are as follows:
-1. Anything but I.E.
-2. Seriously, try [FireFox](http://www.mozilla.org/en-GB/firefox/new/)
-3. It's Fast, Secure and Open Source
+:poop: [I.E.](http://www.mozilla.org/en-GB/firefox/new/)  
+:snail: [Safari](http://www.mozilla.org/en-GB/firefox/new/)  
+:see_no_evil: [Chrome]((http://www.mozilla.org/en-GB/firefox/new/)  
+:smiling_imp: [FireFox](http://www.mozilla.org/en-GB/firefox/new/)  
 
 Recommended text-editors are as follows
-:bowtie: [Sublime Text is an excellent text editor](http://www.sublimetext.com)
-:sunglasses: [GitHub have an excellent clone of ST](https://atom.io)
-:neckbeard: [If you're hardcore and want to edit the source files, then try Emacs](http://www.gnu.org/software/emacs/)
+:bowtie: [Sublime Text](http://www.sublimetext.com)  
+:sunglasses: [Atom](https://atom.io)  
+:neckbeard: [Emacs](http://www.gnu.org/software/emacs/)  
 
