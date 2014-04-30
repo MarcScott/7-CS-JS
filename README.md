@@ -30,6 +30,8 @@ The conlcusion of the project, is to produce a Web Page for displaying digital b
 ![image](resources/Example.png)
 
 ###Glossary
+
+|          |        |         |           |
 |----------|--------|---------|-----------|
 |Script tag|Variable|Declare  |Assign     |
 |Strings   |Boolean |Console  |Conditional|
