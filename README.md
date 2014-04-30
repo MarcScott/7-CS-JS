@@ -30,8 +30,11 @@ The conlcusion of the project, is to produce a Web Page for displaying digital b
 ![image](resources/Example.png)
 
 ###Glossary
-
-A list of terms and definitions relevant to the module.
+|----------|--------|---------|-----------|
+|Script tag|Variable|Declare  |Assign     |
+|Strings   |Boolean |Console  |Conditional|
+|Operator  |Loop    |For      |Iteration  |
+|Function  |        |         |           |
 
 ###Self-assessment questions
 
