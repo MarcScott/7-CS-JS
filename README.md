@@ -1,52 +1,33 @@
-# Computing Module Structure README
-
-##Introduction
-
-The purpose of this structure is to provide a way for teachers to produce modules for teaching KS3 Computing in a consistent manner.
-
-This means that theoretically different teachers at different schools can work on their own modules but then advertise that module on somewhere like the Computing at School forums.
-
-Therefore if a teacher is new to Computing and struggling to find decent modules or if a teacher wants to see if a topic is already covered they can check CaS and download a module or write something else to fill a gap.
-
-Please submit change ideas to the structure!  I would like to tailor it as much as possible.  There is also an ideas document [here](https://github.com/sharland/ComputingModule/blob/master/dev_ideas.md) for future development of this structure.
-
-##How to use
-
-I suggest downloading the module structure as a zip and using it as part of your own folder structure or repositories.
-
-##Module Structure
-
-This structure is obviously not set in stone but following as much of it as possible will enable other teachers to pick up what they need to do.
-
-An empty template is also [available here](https://github.com/sharland/ComputingModule/blob/master/module_template.md)
-
-###Title
-
-Include a simple title.
+## Year 7 - Web Development - An Introduction to JavaScript
 
 ###Target year group or age
 
-Decide on who you think who this module would best be aimed at whether it's an age range or a specific year.
+Year 7
 
 ###Purpose of Module
 
-Give an introductory description of the purpose of the module.  This should describe the broad aims and objectives of this module.
+The purpose of this module is to introduce students to their first text-based programming language, and a few key concepts in Computer Science
+The module builds upon the student's experience writing HTML and CSS, by using JavaScipt in a familair environment.
 
 ###Knowledge and Skills
 
-In this section describe what sort of knowledge and skills pupils are going to cover.  This will hopefully give pupils an ida of what they should be acquiring by the end of the module.
+* I/O with JavaScript
+* Variable decleration, assignment and reassignment
+* Conditional statements
+* Iteration
+* Functions
 
 ###Cross-Curricula links
 
-Does your project have any cross-curricula links to other subjects?
 
 ###Progression from this module
 
-Once a pupil has completed the module - what could they go onto next?
+Web Development - Building games with JavaScript
 
 ###Example work
 
-For certain modules it might be useful to add an example of work which pupils will be aiming for.
+The conlcusion of the project, is to produce a Web Page for displaying digital badfges that have been earned by the student.
+![image](resources/Example.png)
 
 ###Glossary
 
