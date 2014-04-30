@@ -48,11 +48,15 @@ _If I had to do this topic again, what would I do differently?_
 
 ###Work-criteria check-list
 
-|1|2|
-|Asks for name|
-|Uses name in reply|
-|Asks for age|
-|Uses in calculation|
+|:1:|:2:|:3:|:4:|:5:|:6:|
+|---|---|---|---|---|---|
+|Create Greeter.html|Maths Question|Code swaps variable values|
+|Add Boilerplate|Question with 3 answers|   |
+|window.alert('Welcome')|4 Questions of choice"|   |
+|Ask and store name|Give Score|   |
+|Output using variable|Use Score for message|   |
+|Ask age|   |   |
+|Calc and Output|   |   |
 
 
 ###Homework
@@ -60,7 +64,7 @@ _If I had to do this topic again, what would I do differently?_
 This module is self-paced. Students should continue to work on the problems both inside and outside of lessons.
 Depending on lesson length, student ability and time spent outside of lessons, I have found that each activity takes the students between 1 and 2 hours to complete.
 
-###[DfE Computing Curriculum mapping]((https://www.gov.uk/government/publications/national-curriculum-in-england-computing-programmes-of-study)
+###[DfE Computing Curriculum mapping](https://www.gov.uk/government/publications/national-curriculum-in-england-computing-programmes-of-study)
 * design, use and evaluate computational abstractions that model the state and behaviour of real-world problems and physical systems
 * use two or more programming languages, at least one of which is textual, to solve a variety of computational problems; make appropriate use of data structures [for example, lists, tables or arrays]; design and develop modular programs that use procedures or functions
 
@@ -69,12 +73,12 @@ Depending on lesson length, student ability and time spent outside of lessons, I
 
 ###Lessons - Student resources
 
-[Lesson 1 - An Introduction to Javascript]()
-[Lesson 2 - Conditionals and the Console]()
-[Lesson 3 - The Value of Variables]()
-[Lesson 4 - Dominating the DOM]()
-[Lesson 5 - Loopy JavaScript]()
-[Lesson 6 - A Functional Project]()
+[Lesson 1 - An Introduction to Javascript](marcscott.github.io/7-WD-JS/1_Lesson.html)
+[Lesson 2 - Conditionals and the Console](marcscott.github.io/7-WD-JS/2_Lesson.html)
+[Lesson 3 - The Value of Variables](marcscott.github.io/7-WD-JS/3_Lesson.html)
+[Lesson 4 - Dominating the DOM](marcscott.github.io/7-WD-JS/4_Lesson.html)
+[Lesson 5 - Loopy JavaScript](marcscott.github.io/7-WD-JS/5_Lesson.html)
+[Lesson 6 - A Functional Project](marcscott.github.io/7-WD-JS/6_Lesson.html)
 
 ### Lessons - Teacher resources
 
@@ -90,12 +94,14 @@ Depending on lesson length, student ability and time spent outside of lessons, I
 Computers with a web-browser and a text-editor installed are all that are needed.
 
 Recommended web-browsers are as follows:
+
 :poop: [I.E.](http://www.mozilla.org/en-GB/firefox/new/)  
 :snail: [Safari](http://www.mozilla.org/en-GB/firefox/new/)  
 :see_no_evil: [Chrome]((http://www.mozilla.org/en-GB/firefox/new/)  
 :smiling_imp: [FireFox](http://www.mozilla.org/en-GB/firefox/new/)  
 
-Recommended text-editors are as follows
+Recommended text-editors are as follows:
+
 :bowtie: [Sublime Text](http://www.sublimetext.com)  
 :sunglasses: [Atom](https://atom.io)  
 :neckbeard: [Emacs](http://www.gnu.org/software/emacs/)  
