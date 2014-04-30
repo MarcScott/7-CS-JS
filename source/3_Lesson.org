@@ -7,7 +7,7 @@
 
 #+BEGIN_HTML
 <div class=ribbon>
-<a href="https://github.com/MarcScott/KS3_Curriculum">Fork me on GitHub</a>
+<a href="https://github.com/MarcScott/7-WD-JS">Fork me on GitHub</a>
 </div>
 #+END_HTML
 
