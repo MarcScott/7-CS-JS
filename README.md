@@ -73,12 +73,12 @@ Depending on lesson length, student ability and time spent outside of lessons, I
 
 ### Lessons - Student resources
 
-* [Lesson 1 - An Introduction to Javascript](marcscott.github.io/7-WD-JS/1_Lesson.html)
-* [Lesson 2 - Conditionals and the Console](marcscott.github.io/7-WD-JS/2_Lesson.html)
-* [Lesson 3 - The Value of Variables](marcscott.github.io/7-WD-JS/3_Lesson.html)
-* [Lesson 4 - Dominating the DOM](marcscott.github.io/7-WD-JS/4_Lesson.html)
-* [Lesson 5 - Loopy JavaScript](marcscott.github.io/7-WD-JS/5_Lesson.html)
-* [Lesson 6 - A Functional Project](marcscott.github.io/7-WD-JS/6_Lesson.html)
+* [Lesson 1 - An Introduction to Javascript](marcscott.github.io/7-WD-JS/pages/1_Lesson.html)
+* [Lesson 2 - Conditionals and the Console](marcscott.github.io/7-WD-JS/pages/2_Lesson.html)
+* [Lesson 3 - The Value of Variables](marcscott.github.io/7-WD-JS/pages/3_Lesson.html)
+* [Lesson 4 - Dominating the DOM](marcscott.github.io/7-WD-JS/pages/4_Lesson.html)
+* [Lesson 5 - Loopy JavaScript](marcscott.github.io/7-WD-JS/pages/5_Lesson.html)
+* [Lesson 6 - A Functional Project](marcscott.github.io/7-WD-JS/pages/6_Lesson.html)
 
 ### Lessons - Teacher resources
 
