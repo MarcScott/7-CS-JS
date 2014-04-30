@@ -1,15 +1,15 @@
 ## Year 7 - Web Development - An Introduction to JavaScript
 
-###Target year group or age
+### Target year group or age
 
-Year 7
+Key Stage 3 - Year 7
 
-###Purpose of Module
+### Purpose of Module
 
 The purpose of this module is to introduce students to their first text-based programming language, and a few key concepts in Computer Science
 The module builds upon the student's experience writing HTML and CSS, by using JavaScipt in a familair environment.
 
-###Knowledge and Skills
+### Knowledge and Skills
 
 * I/O with JavaScript
 * Variable decleration, assignment and reassignment
@@ -17,19 +17,19 @@ The module builds upon the student's experience writing HTML and CSS, by using J
 * Iteration
 * Functions
 
-###Cross-Curricula links
+### Cross-Curricula links
 
 
-###Progression from this module
+### Progression from this module
 
 Web Development - Building games with JavaScript
 
-###Example work
+### Example work
 
 The conlcusion of the project, is to produce a Web Page for displaying digital badges that have been earned by the student.
 ![image](resources/Example.png)
 
-###Glossary
+### Glossary
 
 |          |        |         |           |
 |----------|--------|---------|-----------|
@@ -38,7 +38,7 @@ The conlcusion of the project, is to produce a Web Page for displaying digital b
 |Operator  |Loop    |For      |Iteration  |
 |Function  |DOM     |         |           |
 
-###Self-assessment questions
+### Self-assessment questions
 
 _How many badges did I obtain?_
 _What was the easiest thing to do in JavaScript?_
@@ -46,7 +46,7 @@ _What was the hardest thing to do in JavaScript?_
 _What was the thing I enjoyed the most about this topic?_
 _If I had to do this topic again, what would I do differently?_
 
-###Work-criteria check-list
+### Work-criteria check-list
 
 |:1:|:2:|:3:|:4:|:5:|:6:|
 |---|---|---|---|---|---|
@@ -59,19 +59,19 @@ _If I had to do this topic again, what would I do differently?_
 |Calc and Output|   |   |
 
 
-###Homework
+### Homework
 
 This module is self-paced. Students should continue to work on the problems both inside and outside of lessons.
 Depending on lesson length, student ability and time spent outside of lessons, I have found that each activity takes the students between 1 and 2 hours to complete.
 
-###[DfE Computing Curriculum mapping](https://www.gov.uk/government/publications/national-curriculum-in-england-computing-programmes-of-study)
+### [DfE Computing Curriculum mapping](https://www.gov.uk/government/publications/national-curriculum-in-england-computing-programmes-of-study)
 * design, use and evaluate computational abstractions that model the state and behaviour of real-world problems and physical systems
 * use two or more programming languages, at least one of which is textual, to solve a variety of computational problems; make appropriate use of data structures [for example, lists, tables or arrays]; design and develop modular programs that use procedures or functions
 
-###[CaS Progression Pathways mapping](http://community.computingatschool.org.uk/resources/1692)
+### [CaS Progression Pathways mapping](http://community.computingatschool.org.uk/resources/1692)
 * Understands the difference between, and appropriately uses if and if, then and else statements. Uses a variable and relational operators within a loop to govern termination. Designs, writes and debugs modular programs using procedures. Knows that a procedure can be used to hide the detail with sub-solution (procedural abstraction).
 
-###Lessons - Student resources
+### Lessons - Student resources
 
 [Lesson 1 - An Introduction to Javascript](marcscott.github.io/7-WD-JS/1_Lesson.html)
 [Lesson 2 - Conditionals and the Console](marcscott.github.io/7-WD-JS/2_Lesson.html)
@@ -89,7 +89,7 @@ Depending on lesson length, student ability and time spent outside of lessons, I
 [Lesson 5 - Loopy JavaScript]()
 [Lesson 6 - A Functional Project]()
 
-###Resources
+### Resources
 
 Computers with a web-browser and a text-editor installed are all that are needed.
 
