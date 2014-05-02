@@ -3,11 +3,11 @@
                "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<title>Dominating the DOM</title>
+<title>An introduction to JavaScript</title>
 <meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
-<meta name="title" content="Dominating the DOM"/>
+<meta name="title" content="An introduction to JavaScript"/>
 <meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2014-05-02T08:00+0100"/>
+<meta name="generated" content="2014-05-02T07:49+0100"/>
 <meta name="author" content="Marc Scott"/>
 <meta name="description" content=""/>
 <meta name="keywords" content=""/>
@@ -117,139 +117,50 @@ for the JavaScript code in this tag.
 </div>
 
 <div id="content">
-<h1 class="title">Dominating the DOM</h1>
+<h1 class="title">An introduction to JavaScript</h1>
+
+
 
 
 <div class=ribbon>
-<a href="https://github.com/MarcScott/KS3_Curriculum">Fork me on GitHub</a>
+<a href="https://github.com/MarcScott/7-WD-JS">Fork me on GitHub</a>
 </div>
 
 
-
-<div id="outline-container-1" class="outline-2 activity">
-<h2 id="sec-1">The DOM</h2>
+<div id="outline-container-1" class="outline-2 intro">
+<h2 id="sec-1">AN INTRODUCTION TO JAVASCRIPT</h2>
 <div class="outline-text-2" id="text-1">
 
-<ul>
-<li>DOM stands for Document Object Model.
-</li>
-<li>Without getting into too much detail, the DOM is a way a web browser represents all the HTML code that you write.
-</li>
-<li>We can use programming languages (in our case JavaScript) to change the DOM, and therefore change the way the HTML is displayed to the user.
-</li>
-</ul>
-
 
 </div>
 
-<div id="outline-container-1-1" class="outline-3 code">
-<h3 id="sec-1-1">Code It</h3>
+<div id="outline-container-1-1" class="outline-3">
+<h3 id="sec-1-1"><a href="1_Lesson.html">Lesson 1 - Javascript Basics</a></h3>
 <div class="outline-text-3" id="text-1-1">
 
-<ul>
-<li>The best way to learn about the DOM is to go ahead and play a little. Copy and paste the boilerplate code into a text editor.
-</li>
-</ul>
-
-
-
-
-
-<pre class="example">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-&lt;script type="text/javascript"&gt;
-
-&lt;/script&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;div id = "container"&gt;&lt;/div&gt;
-&lt;h2&gt;Welcome to DOM&lt;/h2&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</pre>
-
 </div>
 
 </div>
 
-<div id="outline-container-1-2" class="outline-3 save">
-<h3 id="sec-1-2">Save It</h3>
+<div id="outline-container-1-2" class="outline-3">
+<h3 id="sec-1-2"><a href="2_Lesson.html">Lesson 2 - The Console and Conditionals</a></h3>
 <div class="outline-text-3" id="text-1-2">
 
-<ul>
-<li>Save your code somewhere sensible.
-</li>
-</ul>
-
 </div>
 
 </div>
 
-<div id="outline-container-1-3" class="outline-3 run">
-<h3 id="sec-1-3">Run It</h3>
+<div id="outline-container-1-3" class="outline-3">
+<h3 id="sec-1-3"><a href="3_Lesson.html">Lesson 3 - The Value of Variables</a></h3>
 <div class="outline-text-3" id="text-1-3">
 
-<ul>
-<li>Open your page in a web browser, and you should see the level 2 header being displayed.
-</li>
-</ul>
-
 </div>
-
-</div>
-
-<div id="outline-container-1-4" class="outline-3 code">
-<h3 id="sec-1-4">Code It</h3>
-<div class="outline-text-3" id="text-1-4">
-
-<ul>
-<li>We've set up a basic page, but you probably noticed that we had an empty <code>&lt;div&gt;</code> with the id of <i>container</i>. Let's add in some JavaScript and see what we can do with that div.
-</li>
-<li>Add the following JavaScript between your script tags.
-</li>
-</ul>
-
-
-
-
-<pre class="example">var container = document.getElementById("container");
-container.innerHTML = "&lt;h1&gt;Hi there user&lt;/h1&gt;";
-</pre>
-
-
-</div>
-
-</div>
-
-<div id="outline-container-1-5" class="outline-3 try">
-<h3 id="sec-1-5">Try It:</h3>
-<div class="outline-text-3" id="text-1-5">
-
-</div>
-</div>
-
-</div>
-
-<div id="outline-container-2" class="outline-2 activity">
-<h2 id="sec-2">Badge It</h2>
-<div class="outline-text-2" id="text-2">
-
-
-</div>
-
-<div id="outline-container-2-1" class="outline-3 badge">
-<h3 id="sec-2-1">Task</h3>
-<div class="outline-text-3" id="text-2-1">
-
-<p>To earn your fourth <b>Blue JavaScript Badge</b>, complete the tasks below. Once you have finished, ask your teacher to check your code to make sure it runs correctly.
-</p></div>
 </div>
 </div>
 </div>
 
 <div id="postamble">
-
+<a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
 
 </div>
 </body>

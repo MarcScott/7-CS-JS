@@ -1,8 +1,8 @@
 #+STARTUP:indent
 #+STYLE: <link rel="stylesheet" type="text/css" href="css/main.css"/>
 #+STYLE: <link rel="stylesheet" type="text/css" href="css/lesson.css"/>
-
-#+TITLE: Creating a page for your badges.
+#+OPTIONS: toc:nil f:nil author:nil num:nil creator:nil timestamp:nil 
+#+TITLE: Dominating the DOM
 #+AUTHOR: Marc Scott
 
 #+BEGIN_HTML
@@ -31,29 +31,54 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: try
 :END:
-* An HTML page for your badges
+* The DOM
+- DOM stands for Document Object Model.
+- Without getting into too much detail, the DOM is a way a web browser represents all the HTML code that you write.
+- We can use programming languages (in our case JavaScript) to change the DOM, and therefore change the way the HTML is displayed to the user.
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
-- By now you should have collected three blue badges, but other than your file system or your email inbox, you have no where to keep them.
-- In this section, you're going to create a webpage to store all your badges, and then use some JavaScript to provide a little more information to a viewer.
 ** Code It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: code
 :END:
-- There's quite a lot of HTML and CSS you need for this one, so just download the compresses folder below and unzip it into your home directory.
-- [[file:~/GitHub/KS3_Curriculum/Year_7/JavaScript/resources/Badges-Portfolio.zip][Zipped Badges Files]]
-#+BEGIN_SRC html
+- The best way to learn about the DOM is to go ahead and play a little. Copy and paste the boilerplate code into a text editor.
 
+#+BEGIN_SRC html
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+
+</script>
+</head>
+<body>
+<div id = "container"></div>
+<h2>Welcome to DOM</h2>
+</body>
+</html>
 #+END_SRC
 ** Save It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: save
 :END:
+- Save your code somewhere sensible.
 ** Run It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: run
 :END:
+- Open your page in a web browser, and you should see the level 2 header being displayed.
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+- We've set up a basic page, but you probably noticed that we had an empty =<div>= with the id of /container/. Let's add in some JavaScript and see what we can do with that div.
+- Add the following JavaScript between your script tags.
+#+BEGIN_SRC javascript
+  var container = document.getElementById("container");
+  container.innerHTML = "<h1>Hi there user</h1>";
+#+END_SRC
+
 ** Try It:
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: try

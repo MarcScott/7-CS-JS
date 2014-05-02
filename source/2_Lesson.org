@@ -1,7 +1,7 @@
 #+STARTUP:indent
 #+STYLE: <link rel="stylesheet" type="text/css" href="css/main.css"/>
 #+STYLE: <link rel="stylesheet" type="text/css" href="css/lesson.css"/>
-
+#+OPTIONS: toc:nil f:nil author:nil num:nil creator:nil timestamp:nil 
 #+TITLE: The Console and Conditionals
 #+AUTHOR: Marc Scott
 
@@ -125,7 +125,7 @@
   <html>
     <head>
       <meta charset="utf-8"/>
-      <title>Opps, what did I do wrong?</title>
+      <title>Oops, what did I do wrong?</title>
       <script type="text/javascript">
        var myNumber = 20;
        console.log('My Number is '+mynumber);
@@ -195,14 +195,14 @@ windows.alert("I wonder why you're feeling "+ yourAnswer)
 - Conditionals allow the program to make a choice, based on a certain condition being met. (Or sometimes several conditions.)
 - Imagine you are walking along a street and you come to a restaurant. A simplified conditional for what you do might look something like this;
 #+BEGIN_SRC web
-IF i am hungy
+IF i am hungry
     enter restaurant
 ELSE
     continue walking
 #+END_SRC
 - Sometimes though decisions are a little more complex, and we might need to have more than just two options. Imagine you've sat down in the restaurant and the waiter has come to take your order.
 #+BEGIN_SRC web
-IF i am very hungy
+IF i am very hungry
     order a starter and a main course
 ELSE IF i am only peckish
     order a starter only

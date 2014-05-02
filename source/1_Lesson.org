@@ -1,8 +1,8 @@
 #+STARTUP:indent
 #+STYLE: <link rel="stylesheet" type="text/css" href="css/main.css"/>
 #+STYLE: <link rel="stylesheet" type="text/css" href="css/lesson.css"/>
-
-#+TITLE: An introduction to JavaScript
+#+OPTIONS: toc:nil f:nil author:nil num:nil creator:nil timestamp:nil 
+#+TITLE: JavaScript Basics
 #+AUTHOR: Marc Scott
 
 #+BEGIN_HTML

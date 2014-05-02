@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript">
+     var container = document.getElementById("container");
+     container.innerHTML = "New Content!";
+    </script>
+  </head>
+  <body>
+    <div id = "container"></div>
+    <h2>Welcome to DOM</h2>
+  </body>
+</html>
