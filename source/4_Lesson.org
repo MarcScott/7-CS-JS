@@ -170,8 +170,9 @@ displayUserName.innerHTML = "<h1>" + userName + "'s Amazing Website</h1>";
 :HTML_CONTAINER_CLASS: try
 :END:
 - Now it's your turn. Add more window.prompt() lines of code to extract more information from the user.
+- Find out their age and address.
 - Use the data you receive from the prompts to write more information to new divs.
-* Use as a template
+* Use as
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
