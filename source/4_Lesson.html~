@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
 <meta name="title" content="Dominating the DOM"/>
 <meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2014-05-06T08:55+0100"/>
+<meta name="generated" content="2014-05-06T08:53+0100"/>
 <meta name="author" content="Marc Scott"/>
 <meta name="description" content=""/>
 <meta name="keywords" content=""/>
@@ -363,10 +363,10 @@ container2.innerHTML = "&lt;h3&gt;Type whatever you like here&lt;/h3&gt;";
 <pre class="example">var userName = window.prompt("Hi there user, what's your name?");
 </pre>
 
-<ul>
+<ol>
 <li>Next we need to get the div and store that as a variable.
 </li>
-</ul>
+</ol>
 
 
 
@@ -374,10 +374,10 @@ container2.innerHTML = "&lt;h3&gt;Type whatever you like here&lt;/h3&gt;";
 <pre class="example">var displayUserName = document.getElementById('displayUserName');
 </pre>
 
-<ul>
+<ol>
 <li>Lastly we need to <i>concatonate</i> the <code>userName</code> to some HTML and add it into the div.
 </li>
-</ul>
+</ol>
 
 
 
@@ -411,7 +411,7 @@ container2.innerHTML = "&lt;h3&gt;Type whatever you like here&lt;/h3&gt;";
 </li>
 </ul>
 
-<p><img src="img/DOM2.png"  alt="img/DOM2.png" />
+<p><a href="img/DOM2.png">image</a>
 </p></div>
 
 </div>

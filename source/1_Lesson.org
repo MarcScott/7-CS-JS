@@ -111,7 +111,7 @@ window.alert('Losers Click OK');
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: save
 :END:
-- Now save you file
+- Now save your file
 ** Run It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: run
@@ -139,7 +139,7 @@ var myPet;
 #+BEGIN_SRC html
 myPet = 'Tiddles';
 #+END_SRC
-- You'll have probably noticed that each line seems to end with a =;=. The semi-colon is away of telling the browser that you have finished with that instruction, and to move onto the next instruction. Now declare a new variable called =yourPet= and give it a name.
+- You'll have probably noticed that each line seems to end with a =;=. The semi-colon is a way of telling the browser that you have finished with that instruction, and to move onto the next instruction. Now declare a new variable called =yourPet= and give it a name.
 - We can now use our alert command from earlier. Add this line to your code.
 #+BEGIN_SRC html
 window.alert(myPet);

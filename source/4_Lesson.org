@@ -33,7 +33,7 @@
 :END:
 * The DOM
 - DOM stands for Document Object Model.
-- Without getting into too much detail, the DOM is a way a web browser represents all the HTML code that you write.
+- Without getting into too much detail, the DOM is the way a web browser represents all the HTML code that you write.
 - We can use programming languages (in our case JavaScript) to change the DOM, and therefore change the way the HTML is displayed to the user.
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
@@ -45,19 +45,23 @@
 - The best way to learn about the DOM is to go ahead and play a little. Copy and paste the boilerplate code into a text editor.
 
 #+BEGIN_SRC html
-<!DOCTYPE html>
-<html>
-<head>
-<script type="text/javascript">
-
-</script>
-</head>
-<body>
-<div id = "container"></div>
-<h2>Welcome to DOM</h2>
-</body>
-</html>
+  <!DOCTYPE html>
+  <html>
+      <head>
+          <title>Adding text</title>
+      </head>
+      <body>
+          <div id = "container"></div>
+          <h2>Welcome to DOM</h2>
+          <script type="text/javascript">
+  
+          </script>
+      </body>
+  </html>
 #+END_SRC
+
+- You might have noticed that this time we are placing our =<script>= at the end of our html (just before the =</body>= tag).
+- We place our script here so that the browser has had a chance to load up all the html, before the script is run.
 ** Save It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: save
@@ -73,12 +77,116 @@
 :HTML_CONTAINER_CLASS: code
 :END:
 - We've set up a basic page, but you probably noticed that we had an empty =<div>= with the id of /container/. Let's add in some JavaScript and see what we can do with that div.
-- Add the following JavaScript between your script tags.
+- Add the following JavaScript between your script tags (at the _end_ of the html).
 #+BEGIN_SRC javascript
   var container = document.getElementById("container");
   container.innerHTML = "<h1>Hi there user</h1>";
 #+END_SRC
-
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+- Save your code.
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+- Refresh your web browser.
+- Hopefully you'll see the "Hi there user" text being displayed.
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+- Let's add a little more text to our page using javascript.
+- Add a new div, _beneath_ the =<h2>Welcome to the DOM</h2>=, line. Give the div the id "container2"
+#+BEGIN_SRC html
+  <div id = "container2"></div>
+#+END_SRC
+- Now we'll add some extra JavaScript to place some content into our new div.
+- Add in two additional lines of code into your script. The first should declare and assign a variable =container2= to the =container2= div. The next should add some innerHTML to the =container2=.
+- There's code below if you get stuck.
+#+BEGIN_SRC javascript
+  var container2 = document.getElementById("container2");
+  container2.innerHTML = "<h3>Type whatever you like here</h3>";
+#+END_SRC
+** Try It:
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+- Now it's your turn to play around
+- Add at least two more divs to your HTML file, each with their own unique id.
+- Then add JavaScript to add content to your new divs.
+* Getting User input and adding it to the DOM
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+- We're going to let the user help build the website in the next section.
+- Let's start with a little boilerplate
+#+BEGIN_SRC html
+  <!DOCTYPE html>
+  <html>
+      <head>
+          <title>I/O</title>
+      </head>
+      <body>
+          <div id='displayUserName'></div>
+          <script>
+  
+          </script>
+      </body>
+  </html>
+#+END_SRC
+- We have a single empty div with the id of =displayUserName=
+- Now we need three lines of JavaScript.
+- First we need to get some user input and store it using a variable.
+#+BEGIN_SRC javascript
+  var userName = window.prompt("Hi there user, what's your name?");
+#+END_SRC
+- Next we need to get the div and store that as a variable.
+#+BEGIN_SRC javascript
+  var displayUserName = document.getElementById('displayUserName');
+#+END_SRC
+- Lastly we need to /concatonate/ the =userName= to some HTML and add it into the div.
+#+BEGIN_SRC javascript
+displayUserName.innerHTML = "<h1>" + userName + "'s Amazing Website</h1>";
+#+END_SRC
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+- Save your code in a sensible place with a sensible name
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+- View your code in a browser. It should look something like this...
+[[file:img/DOM2.png]]
+** Try It:
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+- Now it's your turn. Add more window.prompt() lines of code to extract more information from the user.
+- Use the data you receive from the prompts to write more information to new divs.
+* Use as a template
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
 ** Try It:
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: try
