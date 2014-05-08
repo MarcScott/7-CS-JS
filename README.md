@@ -17,9 +17,16 @@ The module builds upon the student's experience writing HTML and CSS, by using J
 * Iteration
 * Functions
 
-### Cross-Curricula links
-
-
+### Cross-Curricula / Literacy / Numeracy
+* There are numerous opportunities for developing numeracy  within the unit 
+  - Lesson 1 asks the students to create an equation for calcualting the year an individual will reach 100
+  - Lesson 2 requires students to use conditional statements to find correct answers to mathematical questions and present a score as a percentage
+  - Lesson 3 looks at a mathematical solution for swapping variables
+  - Lesson 6 looks at percentages with regard to counting the badges earned by a student.
+* There are numerous opportunites for developing literacy within the unit
+  - JavaScript requires syntactic precision which helps improve the students literacy skills
+  - Within the quiz that students create, there are opportunites to develop literacy, with a focus on spelling, puntuation and grammar.
+  
 ### Progression from this module
 
 Web Development - Building games with JavaScript
