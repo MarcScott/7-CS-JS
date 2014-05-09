@@ -404,7 +404,7 @@ file:img/conditional.jpg
       console.log('Question 3 close');
       score += 0.5;
   }
-  else if (answer3 = 1954){
+  else if (answer3 === 1954){
       console.log('Question 3 exactly right');
       score += 1;
   }
