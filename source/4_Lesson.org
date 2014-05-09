@@ -172,26 +172,89 @@ displayUserName.innerHTML = "<h1>" + userName + "'s Amazing Website</h1>";
 - Now it's your turn. Add more window.prompt() lines of code to extract more information from the user.
 - Find out their age and address.
 - Use the data you receive from the prompts to write more information to new divs.
-* Use as
+* Functions... Get ready to become a hardcore hacker.
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
+- Mastering functions will take you from being a n00b to being a ninja when it comes to programming.
+- Functions are bits of code that we can reuse throughout our program.
+- As an analogy - imagine I asked you to tie your shoelaces up. You already have the instructions stored in your head, so I don't have to tell you exactly what to do. I can just say =tieUpShoeLace= and you'll now what to do.
 ** Code It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: code
 :END:
+- We're going to go back to using =script= tags in the head of out document again.
+- Create a new html page using the following boiler plate.
+#+BEGIN_SRC html
+  <!DOCTYPE html>
+  <html>
+      <head>
+          <title>Functions</title>
+          <script type="text/javascript">
+  
+          </script>
+      </head>
+      <body>
+          <div id = "outputBox"></div>
+      </body>
+  </html>
+#+END_SRC
+- Now lets write a simple line of JavaScript, similar to the ones we wrote before.
+#+BEGIN_SRC javascript
+  var outputBox = document.getElementById('outputBox');
+  outputBox.innerHTML = "<h1>Your function worked!!!!</h1>";
+#+END_SRC
 ** Save It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: save
 :END:
+- Save your code.
 ** Run It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: run
 :END:
+- Can you guess why the code won't work yet?
+- Run it in a web browser, and try and figure out what's wrong.
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+- Hopefully you've figured out that the JavaScript is read by the web browser before the HTML.
+- This means that the web browser doesn't yet know what the =outputBox= id is, when you use it in your JavaScript.
+- Using a function is going to help us fix this a little.
+- Let's modify our code a little.
+#+BEGIN_SRC javascript
+function runMe()
+{
+  var outputBox = document.getElementById('outputBox');
+  outputBox.innerHTML = "<h1>Your function worked!!!!</h1>";
+};
+#+END_SRC
+- We now have a function called =runMe()=
+- The code that belongs to the function goes inside curly brackets ={}= just like it did for conditionals (=if,elseif,else=)
+- When we /call/ the function, the code will run.
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+- Save your work
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+- Run the code in your web browser.
+- Nothing happens, right?
+- Now open up the console (F12 if using I.E) and type the following... =runMe()=
+- Does anything happen.
 ** Try It:
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: try
 :END:
+- Now it's your turn.
+- Underneath your runMe() function, write a new one.
+- Make sure you give your function a sensible name, and don't forget to add the =()= after the name and the ={}= to contain your code.
+- Once you've written your function, open up the console and run it.
+
 * Badge It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
