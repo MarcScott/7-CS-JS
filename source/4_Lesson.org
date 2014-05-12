@@ -231,7 +231,7 @@ function runMe()
 };
 #+END_SRC
 - We now have a function called =runMe()=
-- The code that belongs to the function goes inside curly brackets ={}= just like it did for conditionals (=if,elseif,else=)
+- The code that belongs to the function goes inside curly brackets ={}= just like it did for conditionals (=if,else if,else=)
 - When we /call/ the function, the code will run.
 ** Save It
 :PROPERTIES:
@@ -252,9 +252,95 @@ function runMe()
 :END:
 - Now it's your turn.
 - Underneath your runMe() function, write a new one.
-- Make sure you give your function a sensible name, and don't forget to add the =()= after the name and the ={}= to contain your code.
+- Make sure you give your function a sensible name, and don't forget to add the =()= after the function name and the ={}= to contain your code.
+- Make your function output something like - =The second Function works also=
 - Once you've written your function, open up the console and run it.
+* Using an =<input>= tag
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+- =<input>= tags allow you to get data from the user of your page.
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+- Use the following boilerplate to start you off.
+#+BEGIN_SRC html
+  <!DOCTYPE html>
+  <html>
+      <head>
+          <title>Inputs</title>
+          <script type="text/javascript">
+              
+          </script>
+      </head>
+      <body>
+          <input type="text" id="userNameIn"></input>
+          <div id = "userNameOut"></div>
+      </body>
+  </html>
+#+END_SRC
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+- Save your webpage
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+- Open your page in a browser and you should see the input box.
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+- We can use the =document.getElementById()= method to find out what the user types into the input box.
+- We can then output this to the div below it.
+#+BEGIN_SRC javascript
+  function outputName()
+  {
+      var userName = document.getElementById('userNameIn').value;
+      userNameOut.innerHTML = "<h1>Hi there " + userName + "</h1>"
+  }     
+#+END_SRC
+- The function name is outputName()
+- The first thing the function does is get the value from the userNameIn input box and stores it as the variable =userName=
+- The next thing the function does is to write HTML into the =userNameOut= div, using the =userName= variable.
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+- Save your webpage
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+- Open your page in a browser.
+- Type your name into the input box.
+- Nothing happens yet, because we still need to call the funtion.
+- Open the console and type =outputName()= to call the function you wrote.
+- You should see a message on the webpage
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+- While the program works at the moment, it would be silly to expect everyone to open a console and call functions to use a webpage.
+- Luckily we can call functions within the HTML using =events=
+- Events can be button pushes, or mouse movement, or really anything a user does to interact with a webpage.
+- We're going to use the =onchange= event. This works by registering when an HTML elements has changed.
 
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+** Try It:
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
 * Badge It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
