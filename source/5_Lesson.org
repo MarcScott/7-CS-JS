@@ -2,7 +2,7 @@
 #+STYLE: <link rel="stylesheet" type="text/css" href="css/main.css"/>
 #+STYLE: <link rel="stylesheet" type="text/css" href="css/lesson.css"/>
 
-#+TITLE: Creating a page for your badges.
+#+TITLE: Loopy JavaScript.
 #+AUTHOR: Marc Scott
 
 #+BEGIN_HTML
@@ -31,20 +31,62 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: try
 :END:
-* An HTML page for your badges
+
+* Two types of loops
+- Sometimes when we're coding we like a program to perform an action over and over again.
+- We use loops to do this for us.
+- JavaScript has two types of loops - the =For= loop and the =While= loop.
+* The While loop
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
-- By now you should have collected three blue badges, but other than your file system or your email inbox, you have no where to keep them.
-- In this section, you're going to create a webpage to store all your badges, and then use some JavaScript to provide a little more information to a viewer.
+- The While loop will repeat the instructions containined within it until some condition is met.
+- An everyday example of a while loop mioght be something like.
+#+BEGIN_SRC
+WHILE WATER IS BELOW 100 DEGREES CELCIUS
+    KEEP HEATING WATER
+#+END_SRC
+- This while loop will cause the water to heat up until it reaches 100 degrees, at which point it will stop heating.
+- Another example of a while loop would be
+#+BEGIN_SRC
+WHILE BATH IS NOT FULL
+    KEEP TAPS ON
+#+END_SRC
 ** Code It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: code
 :END:
-- There's quite a lot of HTML and CSS you need for this one, so just download the compresses folder below and unzip it into your home directory.
-- [[file:~/GitHub/KS3_Curriculum/Year_7/JavaScript/resources/Badges-Portfolio.zip][Zipped Badges Files]]
+- A while loop in JavaScript has fairly similar syntax to the if/else if/else statements.
+#+BEGIN_SRC javascript
+  while (condition)
+  {
+  //do something
+  };
+#+END_SRC
+- Use the following code to get started.
 #+BEGIN_SRC html
-
+  <!DOCTYPE html>
+  <html>
+      <head>
+          <title>MANIC BUTTON MASHER</title>
+          <script type="text/javascript">
+  
+              counting = True;
+              count = 0;
+  
+              while (counting === True)
+              {
+              document.write(count);
+              }
+  
+                             
+          </script>
+      </head>
+  <body>
+  <p>How quickly can you push the button 20 times?</p>
+  <input type="button" value="Click me" onclick="increaseScore()">
+  </body>
+  </html>
 #+END_SRC
 ** Save It
 :PROPERTIES:
@@ -58,6 +100,7 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: try
 :END:
+
 * Badge It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
