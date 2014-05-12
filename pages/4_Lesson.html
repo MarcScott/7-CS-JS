@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
 <meta name="title" content="Dominating the DOM"/>
 <meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2014-05-09T08:49+0100"/>
+<meta name="generated" content="2014-05-12T14:45+0100"/>
 <meta name="author" content="Marc Scott"/>
 <meta name="description" content=""/>
 <meta name="keywords" content=""/>
@@ -550,7 +550,7 @@ outputBox.innerHTML = "&lt;h1&gt;Your function worked!!!!&lt;/h1&gt;";
 <ul>
 <li>We now have a function called <code>runMe()</code>
 </li>
-<li>The code that belongs to the function goes inside curly brackets <code>{}</code> just like it did for conditionals (<code>if,elseif,else</code>)
+<li>The code that belongs to the function goes inside curly brackets <code>{}</code> just like it did for conditionals (<code>if,else if,else</code>)
 </li>
 <li>When we <i>call</i> the function, the code will run.
 </li>
@@ -601,12 +601,13 @@ outputBox.innerHTML = "&lt;h1&gt;Your function worked!!!!&lt;/h1&gt;";
 </li>
 <li>Underneath your runMe() function, write a new one.
 </li>
-<li>Make sure you give your function a sensible name, and don't forget to add the <code>()</code> after the name and the <code>{}</code> to contain your code.
+<li>Make sure you give your function a sensible name, and don't forget to add the <code>()</code> after the function name and the <code>{}</code> to contain your code.
+</li>
+<li>Make your function output something like - <code>The second Function works also</code>
 </li>
 <li>Once you've written your function, open up the console and run it.
 </li>
 </ul>
-
 
 </div>
 </div>
@@ -614,24 +615,273 @@ outputBox.innerHTML = "&lt;h1&gt;Your function worked!!!!&lt;/h1&gt;";
 </div>
 
 <div id="outline-container-4" class="outline-2 activity">
-<h2 id="sec-4">Badge It</h2>
+<h2 id="sec-4">Using an <code>&lt;input&gt;</code> tag</h2>
 <div class="outline-text-2" id="text-4">
+
+<ul>
+<li><code>&lt;input&gt;</code> tags allow you to get data from the user of your page.
+</li>
+</ul>
 
 
 </div>
 
-<div id="outline-container-4-1" class="outline-3 badge">
-<h3 id="sec-4-1">Task</h3>
+<div id="outline-container-4-1" class="outline-3 code">
+<h3 id="sec-4-1">Code It</h3>
 <div class="outline-text-3" id="text-4-1">
 
+<ul>
+<li>Use the following boilerplate to start you off.
+</li>
+</ul>
+
+
+
+
+<pre class="example">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Inputs&lt;/title&gt;
+        &lt;script type="text/javascript"&gt;
+
+        &lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;input type="text" id="userNameIn"&gt;&lt;/input&gt;
+        &lt;div id = "userNameOut"&gt;&lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+</div>
+
+</div>
+
+<div id="outline-container-4-2" class="outline-3 save">
+<h3 id="sec-4-2">Save It</h3>
+<div class="outline-text-3" id="text-4-2">
+
+<ul>
+<li>Save your webpage
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-4-3" class="outline-3 run">
+<h3 id="sec-4-3">Run It</h3>
+<div class="outline-text-3" id="text-4-3">
+
+<ul>
+<li>Open your page in a browser and you should see the input box.
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-4-4" class="outline-3 code">
+<h3 id="sec-4-4">Code It</h3>
+<div class="outline-text-3" id="text-4-4">
+
+<ul>
+<li>We can use the <code>document.getElementById()</code> method to find out what the user types into the input box.
+</li>
+<li>We can then output this to the div below it.
+</li>
+</ul>
+
+
+
+
+<pre class="example">function outputName()
+{
+    var userName = document.getElementById('userNameIn').value;
+    userNameOut.innerHTML = "&lt;h1&gt;Hi there " + userName + "&lt;/h1&gt;"
+}     
+</pre>
+
+<ul>
+<li>The function name is outputName()
+</li>
+<li>The first thing the function does is get the value from the userNameIn input box and stores it as the variable <code>userName</code>
+</li>
+<li>The next thing the function does is to write HTML into the <code>userNameOut</code> div, using the <code>userName</code> variable.
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-4-5" class="outline-3 save">
+<h3 id="sec-4-5">Save It</h3>
+<div class="outline-text-3" id="text-4-5">
+
+<ul>
+<li>Save your webpage
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-4-6" class="outline-3 run">
+<h3 id="sec-4-6">Run It</h3>
+<div class="outline-text-3" id="text-4-6">
+
+<ul>
+<li>Open your page in a browser.
+</li>
+<li>Type your name into the input box.
+</li>
+<li>Nothing happens yet, because we still need to call the funtion.
+</li>
+<li>Open the console and type <code>outputName()</code> to call the function you wrote.
+</li>
+<li>You should see a message on the webpage
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-4-7" class="outline-3 code">
+<h3 id="sec-4-7">Code It</h3>
+<div class="outline-text-3" id="text-4-7">
+
+<ul>
+<li>While the program works at the moment, it would be silly to expect everyone to open a console and call functions to use a webpage.
+</li>
+<li>Luckily we can call functions within the HTML using <code>events</code>
+</li>
+<li>Events can be button pushes, or mouse movement, or really anything a user does to interact with a webpage.
+</li>
+<li>We're going to use the <code>onchange</code> event. This works by registering when an HTML elements has changed.
+</li>
+<li>Find this line in your HTML file.
+</li>
+</ul>
+
+
+
+
+<pre class="example">&lt;input type="text" id="userNameIn"&gt;&lt;/input&gt;
+</pre>
+
+<ul>
+<li>Now we're going to make one small change
+</li>
+</ul>
+
+
+
+
+<pre class="example">&lt;input type="text" id="userNameIn" onchange="outputName()"&gt;&lt;/input&gt;
+</pre>
+
+</div>
+
+</div>
+
+<div id="outline-container-4-8" class="outline-3 save">
+<h3 id="sec-4-8">Save It</h3>
+<div class="outline-text-3" id="text-4-8">
+
+<ul>
+<li>Save your work
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-4-9" class="outline-3 run">
+<h3 id="sec-4-9">Run It</h3>
+<div class="outline-text-3" id="text-4-9">
+
+<ul>
+<li>Now open your webpage and fill your name into the box
+</li>
+<li>When you click outside of the box, the browser should detect a change to the <code>&lt;input&gt;</code> box and run the function.
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-4-10" class="outline-3 try">
+<h3 id="sec-4-10">Try It:</h3>
+<div class="outline-text-3" id="text-4-10">
+
+<ul>
+<li>Now add a second input box to your HTML. Don't forget to give in a different id.
+</li>
+<li>Make this second input box for getting the user's age. You can use &lt;p&gt; tags before the input box to label them.
+</li>
+<li>Write a new function that calculates what year the user will be 100 (you did this in lesson 1) and output the result to another div.
+</li>
+</ul>
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-5" class="outline-2 activity">
+<h2 id="sec-5">Badge It</h2>
+<div class="outline-text-2" id="text-5">
+
+
+</div>
+
+<div id="outline-container-5-1" class="outline-3 badge">
+<h3 id="sec-5-1">Task</h3>
+<div class="outline-text-3" id="text-5-1">
+
 <p>To earn your fourth <b>Blue JavaScript Badge</b>, complete the tasks below. Once you have finished, ask your teacher to check your code to make sure it runs correctly.
-</p></div>
+</p><ul>
+<li>Input boxes can have numerous different types. One type is the password type.
+</li>
+</ul>
+
+
+
+
+<pre class="example">&lt;input type="password" id="" onchange=""&gt;&lt;/input&gt;
+</pre>
+
+<ul>
+<li>Create a new webpage and call it password verification.
+</li>
+<li>Create two input boxes, both accepting passwords, and give them different id's.
+</li>
+<li>Create a function, that can be called when the broswer detecrs a change in the second <code>input</code> box.
+</li>
+<li>The function should get the values of both input voxes and store them as seperate variables.
+</li>
+<li>Then the function should use a conditional statement (<code>if, else</code>) to see if the passwords are the same.
+</li>
+<li>If the passwords match, then use a <code>window.alert()</code> or output to a div to notify the user that the password has been accepted.
+</li>
+<li>If they don not match then the user should be prompted to type their passwords again.
+</li>
+</ul>
+
+</div>
 </div>
 </div>
 </div>
 
 <div id="postamble">
-<a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
+
 
 </div>
 </body>

@@ -1,4 +1,4 @@
-x#+STARTUP:indent
+#+STARTUP:indent
 #+STYLE: <link rel="stylesheet" type="text/css" href="css/main.css"/>
 #+STYLE: <link rel="stylesheet" type="text/css" href="css/lesson.css"/>
 #+OPTIONS: toc:nil f:nil author:nil num:nil creator:nil timestamp:nil 
