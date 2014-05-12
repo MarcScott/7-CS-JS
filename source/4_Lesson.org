@@ -1,4 +1,4 @@
-#+STARTUP:indent
+x#+STARTUP:indent
 #+STYLE: <link rel="stylesheet" type="text/css" href="css/main.css"/>
 #+STYLE: <link rel="stylesheet" type="text/css" href="css/lesson.css"/>
 #+OPTIONS: toc:nil f:nil author:nil num:nil creator:nil timestamp:nil 
@@ -346,11 +346,14 @@ function runMe()
 :HTML_CONTAINER_CLASS: run
 :END:
 - Now open your webpage and fill your name into the box
-- When you press enter on your keyboard, the browser should detect a change to the =<input>= box and run the function.
+- When you click outside of the box, the browser should detect a change to the =<input>= box and run the function.
 ** Try It:
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: try
 :END:
+- Now add a second input box to your HTML. Don't forget to give in a different id.
+- Make this second input box for getting the user's age. You can use <p> tags before the input box to label them.
+- Write a new function that calculates what year the user will be 100 (you did this in lesson 1) and output the result to another div.
 * Badge It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
@@ -360,3 +363,14 @@ function runMe()
 :HTML_CONTAINER_CLASS: badge
 :END:
 To earn your fourth *Blue JavaScript Badge*, complete the tasks below. Once you have finished, ask your teacher to check your code to make sure it runs correctly.
+- Input boxes can have numerous different types. One type is the password type.
+#+BEGIN_SRC html
+<input type="password" id="" onchange=""></input>
+#+END_SRC
+- Create a new webpage and call it password verification.
+- Create two input boxes, both accepting passwords, and give them different id's.
+- Create a function, that can be called when the broswer detecrs a change in the second =input= box.
+- The function should get the values of both input voxes and store them as seperate variables.
+- Then the function should use a conditional statement (=if, else=) to see if the passwords are the same.
+- If the passwords match, then use a =window.alert()= or output to a div to notify the user that the password has been accepted.
+- If they don not match then the user should be prompted to type their passwords again.
