@@ -328,15 +328,25 @@ function runMe()
 - Luckily we can call functions within the HTML using =events=
 - Events can be button pushes, or mouse movement, or really anything a user does to interact with a webpage.
 - We're going to use the =onchange= event. This works by registering when an HTML elements has changed.
-
+- Find this line in your HTML file.
+#+BEGIN_SRC html
+  <input type="text" id="userNameIn"></input>
+#+END_SRC
+- Now we're going to make one small change
+#+BEGIN_SRC html
+  <input type="text" id="userNameIn" onchange="outputName()"></input>
+#+END_SRC
 ** Save It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: save
 :END:
+- Save your work
 ** Run It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: run
 :END:
+- Now open your webpage and fill your name into the box
+- When you press enter on your keyboard, the browser should detect a change to the =<input>= box and run the function.
 ** Try It:
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: try
