@@ -32,6 +32,59 @@
 :HTML_CONTAINER_CLASS: try
 :END:
 
+* A Special function
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+- Before we move on, we're going to look at a really useful function that is built into JavaScript.
+- The function is called =onload()=
+- This function is automatically called by the web browser, once _all_ the HTML has been loaded.
+- This means we can place out JavaScript inside this function, and then interact with the DOM.
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+- Create a new document using the following HTML
+#+BEGIN_SRC html
+  <!DOCTYPE html>
+  <html>
+      <head>
+          <title>onload()</title>
+          <script type="text/javascript">
+           var count = 0
+           window.onload = function()
+           {
+             theCountDisplay = document.getElementById('theCountDisplay');
+             theCountDisplay.innerHTML = '<h1>Go</h1>';
+           };
+           function addToCount(){
+             count++;
+             theCountDisplay.innerHTML = '<h1>'+count+'</h1>';
+           };
+          </script>
+      </head>
+      <body>
+          <p>How quickly can you push the button 20 times?</p>
+          <input type="button" value="Click me" onclick="addToCount()">
+          <div id='theCountDisplay' ></div>
+      </body>
+  </html>
+#+END_SRC
+- The =onload()= function in this code acts once all the HTML has been loaded. It then changes the innerHTML of theCountDisplay div.
+- Without the =onload()= function, the JavaScript would net be able to interact tiwht the DOM  
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+** Try It:
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+
 * Two types of loops
 - Sometimes when we're coding we like a program to perform an action over and over again.
 - We use loops to do this for us.
@@ -41,7 +94,7 @@
 :HTML_CONTAINER_CLASS: activity
 :END:
 - The While loop will repeat the instructions containined within it until some condition is met.
-- An everyday example of a while loop mioght be something like.
+- An everyday example of a while loop might be something like.
 #+BEGIN_SRC
 WHILE WATER IS BELOW 100 DEGREES CELCIUS
     KEEP HEATING WATER
@@ -70,24 +123,61 @@ WHILE BATH IS NOT FULL
       <head>
           <title>MANIC BUTTON MASHER</title>
           <script type="text/javascript">
-  
-              counting = True;
-              count = 0;
-  
-              while (counting === True)
-              {
-              document.write(count);
-              }
-  
-                             
+	   var count = 0 //sets the button pushes to 0
+	   function addToCount()
+	   {
+	     count++;
+	     theCount = document.getElementById('counter');
+	     theCount.innerHTML = count;
+	   };
           </script>
       </head>
   <body>
   <p>How quickly can you push the button 20 times?</p>
-  <input type="button" value="Click me" onclick="increaseScore()">
+  <input type="button" value="Click me" onclick="addToCount()">
+  <div id='counter' ></div>
   </body>
   </html>
 #+END_SRC
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+- Save the HTML file
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+- Run the file
+- You should see a button that you can press. Doing so displays the number of pushes below.
+** Try It:
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+- You'll notice on line six there is a comment - =//sets the button pushes to 0=
+- Comments are useful, as they are not processed by the web browser, so we can use them to help explain our code to other developers.
+- In Javascript, you start a comment by using =//=
+- Add comments to the ends of lines 7, 9, 10 and 11 and try and explain what is happening. Get your teacher to check your work if you're not sure.
+
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+- It would be better if our program stopped counting button presses once twenty had been reached
+- We can use a while loop for this
+#+BEGIN_SRC javascript
+  var count = 0 //sets the button pushes to 0
+  while (count <= 20)
+  {
+      function addToCount()
+      {
+          count++;
+          theCount = document.getElementById('counter');
+          theCount.innerHTML = count;
+      };
+  };
+#+END_SRC
+- We still have to declare 
 ** Save It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: save
@@ -100,6 +190,7 @@ WHILE BATH IS NOT FULL
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: try
 :END:
+
 
 * Badge It
 :PROPERTIES:
