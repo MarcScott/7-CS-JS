@@ -27,7 +27,7 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
-* Lesson 5 - Loopy JavaScript
+* [[file:pages/5_Lesson.html][Lesson 5 - Functions and Events]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:

@@ -34,7 +34,7 @@ Web Development - Building games with JavaScript
 ### Example work
 
 The conlcusion of the project, is to produce a Web Page for displaying digital badges that have been earned by the student.
-![image](resources/Example.png)
+![image](resources/6_resources/Example.png)
 
 ### Glossary
 
