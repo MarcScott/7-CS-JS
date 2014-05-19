@@ -1,7 +1,7 @@
 #+STARTUP:indent
 #+STYLE: <link rel="stylesheet" type="text/css" href="css/main.css"/>
 #+STYLE: <link rel="stylesheet" type="text/css" href="css/lesson.css"/>
-#+OPTIONS: toc:nil f:nil author:nil num:nil creator:nil timestamp:nil 
+#+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil 
 #+TITLE: The Console and Conditionals
 #+AUTHOR: Marc Scott
 

@@ -1,6 +1,7 @@
 #+STARTUP:indent
 #+STYLE: <link rel="stylesheet" type="text/css" href="css/main.css"/>
 #+STYLE: <link rel="stylesheet" type="text/css" href="css/lesson.css"/>
+#+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil 
 
 #+TITLE: More functions and events.
 #+AUTHOR: Marc Scott
