@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
 <meta name="title" content="Creating a page for your badges."/>
 <meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2014-05-21T09:39+0100"/>
+<meta name="generated" content="2014-05-21T11:52+0100"/>
 <meta name="author" content="Marc Scott"/>
 <meta name="description" content=""/>
 <meta name="keywords" content=""/>
@@ -127,6 +127,8 @@ for the JavaScript code in this tag.
 </div>
 
 
+
+
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
@@ -139,9 +141,24 @@ for the JavaScript code in this tag.
 <li><a href="#sec-1-4">1.4 Try It:</a></li>
 </ul>
 </li>
-<li><a href="#sec-2">2 Badge It</a>
+<li><a href="#sec-2">2 Creating a badges.js file</a>
 <ul>
-  <li><a href="#sec-2-1">2.1 Task</a></li>
+  <li><a href="#sec-2-1">2.1 Code It</a></li>
+<li><a href="#sec-2-2">2.2 Save It</a></li>
+<li><a href="#sec-2-3">2.3 Run It</a></li>
+</ul>
+</li>
+<li><a href="#sec-3">3 Using Arrays</a>
+<ul>
+  <li><a href="#sec-3-1">3.1 Code It</a></li>
+<li><a href="#sec-3-2">3.2 Save It</a></li>
+<li><a href="#sec-3-3">3.3 Run It</a></li>
+<li><a href="#sec-3-4">3.4 Try It:</a></li>
+</ul>
+</li>
+<li><a href="#sec-4">4 Badge It</a>
+<ul>
+  <li><a href="#sec-4-1">4.1 Task</a></li>
 </ul>
 </li>
 </ul>
@@ -163,12 +180,66 @@ for the JavaScript code in this tag.
 </li>
 </ul>
 
+<ul>
+<li>The first thing to do is to create a directory structure to store your work.
+</li>
+<li>Make a directory called <code>Badge-Page</code>
+</li>
+<li><i>Inside</i> the <code>Badge-Page</code> directory, create one directory called <code>css</code>, another called <code>js</code> and one more called <code>badges</code>.
+</li>
+<li>Place the Badges.html into the main directory.
+</li>
+<li>Place the badges.css into the css directory.
+</li>
+<li>Place the badges you have been awarded so far into the badges directory.
+</li>
+</ul>
+
 
 </div>
 
 <div id="outline-container-1-1" class="outline-3 code">
 <h3 id="sec-1-1"><span class="section-number-3">1.1</span> Code It</h3>
 <div class="outline-text-3" id="text-1-1">
+
+<ul>
+<li>Open up Badges.html in a text editor.
+</li>
+<li>Have a good luck through the html.
+</li>
+<li>You'll notice that there is no css there at all, instead there is this line.
+</li>
+</ul>
+
+
+
+
+<pre class="example">&lt;link type="text/css" rel="stylesheet" href="css/badges.css"&gt;
+</pre>
+
+<ul>
+<li>This line tells the web browser that all the css can be found on a seperate file.
+</li>
+<li>The file is called <code>badges.css</code> and is located in the <code>css</code> directory.
+</li>
+<li>This is a much neater way of creating web pages. First it tidies up your html and secondly it makes sure that lots of different pages can all access the same css file.
+</li>
+<li>Let's do the same for out JavaScript, and put it all in a seperate file.
+</li>
+<li>Add this line to your html, jest below the link to the css.
+</li>
+</ul>
+
+
+
+
+<pre class="example">&lt;script language="javascript" type="text/javascript" src="js/badges.js"&gt;&lt;/script&gt;
+</pre>
+
+<ul>
+<li>This tells the browser that all the JavaScript can be found in the <code>js</code> directory and is called <code>badges.js</code>
+</li>
+</ul>
 
 </div>
 
@@ -178,6 +249,11 @@ for the JavaScript code in this tag.
 <h3 id="sec-1-2"><span class="section-number-3">1.2</span> Save It</h3>
 <div class="outline-text-3" id="text-1-2">
 
+<ul>
+<li>Save the file.
+</li>
+</ul>
+
 </div>
 
 </div>
@@ -185,6 +261,13 @@ for the JavaScript code in this tag.
 <div id="outline-container-1-3" class="outline-3 run">
 <h3 id="sec-1-3"><span class="section-number-3">1.3</span> Run It</h3>
 <div class="outline-text-3" id="text-1-3">
+
+<ul>
+<li>Run the file in the browser.
+</li>
+<li>Nothing much should be displayed at the moment, so let's fix that.
+</li>
+</ul>
 
 </div>
 
@@ -194,33 +277,167 @@ for the JavaScript code in this tag.
 <h3 id="sec-1-4"><span class="section-number-3">1.4</span> Try It:</h3>
 <div class="outline-text-3" id="text-1-4">
 
-<p>:PROPERTIES:
-:HTML<sub>CONTAINER</sub><sub>CLASS</sub>: try
-:END
-</p></div>
+<ul>
+<li>At the moment there is a div in your HTML with the id <code>badges1</code>
+</li>
+<li>Inside this div are some <code>&lt;img&gt;</code> tags that don't really link to anything at the moment.
+</li>
+<li>Change the <code>&lt;img&gt;</code> tags so that they point to the badges you have earned while learning JavaScript. You should have 5 in total by now.
+</li>
+<li>Make sure the page looks okay in a browser.
+</li>
+</ul>
+
+</div>
 </div>
 
 </div>
 
 <div id="outline-container-2" class="outline-2 activity">
-<h2 id="sec-2"><span class="section-number-2">2</span> Badge It</h2>
+<h2 id="sec-2"><span class="section-number-2">2</span> Creating a badges.js file</h2>
 <div class="outline-text-2" id="text-2">
+
+<ul>
+<li>Open up your web pages in a browser and then open the developers console.
+</li>
+<li>You should see an error message, along the lines that the javascript file can't be found.
+</li>
+<li>Let's fix that now.
+</li>
+</ul>
 
 
 </div>
 
-<div id="outline-container-2-1" class="outline-3 badge">
-<h3 id="sec-2-1"><span class="section-number-3">2.1</span> Task</h3>
+<div id="outline-container-2-1" class="outline-3 code">
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> Code It</h3>
 <div class="outline-text-3" id="text-2-1">
 
+<ul>
+<li>In your text editor save a blank file as <code>badges.js</code> in the <code>js</code> directory you created earlier.
+</li>
+<li>We'll test that it's all working correctly with a quick <code>console.log()</code>
+</li>
+</ul>
+
+
+
+
+<pre class="example">console.log('JavaScript loaded succesfully')
+</pre>
+
+</div>
+
+</div>
+
+<div id="outline-container-2-2" class="outline-3 save">
+<h3 id="sec-2-2"><span class="section-number-3">2.2</span> Save It</h3>
+<div class="outline-text-3" id="text-2-2">
+
+<ul>
+<li>Save the .js file
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-2-3" class="outline-3 run">
+<h3 id="sec-2-3"><span class="section-number-3">2.3</span> Run It</h3>
+<div class="outline-text-3" id="text-2-3">
+
+<ul>
+<li>Refresh your browser and make sure that the console.log is being displayed.
+</li>
+</ul>
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-3" class="outline-2 activity">
+<h2 id="sec-3"><span class="section-number-2">3</span> Using Arrays</h2>
+<div class="outline-text-2" id="text-3">
+
+<ul>
+<li>The first thing we're going to want to do is to display the number of badges your have obtained.
+</li>
+<li>To do this you're going to need to know about <i>arrays</i>
+</li>
+<li>An array is an arrangement of items. Just think about a shopping list.
+</li>
+</ul>
+
+<p><img src="img/shopping.png"  alt="img/shopping.png" />
+</p><ul>
+<li>In JavaScript we'd represent the shopping list like this:
+</li>
+</ul>
+
+
+
+
+<pre class="example">shoppingList = ['Milk','Eggs','Bread','Rice','MacBook Pro']
+</pre>
+
+
+</div>
+
+<div id="outline-container-3-1" class="outline-3 code">
+<h3 id="sec-3-1"><span class="section-number-3">3.1</span> Code It</h3>
+<div class="outline-text-3" id="text-3-1">
+
+</div>
+
+</div>
+
+<div id="outline-container-3-2" class="outline-3 save">
+<h3 id="sec-3-2"><span class="section-number-3">3.2</span> Save It</h3>
+<div class="outline-text-3" id="text-3-2">
+
+</div>
+
+</div>
+
+<div id="outline-container-3-3" class="outline-3 run">
+<h3 id="sec-3-3"><span class="section-number-3">3.3</span> Run It</h3>
+<div class="outline-text-3" id="text-3-3">
+
+</div>
+
+</div>
+
+<div id="outline-container-3-4" class="outline-3 try">
+<h3 id="sec-3-4"><span class="section-number-3">3.4</span> Try It:</h3>
+<div class="outline-text-3" id="text-3-4">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-4" class="outline-2 activity">
+<h2 id="sec-4"><span class="section-number-2">4</span> Badge It</h2>
+<div class="outline-text-2" id="text-4">
+
+
+</div>
+
+<div id="outline-container-4-1" class="outline-3 badge">
+<h3 id="sec-4-1"><span class="section-number-3">4.1</span> Task</h3>
+<div class="outline-text-3" id="text-4-1">
+
 <p>To earn your fourth <b>Blue JavaScript Badge</b>, complete the tasks below. Once you have finished, ask your teacher to check your code to make sure it runs correctly.
-</p></div>
+</p>
+</div>
 </div>
 </div>
 </div>
 
 <div id="postamble">
-<p class="date">Date: 2014-05-21T09:39+0100</p>
+<p class="date">Date: 2014-05-21T11:52+0100</p>
 <p class="author">Author: Marc Scott</p>
 <p class="creator"><a href="http://orgmode.org">Org</a> version 7.9.3f with <a href="http://www.gnu.org/software/emacs/">Emacs</a> version 24</p>
 

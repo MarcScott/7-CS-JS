@@ -79,7 +79,7 @@
 ** Try It:
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: try
-:END
+:END:
 - At the moment there is a div in your HTML with the id =badges1=
 - Inside this div are some =<img>= tags that don't really link to anything at the moment.
 - Change the =<img>= tags so that they point to the badges you have earned while learning JavaScript. You should have 5 in total by now.
@@ -89,14 +89,105 @@
 :HTML_CONTAINER_CLASS: activity
 :END:
 - Open up your web pages in a browser and then open the developers console.
-- You shoudl see an error message, along the lines that the javascript file can't be found.
+- You should see an error message, along the lines that the javascript file can't be found.
 - Let's fix that now.
 ** Code It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: code
 :END:
 - In your text editor save a blank file as =badges.js= in the =js= directory you created earlier.
+- We'll test that it's all working correctly with a quick =console.log()=
+#+BEGIN_SRC javascript
+console.log('JavaScript loaded succesfully')
+#+END_SRC
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+- Save the .js file
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+- Refresh your browser and make sure that the console.log is being displayed.
+* Using Arrays
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+- The first thing we're going to want to do is to display the number of badges your have obtained.
+- To do this you're going to need to know about /arrays/
+- An array is an arrangement of items. Just think about a shopping list.
+[[file:img/shopping.png]]
+- In JavaScript we'd represent the shopping list like this:
+#+BEGIN_SRC javascript
+shoppingList = ['Milk','Eggs','Bread','Rice','MacBook Pro']
+#+END_SRC
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+- Let's create an Array and see what we can do with it.
+- Delete the =console.log()= from your .js file
+- Now lest create a new array
+#+BEGIN_SRC javascript
+var listOfCats = ['Dave','Dee','Dozy','Beaky','Mick','Tich']
+#+END_SRC
+- You can find out what is at any position in an Array quite easily. Write this line below it.
+#+BEGIN_SRC javascript
+console.log(listOfCats[3])
+#+END_SRC
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+- Save the .js file.
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+- Refresh your browser. (Don't forget to look at the console)
+- Which cat is printed out in the console?
+- Is that the one you expected?
+- In JavaScript the first element of an array is indexed - 0. We often call it the zeroth (0th) element. So when counting positions, you /must/ start counting from 0.
+** Try It:
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+- Make sure you can console.log() all the cat names, using the array
 
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+** Try It:
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+
+- Now you have created and accessed an array, one thing that is really useful for a program to know, is the length of the array.
+- This is actually really easy to do.
+#+BEGIN_SRC javascript
+console.log(listOfCats.length)
+#+END_SRC
+- Add this line to your code, and you should see the number 6 printed out in the console, when you save the code and refresh the page.
+* Counting the badges
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+- We're going to use an array to count the badges on your webpage.
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+- 
 ** Save It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: save
@@ -119,3 +210,4 @@
 :HTML_CONTAINER_CLASS: badge
 :END:
 To earn your fourth *Blue JavaScript Badge*, complete the tasks below. Once you have finished, ask your teacher to check your code to make sure it runs correctly.
+
