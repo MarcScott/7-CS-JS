@@ -96,7 +96,7 @@
 :HTML_CONTAINER_CLASS: code
 :END:
 - In your text editor save a blank file as =badges.js= in the =js= directory you created earlier.
-
+- 
 ** Save It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: save
