@@ -4,30 +4,43 @@ window.onload = function()
 {  
     imageArray = document.getElementById('badges1').getElementsByTagName('img');
     countBox = document.getElementById('textCount');
-    countBox.innerHTML = 'Total Badges gained- = ' + imagesArray.length;
+    countBox.innerHTML = 'Total Badges gained- = ' + imageArray.length;
+    progress = imageArray.length/6*100;
     calcProgress = document.getElementById('calcProgress');
     calcProgress.onclick=function(){calculate()}; 
 };
 
-function fillProgressBar()
-{
-    document.getElementById('progressBarFill').style.width = fillPercent+'%';
-};
 
-function calculate()
+/*function calculate()
 {
     fillPercent = 0
-    progress = images.length/12*100;
     setInterval(function()
 		{
 		    fillPercent++; 
 		    if (fillPercent < progress)
 		    {
-			fillProgressBar(); 
+			document.getElementById('progressBarFill').style.width = fillPercent+'%';
 		    } 
 		}
 		,20);
-}
+}*/
+
+function fillIt()
+{
+    fillPercent++;
+    if (fillPercent < progress)
+	{
+	    document.getElementbyId('progressBarFill').style.width = fillPercent+'%';
+	};
+};
+
+function calculate()
+{
+    fillPercent = 0;
+    var stupidVar = setInterval(function(){fillIt()};,20);
+};
+
+
 
 
 
