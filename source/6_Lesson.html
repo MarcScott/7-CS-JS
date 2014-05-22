@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
 <meta name="title" content="Creating a page for your badges."/>
 <meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2014-05-21T11:52+0100"/>
+<meta name="generated" content="2014-05-22T08:05+0100"/>
 <meta name="author" content="Marc Scott"/>
 <meta name="description" content=""/>
 <meta name="keywords" content=""/>
@@ -154,11 +154,23 @@ for the JavaScript code in this tag.
 <li><a href="#sec-3-2">3.2 Save It</a></li>
 <li><a href="#sec-3-3">3.3 Run It</a></li>
 <li><a href="#sec-3-4">3.4 Try It:</a></li>
+<li><a href="#sec-3-5">3.5 Code It</a></li>
 </ul>
 </li>
-<li><a href="#sec-4">4 Badge It</a>
+<li><a href="#sec-4">4 Counting the badges</a>
 <ul>
-  <li><a href="#sec-4-1">4.1 Task</a></li>
+  <li><a href="#sec-4-1">4.1 Code It</a></li>
+<li><a href="#sec-4-2">4.2 Save It</a></li>
+<li><a href="#sec-4-3">4.3 Run It</a></li>
+<li><a href="#sec-4-4">4.4 Code It</a></li>
+<li><a href="#sec-4-5">4.5 Save It</a></li>
+<li><a href="#sec-4-6">4.6 Run It</a></li>
+<li><a href="#sec-4-7">4.7 Try It:</a></li>
+</ul>
+</li>
+<li><a href="#sec-5">5 Badge It</a>
+<ul>
+  <li><a href="#sec-5-1">5.1 Task</a></li>
 </ul>
 </li>
 </ul>
@@ -174,9 +186,9 @@ for the JavaScript code in this tag.
 </li>
 <li>So you're focusing on the HTML and CSS, they have been provided for you.
 </li>
-<li>Download the HTML by <a href="file:///Users/ghost/Curriculum/7-WD-JS/resources/6_resources/Badges.html"><i>Right-Clicking here</i></a> and choosing to download the file.
+<li>Download the HTML by <a href="file:///Users/scott/Curriculum/7-WD-JS/resources/6_resources/Badges.html"><i>Right-Clicking here</i></a> and choosing to download the file.
 </li>
-<li>Download the CSS by <a href="file:///Users/ghost/Curriculum/7-WD-JS/resources/6_resources/css/badges.css"><i>Right-Clicking here</i></a> and choosing to download the file.
+<li>Download the CSS by <a href="file:///Users/scott/Curriculum/7-WD-JS/resources/6_resources/css/badges.css"><i>Right-Clicking here</i></a> and choosing to download the file.
 </li>
 </ul>
 
@@ -389,6 +401,32 @@ for the JavaScript code in this tag.
 <h3 id="sec-3-1"><span class="section-number-3">3.1</span> Code It</h3>
 <div class="outline-text-3" id="text-3-1">
 
+<ul>
+<li>Let's create an Array and see what we can do with it.
+</li>
+<li>Delete the <code>console.log()</code> from your .js file
+</li>
+<li>Now lest create a new array
+</li>
+</ul>
+
+
+
+
+<pre class="example">var listOfCats = ['Dave','Dee','Dozy','Beaky','Mick','Tich']
+</pre>
+
+<ul>
+<li>You can find out what is at any position in an Array quite easily. Write this line below it.
+</li>
+</ul>
+
+
+
+
+<pre class="example">console.log(listOfCats[3])
+</pre>
+
 </div>
 
 </div>
@@ -396,6 +434,11 @@ for the JavaScript code in this tag.
 <div id="outline-container-3-2" class="outline-3 save">
 <h3 id="sec-3-2"><span class="section-number-3">3.2</span> Save It</h3>
 <div class="outline-text-3" id="text-3-2">
+
+<ul>
+<li>Save the .js file.
+</li>
+</ul>
 
 </div>
 
@@ -405,6 +448,17 @@ for the JavaScript code in this tag.
 <h3 id="sec-3-3"><span class="section-number-3">3.3</span> Run It</h3>
 <div class="outline-text-3" id="text-3-3">
 
+<ul>
+<li>Refresh your browser. (Don't forget to look at the console)
+</li>
+<li>Which cat is printed out in the console?
+</li>
+<li>Is that the one you expected?
+</li>
+<li>In JavaScript the first element of an array is indexed - 0. We often call it the zeroth (0th) element. So when counting positions, you <i>must</i> start counting from 0.
+</li>
+</ul>
+
 </div>
 
 </div>
@@ -413,21 +467,234 @@ for the JavaScript code in this tag.
 <h3 id="sec-3-4"><span class="section-number-3">3.4</span> Try It:</h3>
 <div class="outline-text-3" id="text-3-4">
 
+<ul>
+<li>Make sure you can console.log() all the cat names, using the array
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-3-5" class="outline-3 code">
+<h3 id="sec-3-5"><span class="section-number-3">3.5</span> Code It</h3>
+<div class="outline-text-3" id="text-3-5">
+
+<ul>
+<li>Now you have created and accessed an array, one thing that is really useful for a program to know, is the length of the array.
+</li>
+<li>This is actually really easy to do.
+</li>
+</ul>
+
+
+
+
+<pre class="example">console.log(listOfCats.length)
+</pre>
+
+<ul>
+<li>Add this line to your code, and you should see the number 6 printed out in the console, when you save the code and refresh the page.
+</li>
+</ul>
+
 </div>
 </div>
 
 </div>
 
 <div id="outline-container-4" class="outline-2 activity">
-<h2 id="sec-4"><span class="section-number-2">4</span> Badge It</h2>
+<h2 id="sec-4"><span class="section-number-2">4</span> Counting the badges</h2>
 <div class="outline-text-2" id="text-4">
+
+<ul>
+<li>We're now going to use an array to count the badges on your webpage.
+</li>
+<li>Before we start, let's have a quick look at the html of the web page again.
+</li>
+</ul>
+
+
+
+
+<pre class="example">&lt;div id = "badges1"&gt;
+    &lt;h3&gt;JavaScript Badges&lt;/h3&gt;
+    &lt;img src="badges/placeholder.png"&gt;
+    &lt;img src="badges/placeholder.png"&gt;
+    &lt;img src="badges/placeholder.png"&gt;
+    &lt;img src="badges/placeholder.png"&gt;
+    &lt;img src="badges/placeholder.png"&gt;
+&lt;/div&gt;
+&lt;input type="button" value="Calculate Progress" id='calcProgress'&gt;
+&lt;div id="progressSection"&gt;
+    &lt;div id="textCount"&gt;&lt;/div&gt;
+</pre>
+
+<ul>
+<li>The three key areas we need to focus on are the <code>&lt;div id = "badges1"&gt;</code>, the <code>&lt;img&gt;</code> tags used to reference the images and lastly the <code>&lt;div id = "textCount"&gt;</code>. 
+</li>
+</ul>
 
 
 </div>
 
-<div id="outline-container-4-1" class="outline-3 badge">
-<h3 id="sec-4-1"><span class="section-number-3">4.1</span> Task</h3>
+<div id="outline-container-4-1" class="outline-3 code">
+<h3 id="sec-4-1"><span class="section-number-3">4.1</span> Code It</h3>
 <div class="outline-text-3" id="text-4-1">
+
+<ul>
+<li>Delete everything from your .js file.
+</li>
+<li>Declare a variable called <code>imageArray</code> on the first line.
+</li>
+<li>Next we'll need a function that is called when the window loads.
+</li>
+</ul>
+
+
+
+
+<pre class="example">window.onload = function()
+{
+
+};
+</pre>
+
+<ul>
+<li>For now, all your code goes between the <code>{}</code>
+</li>
+<li>To assign the images to the variable you created, add this line of code.
+</li>
+</ul>
+
+
+
+
+<pre class="example">imageArray = document.getElementById('badges1').getElementsByTagName('img');
+</pre>
+
+<ul>
+<li>This code first accesses the <code>badges1</code> div and then gets <span style="text-decoration:underline;">all</span> the elements what use the <code>img</code> tag.
+</li>
+<li>Let's check this works by adding a <code>console.log(imageArray);</code>
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-4-2" class="outline-3 save">
+<h3 id="sec-4-2"><span class="section-number-3">4.2</span> Save It</h3>
+<div class="outline-text-3" id="text-4-2">
+
+<ul>
+<li>Save your .js file
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-4-3" class="outline-3 run">
+<h3 id="sec-4-3"><span class="section-number-3">4.3</span> Run It</h3>
+<div class="outline-text-3" id="text-4-3">
+
+<ul>
+<li>Open the Badges.html file in a browser and check the console. You'll see different things depending on which broiwser you're using, but you should see an array being displayed.
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-4-4" class="outline-3 code">
+<h3 id="sec-4-4"><span class="section-number-3">4.4</span> Code It</h3>
+<div class="outline-text-3" id="text-4-4">
+
+<ul>
+<li>We're now going to use the <code>textCount</code> div to display the number of badges (which is the length of the array.)
+</li>
+<li>Let's grab the <code>textCount</code> div. Put this code between the <code>{}</code>.
+</li>
+</ul>
+
+
+
+
+<pre class="example">var textCount = document.getElementById('textCount');
+</pre>
+
+<ul>
+<li>Now we can edit the innerHTML of the <code>textCount</code> div
+</li>
+</ul>
+
+
+
+
+<pre class="example">textCount.innerHTML = imageArray.length;
+</pre>
+
+</div>
+
+</div>
+
+<div id="outline-container-4-5" class="outline-3 save">
+<h3 id="sec-4-5"><span class="section-number-3">4.5</span> Save It</h3>
+<div class="outline-text-3" id="text-4-5">
+
+<ul>
+<li>Save your .js file
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-4-6" class="outline-3 run">
+<h3 id="sec-4-6"><span class="section-number-3">4.6</span> Run It</h3>
+<div class="outline-text-3" id="text-4-6">
+
+<ul>
+<li>Open the Badges.html file in a browser and check that the number of badges is being displayed.
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-4-7" class="outline-3 try">
+<h3 id="sec-4-7"><span class="section-number-3">4.7</span> Try It:</h3>
+<div class="outline-text-3" id="text-4-7">
+
+
+<ul>
+<li>Having the number on it's own doesn't give our user much information.
+</li>
+<li>Use <i>concatentaion</i> (joining) to add some text to the innerHTML of the <code>textCount</code>. Something along the lines of "Total Badges Gained", should do the trick.
+</li>
+</ul>
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-5" class="outline-2 activity">
+<h2 id="sec-5"><span class="section-number-2">5</span> Badge It</h2>
+<div class="outline-text-2" id="text-5">
+
+
+</div>
+
+<div id="outline-container-5-1" class="outline-3 badge">
+<h3 id="sec-5-1"><span class="section-number-3">5.1</span> Task</h3>
+<div class="outline-text-3" id="text-5-1">
 
 <p>To earn your fourth <b>Blue JavaScript Badge</b>, complete the tasks below. Once you have finished, ask your teacher to check your code to make sure it runs correctly.
 </p>
@@ -437,7 +704,7 @@ for the JavaScript code in this tag.
 </div>
 
 <div id="postamble">
-<p class="date">Date: 2014-05-21T11:52+0100</p>
+<p class="date">Date: 2014-05-22T08:05+0100</p>
 <p class="author">Author: Marc Scott</p>
 <p class="creator"><a href="http://orgmode.org">Org</a> version 7.9.3f with <a href="http://www.gnu.org/software/emacs/">Emacs</a> version 24</p>
 

@@ -154,24 +154,10 @@ console.log(listOfCats[3])
 :HTML_CONTAINER_CLASS: try
 :END:
 - Make sure you can console.log() all the cat names, using the array
-
 ** Code It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: code
 :END:
-** Save It
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: save
-:END:
-** Run It
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: run
-:END:
-** Try It:
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: try
-:END:
-
 - Now you have created and accessed an array, one thing that is really useful for a program to know, is the length of the array.
 - This is actually really easy to do.
 #+BEGIN_SRC javascript
@@ -182,25 +168,82 @@ console.log(listOfCats.length)
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
-- We're going to use an array to count the badges on your webpage.
+- We're now going to use an array to count the badges on your webpage.
+- Before we start, let's have a quick look at the html of the web page again.
+#+BEGIN_SRC html
+  <div id = "badges1">
+      <h3>JavaScript Badges</h3>
+      <img src="badges/placeholder.png">
+      <img src="badges/placeholder.png">
+      <img src="badges/placeholder.png">
+      <img src="badges/placeholder.png">
+      <img src="badges/placeholder.png">
+  </div>
+  <input type="button" value="Calculate Progress" id='calcProgress'>
+  <div id="progressSection">
+      <div id="textCount"></div>
+#+END_SRC
+- The three key areas we need to focus on are the =<div id = "badges1">=, the =<img>= tags used to reference the images and lastly the =<div id = "textCount">=. 
 ** Code It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: code
 :END:
-- 
+- Delete everything from your .js file.
+- Declare a variable called =imageArray= on the first line.
+- Next we'll need a function that is called when the window loads.
+#+BEGIN_SRC javascript
+window.onload = function()
+{
+
+};
+#+END_SRC
+- For now, all your code goes between the ={}=
+- To assign the images to the variable you created, add this line of code.
+#+BEGIN_SRC javascript
+imageArray = document.getElementById('badges1').getElementsByTagName('img');
+#+END_SRC
+- This code first accesses the =badges1= div and then gets _all_ the elements what use the =img= tag.
+- Let's check this works by adding a =console.log(imageArray);=
 ** Save It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: save
 :END:
+- Save your .js file
 ** Run It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: run
 :END:
+- Open the Badges.html file in a browser and check the console. You'll see different things depending on which broiwser you're using, but you should see an array being displayed.
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+- We're now going to use the =textCount= div to display the number of badges (which is the length of the array.)
+- Let's grab the =textCount= div. Put this code between the ={}=.
+#+BEGIN_SRC javascript
+var textCount = document.getElementById('textCount');
+#+END_SRC
+- Now we can edit the innerHTML of the =textCount= div
+#+BEGIN_SRC javascript
+textCount.innerHTML = imageArray.length;
+#+END_SRC
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+- Save your .js file
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+- Open the Badges.html file in a browser and check that the number of badges is being displayed.
 ** Try It:
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: try
 :END:
 
+- Having the number on it's own doesn't give our user much information.
+- Use /concatentaion/ (joining) to add some text to the innerHTML of the =textCount=. Something along the lines of "Total Badges Gained", should do the trick.
 * Badge It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
