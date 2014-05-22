@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
 <meta name="title" content="Creating a page for your badges."/>
 <meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2014-05-22T08:05+0100"/>
+<meta name="generated" content="2014-05-22T16:46+0100"/>
 <meta name="author" content="Marc Scott"/>
 <meta name="description" content=""/>
 <meta name="keywords" content=""/>
@@ -168,9 +168,25 @@ for the JavaScript code in this tag.
 <li><a href="#sec-4-7">4.7 Try It:</a></li>
 </ul>
 </li>
-<li><a href="#sec-5">5 Badge It</a>
+<li><a href="#sec-5">5 Filling the progress bar</a>
 <ul>
-  <li><a href="#sec-5-1">5.1 Task</a></li>
+  <li><a href="#sec-5-1">5.1 Code It</a></li>
+<li><a href="#sec-5-2">5.2 Save It</a></li>
+<li><a href="#sec-5-3">5.3 Run It</a></li>
+<li><a href="#sec-5-4">5.4 Try It:</a></li>
+<li><a href="#sec-5-5">5.5 Code It</a></li>
+<li><a href="#sec-5-6">5.6 Save It</a></li>
+<li><a href="#sec-5-7">5.7 Run It</a></li>
+</ul>
+</li>
+<li><a href="#sec-6">6 Animating the fill</a>
+<ul>
+  <li><a href="#sec-6-1">6.1 Code It</a></li>
+</ul>
+</li>
+<li><a href="#sec-7">7 Badge It</a>
+<ul>
+  <li><a href="#sec-7-1">7.1 Task</a></li>
 </ul>
 </li>
 </ul>
@@ -686,25 +702,271 @@ for the JavaScript code in this tag.
 </div>
 
 <div id="outline-container-5" class="outline-2 activity">
-<h2 id="sec-5"><span class="section-number-2">5</span> Badge It</h2>
+<h2 id="sec-5"><span class="section-number-2">5</span> Filling the progress bar</h2>
 <div class="outline-text-2" id="text-5">
+
+<ul>
+<li>Having a numerical indicator of progress is great, but a progress bar would be better.
+</li>
+<li>In the .html file there are the following lines of code.
+</li>
+</ul>
+
+
+
+
+<pre class="example">&lt;div id="progressBar"&gt;
+    &lt;div id="progressBarFill"&gt;&lt;/div&gt;
+</pre>
+
+<ul>
+<li><code>progressBar</code> is a container div and <code>progressBarFill</code> is a div inside it that has been coloured white, using css. 
+</li>
+</ul>
 
 
 </div>
 
-<div id="outline-container-5-1" class="outline-3 badge">
-<h3 id="sec-5-1"><span class="section-number-3">5.1</span> Task</h3>
+<div id="outline-container-5-1" class="outline-3 code">
+<h3 id="sec-5-1"><span class="section-number-3">5.1</span> Code It</h3>
 <div class="outline-text-3" id="text-5-1">
 
-<p>To earn your fourth <b>Blue JavaScript Badge</b>, complete the tasks below. Once you have finished, ask your teacher to check your code to make sure it runs correctly.
-</p>
+<ul>
+<li>Let's have a play with the <code>progressBarFill</code>, put this inside your <code>onload = function{}</code> code
+</li>
+</ul>
+
+
+
+
+<pre class="example">document.getElementById('progressBarFill').style.width = '25%';
+</pre>
+
+</div>
+
+</div>
+
+<div id="outline-container-5-2" class="outline-3 save">
+<h3 id="sec-5-2"><span class="section-number-3">5.2</span> Save It</h3>
+<div class="outline-text-3" id="text-5-2">
+
+<ul>
+<li>Save the .js file
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-5-3" class="outline-3 run">
+<h3 id="sec-5-3"><span class="section-number-3">5.3</span> Run It</h3>
+<div class="outline-text-3" id="text-5-3">
+
+<ul>
+<li>Open the Badges.html in a browser.
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-5-4" class="outline-3 try">
+<h3 id="sec-5-4"><span class="section-number-3">5.4</span> Try It:</h3>
+<div class="outline-text-3" id="text-5-4">
+
+<ul>
+<li>Play around with different percentages for the progress bar.
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-5-5" class="outline-3 code">
+<h3 id="sec-5-5"><span class="section-number-3">5.5</span> Code It</h3>
+<div class="outline-text-3" id="text-5-5">
+
+<ul>
+<li>Now we want the bar to actually represent the progress you've made.
+</li>
+<li>Add a new variable decleration to your first line, so it reads as follows.
+</li>
+</ul>
+
+
+
+
+<pre class="example">var imageArray, progress
+</pre>
+
+<ul>
+<li>Decleraing multiple variable on a single line saves us a bit of space.
+</li>
+<li>Within the <code>onload</code> function, we now want to work out the percentage of badges you're received and then change the width of the <code>progressBarFill</code>. Edit your function so that it looks like the one below. 
+</li>
+</ul>
+
+
+
+
+<pre class="example">window.onload = function()
+{
+    imageArray = document.getElementById('badges1').getElementsByTagName('img');
+    var textCount = document.getElementById('textCount');
+    textCount.innerHTML = 'Total Badges gained = ' + imageArray.length;
+    progress = imageArray.length/6*100;
+    document.getElementById('progressBarFill').style.width = progress + '%';
+};
+</pre>
+
+</div>
+
+</div>
+
+<div id="outline-container-5-6" class="outline-3 save">
+<h3 id="sec-5-6"><span class="section-number-3">5.6</span> Save It</h3>
+<div class="outline-text-3" id="text-5-6">
+
+<ul>
+<li>Save your code.
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-5-7" class="outline-3 run">
+<h3 id="sec-5-7"><span class="section-number-3">5.7</span> Run It</h3>
+<div class="outline-text-3" id="text-5-7">
+
+<ul>
+<li>Run it in the browser and check that it works.
+</li>
+<li>Try removing some of the image tags from the html file and see whether the progress bar changes in size.
+</li>
+</ul>
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-6" class="outline-2 activity">
+<h2 id="sec-6"><span class="section-number-2">6</span> Animating the fill</h2>
+<div class="outline-text-2" id="text-6">
+
+<ul>
+<li>We're now going to animate the fill bar.
+</li>
+</ul>
+
+
+</div>
+
+<div id="outline-container-6-1" class="outline-3 code">
+<h3 id="sec-6-1"><span class="section-number-3">6.1</span> Code It</h3>
+<div class="outline-text-3" id="text-6-1">
+
+<ul>
+<li>The basic concept is going to be to increase the width of the fill bar by 1% every 20 milliseconds.
+</li>
+<li>We'll start by using a function to handle the timing.
+</li>
+<li>At the top of your .js file declare a new variable called <code>fillPercent</code>
+</li>
+<li>Now, at the bottom of the .js file let's make a new function called <code>timer()</code>
+</li>
+</ul>
+
+
+
+
+<pre class="example">function timer()
+{
+
+};
+</pre>
+
+<ul>
+<li>Inside the <code>timer()</code> function we're going to want to assign the variable fillPercent the value 0, as the bar will start off with a width of 0.
+</li>
+</ul>
+
+
+
+
+<pre class="example">fillPercent = 0
+</pre>
+
+<ul>
+<li>Next we need a timing event inside the function. We'll use the timing event to call a function that we haven't written yet.
+</li>
+</ul>
+
+
+
+
+<pre class="example">setInterval(function(){fillIt()},20;
+</pre>
+
+<ul>
+<li>You'll finish the rest of this off in the Badge It section
+</li>
+</ul>
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-7" class="outline-2 activity">
+<h2 id="sec-7"><span class="section-number-2">7</span> Badge It</h2>
+<div class="outline-text-2" id="text-7">
+
+
+</div>
+
+<div id="outline-container-7-1" class="outline-3 badge">
+<h3 id="sec-7-1"><span class="section-number-3">7.1</span> Task</h3>
+<div class="outline-text-3" id="text-7-1">
+
+<p>To earn your final <b>Blue JavaScript Badge</b>, complete the tasks below. Once you have finished, ask your teacher to check your code to make sure it runs correctly.
+</p><ul>
+<li>Create a new function called fillIt()
+</li>
+<li>Inside the function the first thing that should happen is fillPercent is incremented up by 1 (++)
+</li>
+<li>Next you'll need a conditional <code>if</code> but no <code>else</code>, that should check that fillPercent is less than progress.
+</li>
+<li>If the condition is true then you'll need the line:
+</li>
+</ul>
+
+
+
+
+<pre class="example">document.getElementById('progressBarFill').style.width = fillPercent+'%';
+</pre>
+
+<ul>
+<li>Lastly, delete the line in the onload() function that fills the progress bar.
+</li>
+<li>Check that it's all working, and ask your teacher for your final badge.
+</li>
+</ul>
+
+
 </div>
 </div>
 </div>
 </div>
 
 <div id="postamble">
-<p class="date">Date: 2014-05-22T08:05+0100</p>
+<p class="date">Date: 2014-05-22T16:46+0100</p>
 <p class="author">Author: Marc Scott</p>
 <p class="creator"><a href="http://orgmode.org">Org</a> version 7.9.3f with <a href="http://www.gnu.org/software/emacs/">Emacs</a> version 24</p>
 

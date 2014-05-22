@@ -244,6 +244,100 @@ textCount.innerHTML = imageArray.length;
 
 - Having the number on it's own doesn't give our user much information.
 - Use /concatentaion/ (joining) to add some text to the innerHTML of the =textCount=. Something along the lines of "Total Badges Gained", should do the trick.
+* Filling the progress bar
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+- Having a numerical indicator of progress is great, but a progress bar would be better.
+- In the .html file there are the following lines of code.
+#+BEGIN_SRC html
+  <div id="progressBar">
+      <div id="progressBarFill"></div>
+#+END_SRC
+- =progressBar= is a container div and =progressBarFill= is a div inside it that has been coloured white, using css. 
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+- Let's have a play with the =progressBarFill=, put this inside your =onload = function{}= code
+#+BEGIN_SRC javascript
+document.getElementById('progressBarFill').style.width = '25%';
+#+END_SRC
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+- Save the .js file
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+- Open the Badges.html in a browser.
+** Try It:
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+- Play around with different percentages for the progress bar.
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+- Now we want the bar to actually represent the progress you've made.
+- Add a new variable decleration to your first line, so it reads as follows.
+#+BEGIN_SRC javascript
+var imageArray, progress
+#+END_SRC
+- Decleraing multiple variable on a single line saves us a bit of space.
+- Within the =onload= function, we now want to work out the percentage of badges you're received and then change the width of the =progressBarFill=. Edit your function so that it looks like the one below. 
+#+BEGIN_SRC javascript
+  window.onload = function()
+  {
+      imageArray = document.getElementById('badges1').getElementsByTagName('img');
+      var textCount = document.getElementById('textCount');
+      textCount.innerHTML = 'Total Badges gained = ' + imageArray.length;
+      progress = imageArray.length/6*100;
+      document.getElementById('progressBarFill').style.width = progress + '%';
+  };
+#+END_SRC
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+- Save your code.
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+- Run it in the browser and check that it works.
+- Try removing some of the image tags from the html file and see whether the progress bar changes in size.
+* Animating the fill
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+- We're now going to animate the fill bar.
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+- The basic concept is going to be to increase the width of the fill bar by 1% every 20 milliseconds.
+- We'll start by using a function to handle the timing.
+- At the top of your .js file declare a new variable called =fillPercent=
+- Now, at the bottom of the .js file let's make a new function called =timer()=
+#+BEGIN_SRC javascript
+function timer()
+{
+
+};
+#+END_SRC
+- Inside the =timer()= function we're going to want to assign the variable fillPercent the value 0, as the bar will start off with a width of 0.
+#+BEGIN_SRC javascript
+fillPercent = 0
+#+END_SRC
+- Next we need a timing event inside the function. We'll use the timing event to call a function that we haven't written yet.
+#+BEGIN_SRC javascript
+setInterval(function(){fillIt()},20;
+#+END_SRC
+- You'll finish the rest of this off in the Badge It section
 * Badge It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
@@ -252,5 +346,14 @@ textCount.innerHTML = imageArray.length;
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: badge
 :END:
-To earn your fourth *Blue JavaScript Badge*, complete the tasks below. Once you have finished, ask your teacher to check your code to make sure it runs correctly.
+To earn your final *Blue JavaScript Badge*, complete the tasks below. Once you have finished, ask your teacher to check your code to make sure it runs correctly.
+- Create a new function called fillIt()
+- Inside the function the first thing that should happen is fillPercent is incremented up by 1 (++)
+- Next you'll need a conditional =if= but no =else=, that should check that fillPercent is less than progress.
+- If the condition is true then you'll need the line:
+#+BEGIN_SRC javascript
+  document.getElementById('progressBarFill').style.width = fillPercent+'%';
+#+END_SRC
+- Lastly, delete the line in the onload() function that fills the progress bar.
+- Check that it's all working, and ask your teacher for your final badge.
 

@@ -17,13 +17,10 @@ function timer()
 
 function fillIt()
 {
+    fillPercent++;
     if (fillPercent < progress)
 	{
 	    document.getElementById('progressBarFill').style.width = fillPercent+'%';
-	}
-    else
-	{
-	    fillPercent++;
 	};
 };
 
