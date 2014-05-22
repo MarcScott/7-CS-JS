@@ -1,0 +1,283 @@
+#+STARTUP:indent
+#+STYLE: <link rel="stylesheet" type="text/css" href="css/main.css"/>
+#+STYLE: <link rel="stylesheet" type="text/css" href="css/lesson.css"/>
+
+#+TITLE: Creating a page for your badges.
+#+AUTHOR: Marc Scott
+
+#+BEGIN_HTML
+<div class=ribbon>
+<a href="https://github.com/MarcScott/KS3_Curriculum">Fork me on GitHub</a>
+</div>
+#+END_HTML
+
+* COMMENT Use as a template
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+** Try It:
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+
+* Introduction
+- We're now going to use everything you've learned so far to create a special page for your JavaScript badges.
+- So you're focusing on the HTML and CSS, they have been provided for you.
+- Download the HTML by [[file:~/Curriculum/7-WD-JS/resources/6_resources/Badges.html][/Right-Clicking here/]] and choosing to download the file.
+- Download the CSS by [[file:~/Curriculum/7-WD-JS/resources/6_resources/css/badges.css][/Right-Clicking here/]] and choosing to download the file.
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+- The first thing to do is to create a directory structure to store your work.
+- Make a directory called =Badge-Page=
+- /Inside/ the =Badge-Page= directory, create one directory called =css=, another called =js= and one more called =badges=.
+- Place the Badges.html into the main directory.
+- Place the badges.css into the css directory.
+- Place the badges you have been awarded so far into the badges directory.
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+- Open up Badges.html in a text editor.
+- Have a good luck through the html.
+- You'll notice that there is no css there at all, instead there is this line.
+#+BEGIN_SRC html
+    <link type="text/css" rel="stylesheet" href="css/badges.css">
+#+END_SRC
+- This line tells the web browser that all the css can be found on a seperate file.
+- The file is called =badges.css= and is located in the =css= directory.
+- This is a much neater way of creating web pages. First it tidies up your html and secondly it makes sure that lots of different pages can all access the same css file.
+- Let's do the same for out JavaScript, and put it all in a seperate file.
+- Add this line to your html, jest below the link to the css.
+#+BEGIN_SRC html
+        <script language="javascript" type="text/javascript" src="js/badges.js"></script>
+#+END_SRC
+- This tells the browser that all the JavaScript can be found in the =js= directory and is called =badges.js=
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+- Save the file.
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+- Run the file in the browser.
+- Nothing much should be displayed at the moment, so let's fix that.
+** Try It:
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+- At the moment there is a div in your HTML with the id =badges1=
+- Inside this div are some =<img>= tags that don't really link to anything at the moment.
+- Change the =<img>= tags so that they point to the badges you have earned while learning JavaScript. You should have 5 in total by now.
+- Make sure the page looks okay in a browser.
+* Creating a badges.js file
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+- Open up your web pages in a browser and then open the developers console.
+- You should see an error message, along the lines that the javascript file can't be found.
+- Let's fix that now.
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+- In your text editor save a blank file as =badges.js= in the =js= directory you created earlier.
+- We'll test that it's all working correctly with a quick =console.log()=
+#+BEGIN_SRC javascript
+console.log('JavaScript loaded succesfully')
+#+END_SRC
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+- Save the .js file
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+- Refresh your browser and make sure that the console.log is being displayed.
+* Using Arrays
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+- The first thing we're going to want to do is to display the number of badges your have obtained.
+- To do this you're going to need to know about /arrays/
+- An array is an arrangement of items. Just think about a shopping list.
+[[file:img/shopping.png]]
+- In JavaScript we'd represent the shopping list like this:
+#+BEGIN_SRC javascript
+shoppingList = ['Milk','Eggs','Bread','Rice','MacBook Pro']
+#+END_SRC
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+- Let's create an Array and see what we can do with it.
+- Delete the =console.log()= from your .js file
+- Now lest create a new array
+#+BEGIN_SRC javascript
+var listOfCats = ['Dave','Dee','Dozy','Beaky','Mick','Tich']
+#+END_SRC
+- You can find out what is at any position in an Array quite easily. Write this line below it.
+#+BEGIN_SRC javascript
+console.log(listOfCats[3])
+#+END_SRC
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+- Save the .js file.
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+- Refresh your browser. (Don't forget to look at the console)
+- Which cat is printed out in the console?
+- Is that the one you expected?
+- In JavaScript the first element of an array is indexed - 0. We often call it the zeroth (0th) element. So when counting positions, you /must/ start counting from 0.
+** Try It:
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+- Make sure you can console.log() all the cat names, using the array
+
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+** Try It:
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+
+- Now you have created and accessed an array, one thing that is really useful for a program to know, is the length of the array.
+- This is actually really easy to do.
+#+BEGIN_SRC javascript
+console.log(listOfCats.length)
+#+END_SRC
+- Add this line to your code, and you should see the number 6 printed out in the console, when you save the code and refresh the page.
+* Counting the badges
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+- We're going to use an array to count the badges on your webpage.
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+- You already know how to get the contents of a div using JavaScript using the =document.getElementById('divID') method, so let's build on that a little.
+- First off, you'll need to declare a variable to hold an array of images.
+#+BEGIN_SRC javascript
+var imageArray;
+#+END_SRC
+- We'll need to make sure we're not running our code until the DOM has loaded.
+#+BEGIN_SRC javascript
+window.onload = function()
+{
+
+}
+#+END_SRC
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+- Save your work and then open up the badges.html file in your text editor.
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+- In the html you should be able to see a =div= with the id =badges1=. Inside this =div= should be links to all your badges.
+- Each badge is therefore represented by an =<img>= tag inside the badges.html.
+- Now open your badges.js file and edit it so it looks like the code below.
+#+BEGIN_SRC javascript
+var imageArray
+
+window.onload = function()
+{
+imageArray = document.getElementById('badges1').getElementsByTagName('img');
+}
+#+END_SRC
+- This code gets all the =<img>= tags in the =div= and stores them in the array.
+- Let's get the length of that array.
+#+BEGIN_SRC javascript
+var imageArray
+
+window.onload = function()
+{
+imageArray = document.getElementById('badges1').getElementsByTagName('img');
+console.log(imageArray.length)
+}
+#+END_SRC
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+- Save your .js file and then run the html in a browser.
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+- Open the console (you might need to refresh) and the length of the array should be neatly displayed.
+** Try It:
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+
+- There's a div in the html with the id textCount.
+- declare a variable (right at the top of your code) called =countBox=
+- within the =onload= section of the code (i.e. after the console.log) assign the variable =countBox= to the =textCount= div, using the =document.getElementById= method.
+- Next set the =innerHTML= of the countBox variable to say something like "Total Badges Earned = " + imageArray.length
+- Check back to previous lessons or ask your teacher if you need help.
+* Creating a progress bar
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+** Try It:
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+
+* Badge It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Task
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
+:END:
+To earn your fourth *Blue JavaScript Badge*, complete the tasks below. Once you have finished, ask your teacher to check your code to make sure it runs correctly.
+
