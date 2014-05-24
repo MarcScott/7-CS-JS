@@ -31,7 +31,7 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
-* Lesson 6 - A Page for your badges
+* [[file:pages/6_Lesson.html][Lesson 6 - A Page for your badges]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
