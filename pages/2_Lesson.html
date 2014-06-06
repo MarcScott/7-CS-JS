@@ -6,86 +6,6 @@
 <title>The Console and Conditionals</title>
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
-  .title  { text-align: center; }
-  .todo   { font-family: monospace; color: red; }
-  .done   { color: green; }
-  .tag    { background-color: #eee; font-family: monospace;
-            padding: 2px; font-size: 80%; font-weight: normal; }
-  .timestamp { color: #bebebe; }
-  .timestamp-kwd { color: #5f9ea0; }
-  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
-  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
-  .center { margin-left: auto; margin-right: auto; text-align: center; }
-  .underline { text-decoration: underline; }
-  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
-  p.verse { margin-left: 3%; }
-  pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
-    padding: 8pt;
-    font-family: monospace;
-    overflow: auto;
-    margin: 1.2em;
-  }
-  pre.src {
-    position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
-  }
-  pre.src:before {
-    display: none;
-    position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
-    padding: 3px;
-    border: 1px solid black;
-  }
-  pre.src:hover:before { display: inline;}
-  pre.src-sh:before    { content: 'sh'; }
-  pre.src-bash:before  { content: 'sh'; }
-  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-R:before     { content: 'R'; }
-  pre.src-perl:before  { content: 'Perl'; }
-  pre.src-java:before  { content: 'Java'; }
-  pre.src-sql:before   { content: 'SQL'; }
-
-  table { border-collapse:collapse; }
-  caption.t-above { caption-side: top; }
-  caption.t-bottom { caption-side: bottom; }
-  td, th { vertical-align:top;  }
-  th.right  { text-align: center;  }
-  th.left   { text-align: center;   }
-  th.center { text-align: center; }
-  td.right  { text-align: right;  }
-  td.left   { text-align: left;   }
-  td.center { text-align: center; }
-  dt { font-weight: bold; }
-  .footpara:nth-child(2) { display: inline; }
-  .footpara { display: block; }
-  .footdef  { margin-bottom: 1em; }
-  .figure { padding: 1em; }
-  .figure p { text-align: center; }
-  .inlinetask {
-    padding: 10px;
-    border: 2px solid gray;
-    margin: 10px;
-    background: #ffffcc;
-  }
-  #org-div-home-and-up
-   { text-align: right; font-size: 70%; white-space: nowrap; }
-  textarea { overflow-x: auto; }
-  .linenr { font-size: smaller }
-  .code-highlighted { background-color: #ffff00; }
-  .org-info-js_info-navigation { border-style: none; }
-  #org-info-js_console-label
-    { font-size: 10px; font-weight: bold; white-space: nowrap; }
-  .org-info-js_search-highlight
-    { background-color: #ffff00; color: #000000; font-weight: bold; }
-  /*]]>*/-->
-</style>
 <link rel="stylesheet" type="text/css" href="css/main.css"/>
 <link rel="stylesheet" type="text/css" href="css/lesson.css"/>
 <script type="text/javascript">
@@ -242,17 +162,17 @@ for the JavaScript code in this tag.
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-html">&lt;<span style="color: #ffffff;">!DOCTYPE</span> html&gt;
-&lt;<span style="color: #98fb98;">html</span>&gt;
-    &lt;<span style="color: #98fb98;">meta</span> <span style="color: #9acd32;">charset</span>=<span style="color: #bdb76b;">"utf-8"</span>/&gt;
-    &lt;<span style="color: #98fb98;">head</span>&gt;
-        &lt;<span style="color: #98fb98;">script</span> <span style="color: #9acd32;">type</span>=<span style="color: #bdb76b;">"text/javascript"</span>&gt;
-            <span style="color: #00cd66;">&lt;!--</span><span style="color: #00cd66;">DELETE THIS LINE WHEN YOU NEED TO ADD CODE</span><span style="color: #00cd66;">--&gt;</span>
-        &lt;/<span style="color: #98fb98;">script</span>&gt;
-    &lt;/<span style="color: #98fb98;">head</span>&gt;
-    &lt;<span style="color: #98fb98;">body</span>&gt;
-    &lt;/<span style="color: #98fb98;">body</span>&gt;
-&lt;/<span style="color: #98fb98;">html</span>&gt;
+<pre class="src src-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;meta charset="utf-8"/&gt;
+    &lt;head&gt;
+	&lt;script type="text/javascript"&gt;
+	    &lt;!--DELETE THIS LINE WHEN YOU NEED TO ADD CODE--&gt;
+	&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
 </pre>
 </div>
 <ul class="org-ul">
@@ -262,7 +182,7 @@ for the JavaScript code in this tag.
 
 <div class="org-src-container">
 
-<pre class="src src-javascript">console.log(<span style="color: #bdb76b;">'Hi there Dev. This is a message from Dev'</span>)
+<pre class="src src-javascript">console.log('Hi there Dev. This is a message from Dev')
 </pre>
 </div>
 <ul class="org-ul">
@@ -447,7 +367,7 @@ for the JavaScript code in this tag.
     &lt;meta charset="utf-8"/&gt;
     &lt;title&gt;Oops, what did I do wrong?&lt;/title&gt;
     &lt;script type="text/javascript"&gt;
-     <span style="color: #ffffff;">var</span> <span style="color: #9acd32;">myNumber</span> = 20;
+     var myNumber = 20;
      console.log('My Number is '+mynumber);
     &lt;/script&gt;
   &lt;/head&gt;
@@ -491,7 +411,7 @@ for the JavaScript code in this tag.
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-javascript">console.log(<span style="color: #bdb76b;">'My Number is '</span>+myNumber);
+<pre class="src src-javascript">console.log('My Number is '+myNumber);
 </pre>
 </div>
 </div>
@@ -529,7 +449,7 @@ for the JavaScript code in this tag.
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-javascript">window.alert(<span style="color: #bdb76b;">'This page is correct'</span>;
+<pre class="src src-javascript">window.alert('This page is correct';
 </pre>
 </div>
 <ul class="org-ul">
@@ -538,7 +458,7 @@ for the JavaScript code in this tag.
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-javascript">consolelog(<span style="color: #bdb76b;">'Hi Dev, you'</span>ve got it right.<span style="color: #bdb76b;">');</span>
+<pre class="src src-javascript">consolelog('Hi Dev, you've got it right.');
 </pre>
 </div>
 <ul class="org-ul">
@@ -547,8 +467,8 @@ for the JavaScript code in this tag.
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-javascript"><span style="color: #ffffff;">var</span> <span style="color: #9acd32;">yourAnswer</span> = window.prompt(<span style="color: #bdb76b;">'How are you feeling?'</span>)
-windows.alert(<span style="color: #bdb76b;">"I wonder why you're feeling "</span>+ yourAnswer)
+<pre class="src src-javascript">var yourAnswer = window.prompt('How are you feeling?')
+windows.alert("I wonder why you're feeling "+ yourAnswer)
 </pre>
 </div>
 </div>
@@ -671,12 +591,12 @@ ELSE
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-javascript"><span style="color: #ffffff;">var</span> <span style="color: #9acd32;">userName</span> = window.prompt(<span style="color: #bdb76b;">"Hi, what's your name?"</span>);
-<span style="color: #ffffff;">if</span> (userName === <span style="color: #bdb76b;">'Marc'</span>){
-    window.alert(<span style="color: #bdb76b;">'Nice to meet you '</span> + userName);
+<pre class="src src-javascript">var userName = window.prompt("Hi, what's your name?");
+if (userName === 'Marc'){
+    window.alert('Nice to meet you ' + userName);
 }
-<span style="color: #ffffff;">else</span>{
-    window.alert(<span style="color: #bdb76b;">"I don't like the name "</span> + userName);
+else{
+    window.alert("I don't like the name " + userName);
 };
 </pre>
 </div>
@@ -756,7 +676,7 @@ ELSE
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-javascript"><span style="color: #ffffff;">var</span> <span style="color: #9acd32;">score</span> = 0;
+<pre class="src src-javascript">var score = 0;
 </pre>
 </div>
 <ul class="org-ul">
@@ -765,7 +685,7 @@ ELSE
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-javascript">answerOne = window.prompt(<span style="color: #bdb76b;">"What is the capital city of England"</span>);
+<pre class="src src-javascript">answerOne = window.prompt("What is the capital city of England");
 </pre>
 </div>
 <ul class="org-ul">
@@ -774,14 +694,14 @@ ELSE
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-javascript"><span style="color: #ffffff;">if</span> (answerOne === <span style="color: #bdb76b;">"London"</span>){
+<pre class="src src-javascript">if (answerOne === "London"){
     score = score + 1;
-    console.log(<span style="color: #bdb76b;">'Question 1 correct'</span>);
-    console.log(<span style="color: #bdb76b;">'Score is '</span> + score);
+    console.log('Question 1 correct');
+    console.log('Score is ' + score);
 }
-<span style="color: #ffffff;">else</span>{
-    console.log(<span style="color: #bdb76b;">'Question 1 incorrect'</span>);
-    console.log(<span style="color: #bdb76b;">'Score is '</span> + score);
+else{
+    console.log('Question 1 incorrect');
+    console.log('Score is ' + score);
 };
 </pre>
 </div>
@@ -820,19 +740,19 @@ ELSE
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-javascript"><span style="color: #ffffff;">if</span> (answerOne === <span style="color: #bdb76b;">"London"</span>){
+<pre class="src src-javascript">if (answerOne === "London"){
     score += 1;
-    console.log(<span style="color: #bdb76b;">'Question 1 correct'</span>);
-    console.log(<span style="color: #bdb76b;">'Score is '</span> + score);
+    console.log('Question 1 correct');
+    console.log('Score is ' + score);
 }
-<span style="color: #ffffff;">else</span> <span style="color: #ffffff;">if</span> (answerOne === <span style="color: #bdb76b;">"london"</span>){
+else if (answerOne === "london"){
     score += 0.5;
-    console.log(<span style="color: #bdb76b;">'Question 1 correct'</span>);
-    console.log(<span style="color: #bdb76b;">'Score is '</span> + score);
+    console.log('Question 1 correct');
+    console.log('Score is ' + score);
 }
-<span style="color: #ffffff;">else</span>{
-    console.log(<span style="color: #bdb76b;">'Question 1 incorrect'</span>);
-    console.log(<span style="color: #bdb76b;">'Score is '</span> + score);
+else{
+    console.log('Question 1 incorrect');
+    console.log('Score is ' + score);
 };
 </pre>
 </div>
@@ -886,7 +806,7 @@ ELSE
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-javascript"><span style="color: #ffffff;">if</span> (answer &lt; 366 &amp;&amp; answer &gt; 365){
+<pre class="src src-javascript">if (answer &lt; 366 &amp;&amp; answer &gt; 365){
     DO SOMETHING
 }
 </pre>
@@ -901,21 +821,21 @@ ELSE
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-javascript">answer3 = window.prompt(<span style="color: #bdb76b;">'In what year did Sir Alan Turing die?'</span>);
-<span style="color: #ffffff;">if</span> (answer3 &lt; 1960 &amp;&amp; answer3 &gt; 1954){
-    console.log(<span style="color: #bdb76b;">'Question 3 close'</span>);
+<pre class="src src-javascript">answer3 = window.prompt('In what year did Sir Alan Turing die?');
+if (answer3 &lt; 1960 &amp;&amp; answer3 &gt; 1954){
+    console.log('Question 3 close');
     score += 0.5;
 }
-<span style="color: #ffffff;">else</span> <span style="color: #ffffff;">if</span> (answer3 === 1954){
-    console.log(<span style="color: #bdb76b;">'Question 3 exactly right'</span>);
+else if (answer3 === 1954){
+    console.log('Question 3 exactly right');
     score += 1;
 }
-<span style="color: #ffffff;">else</span> <span style="color: #ffffff;">if</span> (answer3 &gt; 1949 &amp;&amp; answer3 &lt; 1954){
-    console.log(<span style="color: #bdb76b;">'Question 3 close'</span>);
+else if (answer3 &gt; 1949 &amp;&amp; answer3 &lt; 1954){
+    console.log('Question 3 close');
     score += 0.5;
 }
-<span style="color: #ffffff;">else</span>{
-    console.log(<span style="color: #bdb76b;">'Question 3 incorrect'</span>);
+else{
+    console.log('Question 3 incorrect');
 };
 </pre>
 </div>

@@ -6,86 +6,6 @@
 <title>Creating a page for your badges.</title>
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
-  .title  { text-align: center; }
-  .todo   { font-family: monospace; color: red; }
-  .done   { color: green; }
-  .tag    { background-color: #eee; font-family: monospace;
-            padding: 2px; font-size: 80%; font-weight: normal; }
-  .timestamp { color: #bebebe; }
-  .timestamp-kwd { color: #5f9ea0; }
-  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
-  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
-  .center { margin-left: auto; margin-right: auto; text-align: center; }
-  .underline { text-decoration: underline; }
-  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
-  p.verse { margin-left: 3%; }
-  pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
-    padding: 8pt;
-    font-family: monospace;
-    overflow: auto;
-    margin: 1.2em;
-  }
-  pre.src {
-    position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
-  }
-  pre.src:before {
-    display: none;
-    position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
-    padding: 3px;
-    border: 1px solid black;
-  }
-  pre.src:hover:before { display: inline;}
-  pre.src-sh:before    { content: 'sh'; }
-  pre.src-bash:before  { content: 'sh'; }
-  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-R:before     { content: 'R'; }
-  pre.src-perl:before  { content: 'Perl'; }
-  pre.src-java:before  { content: 'Java'; }
-  pre.src-sql:before   { content: 'SQL'; }
-
-  table { border-collapse:collapse; }
-  caption.t-above { caption-side: top; }
-  caption.t-bottom { caption-side: bottom; }
-  td, th { vertical-align:top;  }
-  th.right  { text-align: center;  }
-  th.left   { text-align: center;   }
-  th.center { text-align: center; }
-  td.right  { text-align: right;  }
-  td.left   { text-align: left;   }
-  td.center { text-align: center; }
-  dt { font-weight: bold; }
-  .footpara:nth-child(2) { display: inline; }
-  .footpara { display: block; }
-  .footdef  { margin-bottom: 1em; }
-  .figure { padding: 1em; }
-  .figure p { text-align: center; }
-  .inlinetask {
-    padding: 10px;
-    border: 2px solid gray;
-    margin: 10px;
-    background: #ffffcc;
-  }
-  #org-div-home-and-up
-   { text-align: right; font-size: 70%; white-space: nowrap; }
-  textarea { overflow-x: auto; }
-  .linenr { font-size: smaller }
-  .code-highlighted { background-color: #ffff00; }
-  .org-info-js_info-navigation { border-style: none; }
-  #org-info-js_console-label
-    { font-size: 10px; font-weight: bold; white-space: nowrap; }
-  .org-info-js_search-highlight
-    { background-color: #ffff00; color: #000000; font-weight: bold; }
-  /*]]>*/-->
-</style>
 <link rel="stylesheet" type="text/css" href="css/main.css"/>
 <link rel="stylesheet" type="text/css" href="css/lesson.css"/>
 <script type="text/javascript">
@@ -213,9 +133,9 @@ for the JavaScript code in this tag.
 </li>
 <li>So you're focusing on the HTML and CSS, they have been provided for you.
 </li>
-<li>Download the HTML by <a href="file:///Users/scott/Curriculum/7-WD-JS/resources/6_resources/Badges.html"><i>Right-Clicking here</i></a> and choosing to download the file.
+<li>Download the HTML by <a href="file:///Users/ghost/Curriculum/7-WD-JS/resources/6_resources/Badges.html"><i>Right-Clicking here</i></a> and choosing to download the file.
 </li>
-<li>Download the CSS by <a href="file:///Users/scott/Curriculum/7-WD-JS/resources/6_resources/css/badges.css"><i>Right-Clicking here</i></a> and choosing to download the file.
+<li>Download the CSS by <a href="file:///Users/ghost/Curriculum/7-WD-JS/resources/6_resources/css/badges.css"><i>Right-Clicking here</i></a> and choosing to download the file.
 </li>
 </ul>
 <ul class="org-ul">
@@ -246,7 +166,7 @@ for the JavaScript code in this tag.
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-html">&lt;<span style="color: #98fb98;">link</span> <span style="color: #9acd32;">type</span>=<span style="color: #bdb76b;">"text/css"</span> <span style="color: #9acd32;">rel</span>=<span style="color: #bdb76b;">"stylesheet"</span> <span style="color: #9acd32;">href</span>=<span style="color: #bdb76b;">"css/badges.css"</span>&gt;
+<pre class="src src-html">&lt;link type="text/css" rel="stylesheet" href="css/badges.css"&gt;
 </pre>
 </div>
 <ul class="org-ul">
@@ -263,7 +183,7 @@ for the JavaScript code in this tag.
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-html">&lt;<span style="color: #98fb98;">script</span> <span style="color: #9acd32;">language</span>=<span style="color: #bdb76b;">"javascript"</span> <span style="color: #9acd32;">type</span>=<span style="color: #bdb76b;">"text/javascript"</span> <span style="color: #9acd32;">src</span>=<span style="color: #bdb76b;">"js/badges.js"</span>&gt;&lt;/<span style="color: #98fb98;">script</span>&gt;
+<pre class="src src-html">&lt;script language="javascript" type="text/javascript" src="js/badges.js"&gt;&lt;/script&gt;
 </pre>
 </div>
 <ul class="org-ul">
@@ -331,7 +251,7 @@ for the JavaScript code in this tag.
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-javascript">console.log(<span style="color: #bdb76b;">'JavaScript loaded successfully'</span>)
+<pre class="src src-javascript">console.log('JavaScript loaded successfully')
 </pre>
 </div>
 </div>
@@ -377,7 +297,7 @@ for the JavaScript code in this tag.
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-javascript">shoppingList = [<span style="color: #bdb76b;">'Milk'</span>,<span style="color: #bdb76b;">'Eggs'</span>,<span style="color: #bdb76b;">'Bread'</span>,<span style="color: #bdb76b;">'Rice'</span>,<span style="color: #bdb76b;">'MacBook Pro'</span>]
+<pre class="src src-javascript">shoppingList = ['Milk','Eggs','Bread','Rice','MacBook Pro']
 </pre>
 </div>
 </div>
@@ -394,7 +314,7 @@ for the JavaScript code in this tag.
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-javascript"><span style="color: #ffffff;">var</span> <span style="color: #9acd32;">listOfCats</span> = [<span style="color: #bdb76b;">'Dave'</span>,<span style="color: #bdb76b;">'Dee'</span>,<span style="color: #bdb76b;">'Dozy'</span>,<span style="color: #bdb76b;">'Beaky'</span>,<span style="color: #bdb76b;">'Mick'</span>,<span style="color: #bdb76b;">'Tich'</span>]
+<pre class="src src-javascript">var listOfCats = ['Dave','Dee','Dozy','Beaky','Mick','Tich']
 </pre>
 </div>
 <ul class="org-ul">
@@ -473,17 +393,17 @@ for the JavaScript code in this tag.
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-html">&lt;<span style="color: #98fb98;">div</span> id = <span style="color: #bdb76b;">"badges1"</span>&gt;
-    &lt;<span style="color: #98fb98;">h3</span>&gt;<span style="font-style: italic; text-decoration: underline;">JavaScript Badges</span>&lt;/<span style="color: #98fb98;">h3</span>&gt;
-    &lt;<span style="color: #98fb98;">img</span> <span style="color: #9acd32;">src</span>=<span style="color: #bdb76b;">"badges/placeholder.png"</span>&gt;
-    &lt;<span style="color: #98fb98;">img</span> <span style="color: #9acd32;">src</span>=<span style="color: #bdb76b;">"badges/placeholder.png"</span>&gt;
-    &lt;<span style="color: #98fb98;">img</span> <span style="color: #9acd32;">src</span>=<span style="color: #bdb76b;">"badges/placeholder.png"</span>&gt;
-    &lt;<span style="color: #98fb98;">img</span> <span style="color: #9acd32;">src</span>=<span style="color: #bdb76b;">"badges/placeholder.png"</span>&gt;
-    &lt;<span style="color: #98fb98;">img</span> <span style="color: #9acd32;">src</span>=<span style="color: #bdb76b;">"badges/placeholder.png"</span>&gt;
-&lt;/<span style="color: #98fb98;">div</span>&gt;
-&lt;<span style="color: #98fb98;">input</span> <span style="color: #9acd32;">type</span>=<span style="color: #bdb76b;">"button"</span> <span style="color: #9acd32;">value</span>=<span style="color: #bdb76b;">"Calculate Progress"</span> <span style="color: #9acd32;">id</span>='calcProgress'&gt;
-&lt;<span style="color: #98fb98;">div</span> <span style="color: #9acd32;">id</span>=<span style="color: #bdb76b;">"progressSection"</span>&gt;
-    &lt;<span style="color: #98fb98;">div</span> <span style="color: #9acd32;">id</span>=<span style="color: #bdb76b;">"textCount"</span>&gt;&lt;/<span style="color: #98fb98;">div</span>&gt;
+<pre class="src src-html">&lt;div id = "badges1"&gt;
+    &lt;h3&gt;JavaScript Badges&lt;/h3&gt;
+    &lt;img src="badges/placeholder.png"&gt;
+    &lt;img src="badges/placeholder.png"&gt;
+    &lt;img src="badges/placeholder.png"&gt;
+    &lt;img src="badges/placeholder.png"&gt;
+    &lt;img src="badges/placeholder.png"&gt;
+&lt;/div&gt;
+&lt;input type="button" value="Calculate Progress" id='calcProgress'&gt;
+&lt;div id="progressSection"&gt;
+    &lt;div id="textCount"&gt;&lt;/div&gt;
 </pre>
 </div>
 <ul class="org-ul">
@@ -504,7 +424,7 @@ for the JavaScript code in this tag.
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-javascript">window.onload = <span style="color: #ffffff;">function</span>()
+<pre class="src src-javascript">window.onload = function()
 {
 
 };
@@ -518,7 +438,7 @@ for the JavaScript code in this tag.
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-javascript">imageArray = document.getElementById(<span style="color: #bdb76b;">'badges1'</span>).getElementsByTagName(<span style="color: #bdb76b;">'img'</span>);
+<pre class="src src-javascript">imageArray = document.getElementById('badges1').getElementsByTagName('img');
 </pre>
 </div>
 <ul class="org-ul">
@@ -558,7 +478,7 @@ for the JavaScript code in this tag.
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-javascript"><span style="color: #ffffff;">var</span> <span style="color: #9acd32;">textCount</span> = document.getElementById(<span style="color: #bdb76b;">'textCount'</span>);
+<pre class="src src-javascript">var textCount = document.getElementById('textCount');
 </pre>
 </div>
 <ul class="org-ul">
@@ -613,8 +533,8 @@ for the JavaScript code in this tag.
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-html">&lt;<span style="color: #98fb98;">div</span> <span style="color: #9acd32;">id</span>=<span style="color: #bdb76b;">"progressBar"</span>&gt;
-    &lt;<span style="color: #98fb98;">div</span> <span style="color: #9acd32;">id</span>=<span style="color: #bdb76b;">"progressBarFill"</span>&gt;&lt;/<span style="color: #98fb98;">div</span>&gt;
+<pre class="src src-html">&lt;div id="progressBar"&gt;
+    &lt;div id="progressBarFill"&gt;&lt;/div&gt;
 </pre>
 </div>
 <ul class="org-ul">
@@ -631,7 +551,7 @@ for the JavaScript code in this tag.
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-javascript">document.getElementById(<span style="color: #bdb76b;">'progressBarFill'</span>).style.width = <span style="color: #bdb76b;">'25%'</span>;
+<pre class="src src-javascript">document.getElementById('progressBarFill').style.width = '25%';
 </pre>
 </div>
 </div>
@@ -674,7 +594,7 @@ for the JavaScript code in this tag.
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-javascript"><span style="color: #ffffff;">var</span> <span style="color: #9acd32;">imageArray</span>, <span style="color: #9acd32;">progress</span>
+<pre class="src src-javascript">var imageArray, progress
 </pre>
 </div>
 <ul class="org-ul">
@@ -685,13 +605,13 @@ for the JavaScript code in this tag.
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-javascript">window.onload = <span style="color: #ffffff;">function</span>()
+<pre class="src src-javascript">window.onload = function()
 {
-    imageArray = document.getElementById(<span style="color: #bdb76b;">'badges1'</span>).getElementsByTagName(<span style="color: #bdb76b;">'img'</span>);
-    <span style="color: #ffffff;">var</span> <span style="color: #9acd32;">textCount</span> = document.getElementById(<span style="color: #bdb76b;">'textCount'</span>);
-    textCount.innerHTML = <span style="color: #bdb76b;">'Total Badges gained = '</span> + imageArray.length;
+    imageArray = document.getElementById('badges1').getElementsByTagName('img');
+    var textCount = document.getElementById('textCount');
+    textCount.innerHTML = 'Total Badges gained = ' + imageArray.length;
     progress = imageArray.length/6*100;
-    document.getElementById(<span style="color: #bdb76b;">'progressBarFill'</span>).style.width = progress + <span style="color: #bdb76b;">'%'</span>;
+    document.getElementById('progressBarFill').style.width = progress + '%';
 };
 </pre>
 </div>
@@ -741,7 +661,7 @@ for the JavaScript code in this tag.
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-javascript"><span style="color: #ffffff;">function</span> <span style="color: #98fb98;">timer</span>()
+<pre class="src src-javascript">function timer()
 {
 
 };
@@ -762,7 +682,7 @@ for the JavaScript code in this tag.
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-javascript">setInterval(<span style="color: #ffffff;">function</span>(){fillIt()},20;
+<pre class="src src-javascript">setInterval(function(){fillIt()},20;
 </pre>
 </div>
 <ul class="org-ul">
@@ -794,7 +714,7 @@ To earn your final <b>Blue JavaScript Badge</b>, complete the tasks below. Once 
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-javascript">document.getElementById(<span style="color: #bdb76b;">'progressBarFill'</span>).style.width = fillPercent+<span style="color: #bdb76b;">'%'</span>;
+<pre class="src src-javascript">document.getElementById('progressBarFill').style.width = fillPercent+'%';
 </pre>
 </div>
 <ul class="org-ul">

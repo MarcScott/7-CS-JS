@@ -6,86 +6,6 @@
 <title>Dominating the DOM</title>
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
-  .title  { text-align: center; }
-  .todo   { font-family: monospace; color: red; }
-  .done   { color: green; }
-  .tag    { background-color: #eee; font-family: monospace;
-            padding: 2px; font-size: 80%; font-weight: normal; }
-  .timestamp { color: #bebebe; }
-  .timestamp-kwd { color: #5f9ea0; }
-  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
-  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
-  .center { margin-left: auto; margin-right: auto; text-align: center; }
-  .underline { text-decoration: underline; }
-  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
-  p.verse { margin-left: 3%; }
-  pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
-    padding: 8pt;
-    font-family: monospace;
-    overflow: auto;
-    margin: 1.2em;
-  }
-  pre.src {
-    position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
-  }
-  pre.src:before {
-    display: none;
-    position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
-    padding: 3px;
-    border: 1px solid black;
-  }
-  pre.src:hover:before { display: inline;}
-  pre.src-sh:before    { content: 'sh'; }
-  pre.src-bash:before  { content: 'sh'; }
-  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-R:before     { content: 'R'; }
-  pre.src-perl:before  { content: 'Perl'; }
-  pre.src-java:before  { content: 'Java'; }
-  pre.src-sql:before   { content: 'SQL'; }
-
-  table { border-collapse:collapse; }
-  caption.t-above { caption-side: top; }
-  caption.t-bottom { caption-side: bottom; }
-  td, th { vertical-align:top;  }
-  th.right  { text-align: center;  }
-  th.left   { text-align: center;   }
-  th.center { text-align: center; }
-  td.right  { text-align: right;  }
-  td.left   { text-align: left;   }
-  td.center { text-align: center; }
-  dt { font-weight: bold; }
-  .footpara:nth-child(2) { display: inline; }
-  .footpara { display: block; }
-  .footdef  { margin-bottom: 1em; }
-  .figure { padding: 1em; }
-  .figure p { text-align: center; }
-  .inlinetask {
-    padding: 10px;
-    border: 2px solid gray;
-    margin: 10px;
-    background: #ffffcc;
-  }
-  #org-div-home-and-up
-   { text-align: right; font-size: 70%; white-space: nowrap; }
-  textarea { overflow-x: auto; }
-  .linenr { font-size: smaller }
-  .code-highlighted { background-color: #ffff00; }
-  .org-info-js_info-navigation { border-style: none; }
-  #org-info-js_console-label
-    { font-size: 10px; font-weight: bold; white-space: nowrap; }
-  .org-info-js_search-highlight
-    { background-color: #ffff00; color: #000000; font-weight: bold; }
-  /*]]>*/-->
-</style>
 <link rel="stylesheet" type="text/css" href="css/main.css"/>
 <link rel="stylesheet" type="text/css" href="css/lesson.css"/>
 <script type="text/javascript">
@@ -221,19 +141,19 @@ for the JavaScript code in this tag.
 
 <div class="org-src-container">
 
-<pre class="src src-html">&lt;<span style="color: #ffffff;">!DOCTYPE</span> html&gt;
-&lt;<span style="color: #98fb98;">html</span>&gt;
-    &lt;<span style="color: #98fb98;">head</span>&gt;
-        &lt;<span style="color: #98fb98;">title</span>&gt;<span style="font-weight: bold; text-decoration: underline;">Adding text</span>&lt;/<span style="color: #98fb98;">title</span>&gt;
-    &lt;/<span style="color: #98fb98;">head</span>&gt;
-    &lt;<span style="color: #98fb98;">body</span>&gt;
-        &lt;<span style="color: #98fb98;">div</span> id = <span style="color: #bdb76b;">"container"</span>&gt;&lt;/<span style="color: #98fb98;">div</span>&gt;
-        &lt;<span style="color: #98fb98;">h2</span>&gt;<span style="font-weight: bold; font-style: italic; text-decoration: underline;">Welcome to DOM</span>&lt;/<span style="color: #98fb98;">h2</span>&gt;
-        &lt;<span style="color: #98fb98;">script</span> <span style="color: #9acd32;">type</span>=<span style="color: #bdb76b;">"text/javascript"</span>&gt;
+<pre class="src src-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+	&lt;title&gt;Adding text&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+	&lt;div id = "container"&gt;&lt;/div&gt;
+	&lt;h2&gt;Welcome to DOM&lt;/h2&gt;
+	&lt;script type="text/javascript"&gt;
 
-        &lt;/<span style="color: #98fb98;">script</span>&gt;
-    &lt;/<span style="color: #98fb98;">body</span>&gt;
-&lt;/<span style="color: #98fb98;">html</span>&gt;
+	&lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
 </pre>
 </div>
 
@@ -274,8 +194,8 @@ for the JavaScript code in this tag.
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-javascript"><span style="color: #ffffff;">var</span> <span style="color: #9acd32;">container</span> = document.getElementById(<span style="color: #bdb76b;">"container"</span>);
-container.innerHTML = <span style="color: #bdb76b;">"&lt;h1&gt;Hi there user&lt;/h1&gt;"</span>;
+<pre class="src src-javascript">var container = document.getElementById("container");
+container.innerHTML = "&lt;h1&gt;Hi there user&lt;/h1&gt;";
 </pre>
 </div>
 </div>
@@ -311,7 +231,7 @@ container.innerHTML = <span style="color: #bdb76b;">"&lt;h1&gt;Hi there user&lt;
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-html">&lt;<span style="color: #98fb98;">div</span> id = <span style="color: #bdb76b;">"container2"</span>&gt;&lt;/<span style="color: #98fb98;">div</span>&gt;
+<pre class="src src-html">&lt;div id = "container2"&gt;&lt;/div&gt;
 </pre>
 </div>
 <ul class="org-ul">
@@ -324,8 +244,8 @@ container.innerHTML = <span style="color: #bdb76b;">"&lt;h1&gt;Hi there user&lt;
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-javascript"><span style="color: #ffffff;">var</span> <span style="color: #9acd32;">container2</span> = document.getElementById(<span style="color: #bdb76b;">"container2"</span>);
-container2.innerHTML = <span style="color: #bdb76b;">"&lt;h3&gt;Type whatever you like here&lt;/h3&gt;"</span>;
+<pre class="src src-javascript">var container2 = document.getElementById("container2");
+container2.innerHTML = "&lt;h3&gt;Type whatever you like here&lt;/h3&gt;";
 </pre>
 </div>
 </div>
@@ -359,18 +279,18 @@ container2.innerHTML = <span style="color: #bdb76b;">"&lt;h3&gt;Type whatever yo
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-html">&lt;<span style="color: #ffffff;">!DOCTYPE</span> html&gt;
-&lt;<span style="color: #98fb98;">html</span>&gt;
-    &lt;<span style="color: #98fb98;">head</span>&gt;
-        &lt;<span style="color: #98fb98;">title</span>&gt;<span style="font-weight: bold; text-decoration: underline;">I/O</span>&lt;/<span style="color: #98fb98;">title</span>&gt;
-    &lt;/<span style="color: #98fb98;">head</span>&gt;
-    &lt;<span style="color: #98fb98;">body</span>&gt;
-        &lt;<span style="color: #98fb98;">div</span> <span style="color: #9acd32;">id</span>='displayUserName'&gt;&lt;/<span style="color: #98fb98;">div</span>&gt;
-        &lt;<span style="color: #98fb98;">script</span>&gt;
+<pre class="src src-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+	&lt;title&gt;I/O&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+	&lt;div id='displayUserName'&gt;&lt;/div&gt;
+	&lt;script&gt;
 
-        &lt;/<span style="color: #98fb98;">script</span>&gt;
-    &lt;/<span style="color: #98fb98;">body</span>&gt;
-&lt;/<span style="color: #98fb98;">html</span>&gt;
+	&lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
 </pre>
 </div>
 <ul class="org-ul">
@@ -383,7 +303,7 @@ container2.innerHTML = <span style="color: #bdb76b;">"&lt;h3&gt;Type whatever yo
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-javascript"><span style="color: #ffffff;">var</span> <span style="color: #9acd32;">userName</span> = window.prompt(<span style="color: #bdb76b;">"Hi there user, what's your name?"</span>);
+<pre class="src src-javascript">var userName = window.prompt("Hi there user, what's your name?");
 </pre>
 </div>
 <ul class="org-ul">
@@ -392,7 +312,7 @@ container2.innerHTML = <span style="color: #bdb76b;">"&lt;h3&gt;Type whatever yo
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-javascript"><span style="color: #ffffff;">var</span> <span style="color: #9acd32;">displayUserName</span> = document.getElementById(<span style="color: #bdb76b;">'displayUserName'</span>);
+<pre class="src src-javascript">var displayUserName = document.getElementById('displayUserName');
 </pre>
 </div>
 <ul class="org-ul">
@@ -401,7 +321,7 @@ container2.innerHTML = <span style="color: #bdb76b;">"&lt;h3&gt;Type whatever yo
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-javascript">displayUserName.innerHTML = <span style="color: #bdb76b;">"&lt;h1&gt;"</span> + userName + <span style="color: #bdb76b;">"'s Amazing Website&lt;/h1&gt;"</span>;
+<pre class="src src-javascript">displayUserName.innerHTML = "&lt;h1&gt;" + userName + "'s Amazing Website&lt;/h1&gt;";
 </pre>
 </div>
 </div>
@@ -466,18 +386,18 @@ container2.innerHTML = <span style="color: #bdb76b;">"&lt;h3&gt;Type whatever yo
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-html">&lt;<span style="color: #ffffff;">!DOCTYPE</span> html&gt;
-&lt;<span style="color: #98fb98;">html</span>&gt;
-    &lt;<span style="color: #98fb98;">head</span>&gt;
-        &lt;<span style="color: #98fb98;">title</span>&gt;<span style="font-weight: bold; text-decoration: underline;">Functions</span>&lt;/<span style="color: #98fb98;">title</span>&gt;
-        &lt;<span style="color: #98fb98;">script</span> <span style="color: #9acd32;">type</span>=<span style="color: #bdb76b;">"text/javascript"</span>&gt;
+<pre class="src src-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+	&lt;title&gt;Functions&lt;/title&gt;
+	&lt;script type="text/javascript"&gt;
 
-        &lt;/<span style="color: #98fb98;">script</span>&gt;
-    &lt;/<span style="color: #98fb98;">head</span>&gt;
-    &lt;<span style="color: #98fb98;">body</span>&gt;
-        &lt;<span style="color: #98fb98;">div</span> id = <span style="color: #bdb76b;">"outputBox"</span>&gt;&lt;/<span style="color: #98fb98;">div</span>&gt;
-    &lt;/<span style="color: #98fb98;">body</span>&gt;
-&lt;/<span style="color: #98fb98;">html</span>&gt;
+	&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+	&lt;div id = "outputBox"&gt;&lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
 </pre>
 </div>
 <ul class="org-ul">
@@ -486,8 +406,8 @@ container2.innerHTML = <span style="color: #bdb76b;">"&lt;h3&gt;Type whatever yo
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-javascript"><span style="color: #ffffff;">var</span> <span style="color: #9acd32;">outputBox</span> = document.getElementById(<span style="color: #bdb76b;">'outputBox'</span>);
-outputBox.innerHTML = <span style="color: #bdb76b;">"&lt;h1&gt;Your function worked!!!!&lt;/h1&gt;"</span>;
+<pre class="src src-javascript">var outputBox = document.getElementById('outputBox');
+outputBox.innerHTML = "&lt;h1&gt;Your function worked!!!!&lt;/h1&gt;";
 </pre>
 </div>
 </div>
@@ -527,10 +447,10 @@ outputBox.innerHTML = <span style="color: #bdb76b;">"&lt;h1&gt;Your function wor
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-javascript"><span style="color: #ffffff;">function</span> <span style="color: #98fb98;">runMe</span>()
+<pre class="src src-javascript">function runMe()
 {
-  <span style="color: #ffffff;">var</span> <span style="color: #9acd32;">outputBox</span> = document.getElementById(<span style="color: #bdb76b;">'outputBox'</span>);
-  outputBox.innerHTML = <span style="color: #bdb76b;">"&lt;h1&gt;Your function worked!!!!&lt;/h1&gt;"</span>;
+  var outputBox = document.getElementById('outputBox');
+  outputBox.innerHTML = "&lt;h1&gt;Your function worked!!!!&lt;/h1&gt;";
 };
 </pre>
 </div>
@@ -603,19 +523,19 @@ outputBox.innerHTML = <span style="color: #bdb76b;">"&lt;h1&gt;Your function wor
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-html">&lt;<span style="color: #ffffff;">!DOCTYPE</span> html&gt;
-&lt;<span style="color: #98fb98;">html</span>&gt;
-    &lt;<span style="color: #98fb98;">head</span>&gt;
-        &lt;<span style="color: #98fb98;">title</span>&gt;<span style="font-weight: bold; text-decoration: underline;">Inputs</span>&lt;/<span style="color: #98fb98;">title</span>&gt;
-        &lt;<span style="color: #98fb98;">script</span> <span style="color: #9acd32;">type</span>=<span style="color: #bdb76b;">"text/javascript"</span>&gt;
+<pre class="src src-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+	&lt;title&gt;Inputs&lt;/title&gt;
+	&lt;script type="text/javascript"&gt;
 
-        &lt;/<span style="color: #98fb98;">script</span>&gt;
-    &lt;/<span style="color: #98fb98;">head</span>&gt;
-    &lt;<span style="color: #98fb98;">body</span>&gt;
-        &lt;<span style="color: #98fb98;">input</span> <span style="color: #9acd32;">type</span>=<span style="color: #bdb76b;">"text"</span> <span style="color: #9acd32;">id</span>=<span style="color: #bdb76b;">"userNameIn"</span>&gt;&lt;/<span style="color: #98fb98;">input</span>&gt;
-        &lt;<span style="color: #98fb98;">div</span> id = <span style="color: #bdb76b;">"userNameOut"</span>&gt;&lt;/<span style="color: #98fb98;">div</span>&gt;
-    &lt;/<span style="color: #98fb98;">body</span>&gt;
-&lt;/<span style="color: #98fb98;">html</span>&gt;
+	&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+	&lt;input type="text" id="userNameIn"&gt;&lt;/input&gt;
+	&lt;div id = "userNameOut"&gt;&lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
 </pre>
 </div>
 </div>
@@ -649,10 +569,10 @@ outputBox.innerHTML = <span style="color: #bdb76b;">"&lt;h1&gt;Your function wor
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-javascript"><span style="color: #ffffff;">function</span> <span style="color: #98fb98;">outputName</span>()
+<pre class="src src-javascript">function outputName()
 {
-    <span style="color: #ffffff;">var</span> <span style="color: #9acd32;">userName</span> = document.getElementById(<span style="color: #bdb76b;">'userNameIn'</span>).value;
-    userNameOut.innerHTML = <span style="color: #bdb76b;">"&lt;h1&gt;Hi there "</span> + userName + <span style="color: #bdb76b;">"&lt;/h1&gt;"</span>
+    var userName = document.getElementById('userNameIn').value;
+    userNameOut.innerHTML = "&lt;h1&gt;Hi there " + userName + "&lt;/h1&gt;"
 }
 </pre>
 </div>
@@ -709,7 +629,7 @@ outputBox.innerHTML = <span style="color: #bdb76b;">"&lt;h1&gt;Your function wor
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-html">&lt;<span style="color: #98fb98;">input</span> <span style="color: #9acd32;">type</span>=<span style="color: #bdb76b;">"text"</span> <span style="color: #9acd32;">id</span>=<span style="color: #bdb76b;">"userNameIn"</span>&gt;&lt;/<span style="color: #98fb98;">input</span>&gt;
+<pre class="src src-html">&lt;input type="text" id="userNameIn"&gt;&lt;/input&gt;
 </pre>
 </div>
 <ul class="org-ul">
@@ -718,7 +638,7 @@ outputBox.innerHTML = <span style="color: #bdb76b;">"&lt;h1&gt;Your function wor
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-html">&lt;<span style="color: #98fb98;">input</span> <span style="color: #9acd32;">type</span>=<span style="color: #bdb76b;">"text"</span> <span style="color: #9acd32;">id</span>=<span style="color: #bdb76b;">"userNameIn"</span> <span style="color: #9acd32;">onchange</span>=<span style="color: #bdb76b;">"outputName()"</span>&gt;&lt;/<span style="color: #98fb98;">input</span>&gt;
+<pre class="src src-html">&lt;input type="text" id="userNameIn" onchange="outputName()"&gt;&lt;/input&gt;
 </pre>
 </div>
 </div>
@@ -773,7 +693,7 @@ To earn your fourth <b>Blue JavaScript Badge</b>, complete the tasks below. Once
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-html">&lt;<span style="color: #98fb98;">input</span> <span style="color: #9acd32;">type</span>=<span style="color: #bdb76b;">"password"</span> <span style="color: #9acd32;">id</span>=<span style="color: #bdb76b;">""</span> <span style="color: #9acd32;">onchange</span>=<span style="color: #bdb76b;">""</span>&gt;&lt;/<span style="color: #98fb98;">input</span>&gt;
+<pre class="src src-html">&lt;input type="password" id="" onchange=""&gt;&lt;/input&gt;
 </pre>
 </div>
 <ul class="org-ul">
