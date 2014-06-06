@@ -1,6 +1,7 @@
 #+STARTUP:indent
-#+STYLE: <link rel="stylesheet" type="text/css" href="css/main.css"/>
-#+STYLE: <link rel="stylesheet" type="text/css" href="css/lesson.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/main.css"/>
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="css/lesson.css"/>
+#+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil 
 
 #+TITLE: Creating a page for your badges.
 #+AUTHOR: Marc Scott
@@ -56,10 +57,10 @@
 #+BEGIN_SRC html
     <link type="text/css" rel="stylesheet" href="css/badges.css">
 #+END_SRC
-- This line tells the web browser that all the css can be found on a seperate file.
+- This line tells the web browser that all the css can be found on a separate file.
 - The file is called =badges.css= and is located in the =css= directory.
 - This is a much neater way of creating web pages. First it tidies up your html and secondly it makes sure that lots of different pages can all access the same css file.
-- Let's do the same for out JavaScript, and put it all in a seperate file.
+- Let's do the same for out JavaScript, and put it all in a separate file.
 - Add this line to your html, jest below the link to the css.
 #+BEGIN_SRC html
         <script language="javascript" type="text/javascript" src="js/badges.js"></script>
@@ -98,7 +99,7 @@
 - In your text editor save a blank file as =badges.js= in the =js= directory you created earlier.
 - We'll test that it's all working correctly with a quick =console.log()=
 #+BEGIN_SRC javascript
-console.log('JavaScript loaded succesfully')
+console.log('JavaScript loaded successfully')
 #+END_SRC
 ** Save It
 :PROPERTIES:
@@ -168,7 +169,7 @@ console.log(listOfCats.length)
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
-- We're now going to use an array to count the badges on your webpage.
+- We're now going to use an array to count the badges on your web-page.
 - Before we start, let's have a quick look at the html of the web page again.
 #+BEGIN_SRC html
   <div id = "badges1">
@@ -213,7 +214,7 @@ imageArray = document.getElementById('badges1').getElementsByTagName('img');
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: run
 :END:
-- Open the Badges.html file in a browser and check the console. You'll see different things depending on which broiwser you're using, but you should see an array being displayed.
+- Open the Badges.html file in a browser and check the console. You'll see different things depending on which browser you're using, but you should see an array being displayed.
 ** Code It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: code
@@ -243,7 +244,7 @@ textCount.innerHTML = imageArray.length;
 :END:
 
 - Having the number on it's own doesn't give our user much information.
-- Use /concatentaion/ (joining) to add some text to the innerHTML of the =textCount=. Something along the lines of "Total Badges Gained", should do the trick.
+- Use /concatenation/ (joining) to add some text to the innerHTML of the =textCount=. Something along the lines of "Total Badges Gained", should do the trick.
 * Filling the progress bar
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
@@ -283,11 +284,11 @@ document.getElementById('progressBarFill').style.width = '25%';
 :HTML_CONTAINER_CLASS: code
 :END:
 - Now we want the bar to actually represent the progress you've made.
-- Add a new variable decleration to your first line, so it reads as follows.
+- Add a new variable declaration to your first line, so it reads as follows.
 #+BEGIN_SRC javascript
 var imageArray, progress
 #+END_SRC
-- Decleraing multiple variable on a single line saves us a bit of space.
+- Declaring multiple variable on a single line saves us a bit of space.
 - Within the =onload= function, we now want to work out the percentage of badges you're received and then change the width of the =progressBarFill=. Edit your function so that it looks like the one below. 
 #+BEGIN_SRC javascript
   window.onload = function()

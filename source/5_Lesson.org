@@ -1,6 +1,6 @@
 #+STARTUP:indent
-#+STYLE: <link rel="stylesheet" type="text/css" href="css/main.css"/>
-#+STYLE: <link rel="stylesheet" type="text/css" href="css/lesson.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/main.css"/>
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="css/lesson.css"/>
 #+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil 
 
 #+TITLE: More functions and events.
@@ -65,7 +65,7 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: save
 :END:
-- Save you code. Call it something like onLoad.html
+- Save you code. Call it something like onload.html
 ** Run It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: run
@@ -102,7 +102,7 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: try
 :END:
-- Add another =div= into the =<body>= of your webpage, beneath the one already there.
+- Add another =div= into the =<body>= of your web-page, beneath the one already there.
 - Give the div the id =theTimerDisplay=.
 - Now add some JavaScript so that the div also displays the text =working= but within =<h2>= tags.
 - _Make sure your code works_
@@ -142,7 +142,7 @@
 #+BEGIN_SRC javascript
   var count = 0
 #+END_SRC 
-- Next we want a little function that will display the count and make the count go up. This code should fo after the =onload= event has finished.
+- Next we want a little function that will display the count and make the count go up. This code should go after the =onload= event has finished.
 - Look at the line =count++;=. In JavaScript we can use this syntax to increase something by 1. It is the same as writing =count = count + 1=.
 #+BEGIN_SRC javascript
   function addToCount()
@@ -170,7 +170,7 @@
 :HTML_CONTAINER_CLASS: run
 :END:
 - Open your file in a web browser and you should see the button.
-- Open your file in a webbrowser.
+- Open your file in a web-browser.
 - Clicking the button should cause the numbers to increase.
 ** Try It:
 :PROPERTIES:
@@ -234,7 +234,7 @@ setInterval(function(){calcTime()}, 1000);
 
 - At the moment the page looks a little ugly.
 - Try and add a little more html to the page.
-- Maybe you could add a heading and some simple instructions, or perhaps rearange the elements a little. Try adding some colour.
+- Maybe you could add a heading and some simple instructions, or perhaps rearrange the elements a little. Try adding some colour.
 * Badge It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
@@ -245,9 +245,9 @@ setInterval(function(){calcTime()}, 1000);
 :END:
 To earn your fourth *Blue JavaScript Badge*, complete the tasks below. Once you have finished, ask your teacher to check your code to make sure it runs correctly.
 - At the moment the game doesn't end. To earn your 5th JavaScript badge you need the game to stop after a certain time.
-- _You'll only need to edit the code in the two funtions =addToCount()= and =calcTime=_
+- _You'll only need to edit the code in the two functions =addToCount()= and =calcTime=_
 - In the =addToCount= function, use an =if= condition so that the count is displayed and increased /only when seconds is less than or equal to 5/
-- In the =addToCount= funtion, use an =else= condition to display a message to the user, telling them what their final score was.
+- In the =addToCount= function, use an =else= condition to display a message to the user, telling them what their final score was.
 - In the =calcTime()= function, use an =if= condition so that the the time is displayed and increase /only when seconds is less than or equal to 5/
 - In the =calcTime()= function, use an =else= condition to display a message to the user that the 'Time is up'.
 - Get your teacher to check your work once you are finished.

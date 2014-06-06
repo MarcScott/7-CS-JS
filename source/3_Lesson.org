@@ -1,6 +1,6 @@
 #+STARTUP:indent
-#+STYLE: <link rel="stylesheet" type="text/css" href="css/main.css"/>
-#+STYLE: <link rel="stylesheet" type="text/css" href="css/lesson.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/main.css"/>
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="css/lesson.css"/>
 #+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil 
 #+TITLE: The Value of Variables.
 #+AUTHOR: Marc Scott
@@ -63,12 +63,12 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
-- We've already covered variable assignment and decleration, but here we'll go into it in a little more detail.
+- We've already covered variable assignment and declaration, but here we'll go into it in a little more detail.
 ** Code It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: code
 :END:
-- Open any of the webpages you created in the previous lessons.
+- Open any of the web-pages you created in the previous lessons.
 - Open the console
 - Type the following code
 #+BEGIN_SRC javascript
@@ -93,7 +93,7 @@
 :END:
 - Declare a variable that stores a string.
 - Declare a variable that stores a number.
-- Declare a variable that stores a boolean.
+- Declare a variable that stores a Boolean.
 * Reassigning Variables
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity

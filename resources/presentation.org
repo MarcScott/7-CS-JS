@@ -12,7 +12,7 @@
 Alerts can contain strings or variables or a mix of both
 #+BEGIN_SRC javascript
 window.alert('A message goes here')
-window.alert(anyBVariableName)
+window.alert(anyVariableName)
 window.alert('You can mix text and ' + variableNames)
 #+END_SRC
 *** Prompt

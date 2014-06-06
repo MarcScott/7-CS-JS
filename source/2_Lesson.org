@@ -1,6 +1,6 @@
 #+STARTUP:indent
-#+STYLE: <link rel="stylesheet" type="text/css" href="css/main.css"/>
-#+STYLE: <link rel="stylesheet" type="text/css" href="css/lesson.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/main.css"/>
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="css/lesson.css"/>
 #+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil 
 #+TITLE: The Console and Conditionals
 #+AUTHOR: Marc Scott
@@ -39,7 +39,7 @@
   - =window.alert()=
   - =window.prompt()=
   - =window.confirm()=
-- Sometimes, however, you want to be able to communciate with yourself. It's often useful to be able to see what your code is doing in a quick and unobtrusive way. For this we use =console.log()= 
+- Sometimes, however, you want to be able to communicate with yourself. It's often useful to be able to see what your code is doing in a quick and unobtrusive way. For this we use =console.log()= 
 ** Code It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: code
@@ -75,7 +75,7 @@
 :END:
 - Find the file you just saved in your JavaScript directory.
 - Double click it to open it in your browser.
-- Now comes the little secret that only Hackers know about. We're going to open up an inspector which will allow us to see what is going on in any webpage. The way you do this depends on the browser you are using.
+- Now comes the little secret that only Hackers know about. We're going to open up an inspector which will allow us to see what is going on in any web-page. The way you do this depends on the browser you are using.
 *** Instructions for Internet Explorer
     - Click on the gear symbol in the top right of the IE window and select 'F12 Developer Tools.
 [[file:img/IE1.png]]
@@ -84,7 +84,7 @@
 *** Instructions for Safari
       - Safari likes to hide the developer menu. Click on Safari in the top left of the screen and select Preferences...
 [[file:img/safari1.png]]
-      - Choose the Advanced icon and then check the box to 'Show Devloper menu in menu bar'. Close Preferences
+      - Choose the Advanced icon and then check the box to 'Show Developer menu in menu bar'. Close Preferences
 [[file:img/safari2.png]]
       - From the now visible Develop menu, choose 'Show Error Console.
 [[file:img/safari3.png]]
@@ -191,7 +191,7 @@ windows.alert("I wonder why you're feeling "+ yourAnswer)
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
-- Condtionals are an important part of coding. You actually used a conditional in the first lesson.
+- Conditionals are an important part of coding. You actually used a conditional in the first lesson.
 - Conditionals allow the program to make a choice, based on a certain condition being met. (Or sometimes several conditions.)
 - Imagine you are walking along a street and you come to a restaurant. A simplified conditional for what you do might look something like this;
 #+BEGIN_SRC web
@@ -213,10 +213,10 @@ ELSE
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: code
 :END:
-- Let's use a simple conditional in JavaScript. You'll need to remove all your debuuging lines from between the =<script>= tags, then write in the following lines.
+- Let's use a simple conditional in JavaScript. You'll need to remove all your debugging lines from between the =<script>= tags, then write in the following lines.
 
 #+BEGIN_SRC javascript
-  var choice = window.confirm('Click OK if you undertand conditionals');
+  var choice = window.confirm('Click OK if you understand conditionals');
   if (choice === true){
       window.alert('Then continue to the next section');
   }
@@ -344,7 +344,7 @@ file:img/conditional.jpg
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: code
 :END:
-- At the moment, our code penalises people who accidently forget to use a capital 'L' in London. Let's fix that.
+- At the moment, our code penalises people who accidentally forget to use a capital 'L' in London. Let's fix that.
 - Alter your code so that they get 1/2 a point if they use a lowercase 'l'
 #+BEGIN_SRC javascript
   if (answerOne === "London"){
@@ -450,5 +450,5 @@ To earn your second *Blue JavaScript Badge*, complete the tasks below. Once you 
   - Tell the user the quiz is over.
   - Display the user's percentage score.
   - Give them a congratulatory message if they scored higher than 59%
-  - Give them a consoliatory message if they scored lower than 60%
+  - Give them a consolatory message if they scored lower than 60%
   

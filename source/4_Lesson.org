@@ -1,6 +1,6 @@
 #+STARTUP:indent
-#+STYLE: <link rel="stylesheet" type="text/css" href="css/main.css"/>
-#+STYLE: <link rel="stylesheet" type="text/css" href="css/lesson.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/main.css"/>
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="css/lesson.css"/>
 #+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil 
 
 #+TITLE: Dominating the DOM
@@ -151,7 +151,7 @@
 #+BEGIN_SRC javascript
   var displayUserName = document.getElementById('displayUserName');
 #+END_SRC
-- Lastly we need to /concatonate/ the =userName= to some HTML and add it into the div.
+- Lastly we need to /concatenate/ the =userName= to some HTML and add it into the div.
 #+BEGIN_SRC javascript
 displayUserName.innerHTML = "<h1>" + userName + "'s Amazing Website</h1>";
 #+END_SRC
@@ -285,7 +285,7 @@ function runMe()
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: save
 :END:
-- Save your webpage
+- Save your web-page
 ** Run It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: run
@@ -311,23 +311,23 @@ function runMe()
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: save
 :END:
-- Save your webpage
+- Save your web-page
 ** Run It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: run
 :END:
 - Open your page in a browser.
 - Type your name into the input box.
-- Nothing happens yet, because we still need to call the funtion.
+- Nothing happens yet, because we still need to call the function.
 - Open the console and type =outputName()= to call the function you wrote.
-- You should see a message on the webpage
+- You should see a message on the web-page
 ** Code It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: code
 :END:
-- While the program works at the moment, it would be silly to expect everyone to open a console and call functions to use a webpage.
+- While the program works at the moment, it would be silly to expect everyone to open a console and call functions to use a web-page.
 - Luckily we can call functions within the HTML using =events=
-- Events can be button pushes, or mouse movement, or really anything a user does to interact with a webpage.
+- Events can be button pushes, or mouse movement, or really anything a user does to interact with a web-page.
 - We're going to use the =onchange= event. This works by registering when an HTML elements has changed.
 - Find this line in your HTML file.
 #+BEGIN_SRC html
@@ -346,7 +346,7 @@ function runMe()
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: run
 :END:
-- Now open your webpage and fill your name into the box
+- Now open your web-page and fill your name into the box
 - When you click outside of the box, the browser should detect a change to the =<input>= box and run the function.
 ** Try It:
 :PROPERTIES:
@@ -368,10 +368,10 @@ To earn your fourth *Blue JavaScript Badge*, complete the tasks below. Once you 
 #+BEGIN_SRC html
 <input type="password" id="" onchange=""></input>
 #+END_SRC
-- Create a new webpage and call it password verification.
+- Create a new web-page and call it password verification.
 - Create two input boxes, both accepting passwords, and give them different id's.
-- Create a function, that can be called when the broswer detecrs a change in the second =input= box.
-- The function should get the values of both input voxes and store them as seperate variables.
+- Create a function, that can be called when the browser detects a change in the second =input= box.
+- The function should get the values of both input boxes and store them as separate variables.
 - Then the function should use a conditional statement (=if, else=) to see if the passwords are the same.
 - If the passwords match, then use a =window.alert()= or output to a div to notify the user that the password has been accepted.
 - If they don not match then the user should be prompted to type their passwords again.

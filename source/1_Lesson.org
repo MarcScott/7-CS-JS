@@ -1,6 +1,6 @@
 #+STARTUP:indent
-#+STYLE: <link rel="stylesheet" type="text/css" href="css/main.css"/>
-#+STYLE: <link rel="stylesheet" type="text/css" href="css/lesson.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/main.css"/>
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="css/lesson.css"/>
 #+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil 
 #+TITLE: JavaScript Basics
 #+AUTHOR: Marc Scott
@@ -37,9 +37,9 @@
 :HTML_CONTAINER_CLASS: intro
 :END:
 ** What is JavaScript?
-JavaScript is a programming language used by web browsers to interact with the user, and alter the contents of webpages.
-JavaScript is present on almost every modern webpage.
-Recently, people have started to use JavaScript outside of webbrowsers, using platforms like Node.js
+JavaScript is a programming language used by web browsers to interact with the user, and alter the contents of web-pages.
+JavaScript is present on almost every modern web-page.
+Recently, people have started to use JavaScript outside of web-browsers, using platforms like Node.js
 ** Where do I write JavaScript?
 Like any other programming language, JavaScript is nothing more than text.
 You can write JavaScript using any text editor and save it as either a .js file or a .html file.
@@ -86,7 +86,7 @@ For now we're going to write JavaScript inside an HTML file. This will make it e
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: try
 :END:
-- Can you remember how to give you webpage a =<title>=? Give it a go using the =<title>= tag in the =<head>= of your page.
+- Can you remember how to give you web-page a =<title>=? Give it a go using the =<title>= tag in the =<head>= of your page.
 * Your first line of JavaScript
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
@@ -95,7 +95,7 @@ For now we're going to write JavaScript inside an HTML file. This will make it e
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: code
 :END:
-- Make sure all your code goes inbetween the script tags. You'll need to delete the comment line that begins =<!--=
+- Make sure all your code goes in-between the script tags. You'll need to delete the comment line that begins =<!--=
 #+BEGIN_SRC html
 <script type="text/javascript"> 
 <!--DELETE THIS ENTIRE LINE AND YOUR CODE HERE IN THE NEXT SECTION-->
@@ -116,7 +116,7 @@ window.alert('Losers Click OK');
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: run
 :END:
-- What happens now when you view your webpage in a browser?
+- What happens now when you view your web-page in a browser?
 ** Try It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: try
@@ -135,7 +135,7 @@ window.alert('Losers Click OK');
 #+BEGIN_SRC html
 var myPet;
 #+END_SRC
-- Now that we have declared a variable, we have to assign it to some data. The Internet is full of cats, so let's choose a cat's name. Add this line _below_ the variable decleration.
+- Now that we have declared a variable, we have to assign it to some data. The Internet is full of cats, so let's choose a cat's name. Add this line _below_ the variable declaration.
 #+BEGIN_SRC html
 myPet = 'Tiddles';
 #+END_SRC
@@ -153,7 +153,7 @@ window.alert(myPet);
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: run
 :END:
-Open your webpage in a web browser. What happens?
+Open your web-page in a web browser. What happens?
 ** Try It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: try
@@ -318,5 +318,5 @@ To earn your first *Blue JavaScript Badge*, complete the tasks below. Once you h
 - Output a message using =window.alert()= that says "Hey, my name is XXXXXXX too".
 - Use a =window.prompt()= message box to ask the user how old they are and store their age as a variable.
 - Convert the variable to a =number=
-- Use a =window.alert()= box to display the message 'That means you will be 100 in the year ####' (/HINT: the calcualtion is 100 - age + current year/)
+- Use a =window.alert()= box to display the message 'That means you will be 100 in the year ####' (/HINT: the calculation is 100 - age + current year/)
 - Use a =window.confirm()= box to ask if the user would like to continue.

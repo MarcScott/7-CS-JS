@@ -1,63 +1,89 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Creating a page for your badges.</title>
-<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
-<meta name="title" content="Creating a page for your badges."/>
-<meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2014-05-22T16:46+0100"/>
-<meta name="author" content="Marc Scott"/>
-<meta name="description" content=""/>
-<meta name="keywords" content=""/>
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
-  html { font-family: Times, serif; font-size: 12pt; }
   .title  { text-align: center; }
-  .todo   { color: red; }
+  .todo   { font-family: monospace; color: red; }
   .done   { color: green; }
-  .tag    { background-color: #add8e6; font-weight:normal }
-  .target { }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
   .timestamp { color: #bebebe; }
   .timestamp-kwd { color: #5f9ea0; }
-  .right  {margin-left:auto; margin-right:0px;  text-align:right;}
-  .left   {margin-left:0px;  margin-right:auto; text-align:left;}
-  .center {margin-left:auto; margin-right:auto; text-align:center;}
-  p.verse { margin-left: 3% }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
   pre {
-	border: 1pt solid #AEBDCC;
-	background-color: #F3F5F7;
-	padding: 5pt;
-	font-family: courier, monospace;
-        font-size: 90%;
-        overflow:auto;
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
   }
-  table { border-collapse: collapse; }
-  td, th { vertical-align: top;  }
-  th.right  { text-align:center;  }
-  th.left   { text-align:center;   }
-  th.center { text-align:center; }
-  td.right  { text-align:right;  }
-  td.left   { text-align:left;   }
-  td.center { text-align:center; }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
   dt { font-weight: bold; }
-  div.figure { padding: 0.5em; }
-  div.figure p { text-align: center; }
-  div.inlinetask {
-    padding:10px;
-    border:2px solid gray;
-    margin:10px;
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
     background: #ffffcc;
   }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
   textarea { overflow-x: auto; }
-  .linenr { font-size:smaller }
-  .code-highlighted {background-color:#ffff00;}
-  .org-info-js_info-navigation { border-style:none; }
-  #org-info-js_console-label { font-size:10px; font-weight:bold;
-                               white-space:nowrap; }
-  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
-                                 font-weight:bold; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
   /*]]>*/-->
 </style>
 <link rel="stylesheet" type="text/css" href="css/main.css"/>
@@ -108,96 +134,81 @@ for the JavaScript code in this tag.
  }
 /*]]>*///-->
 </script>
-
 </head>
 <body>
-
-<div id="preamble">
-
-</div>
-
 <div id="content">
 <h1 class="title">Creating a page for your badges.</h1>
-
-
-
-
-<div class=ribbon>
-<a href="https://github.com/MarcScott/KS3_Curriculum">Fork me on GitHub</a>
-</div>
-
-
-
-
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-    <li><a href="#sec-1">1 Introduction</a>
+<li><a href="#sec-1">1. Introduction</a>
 <ul>
-  <li><a href="#sec-1-1">1.1 Code It</a></li>
-<li><a href="#sec-1-2">1.2 Save It</a></li>
-<li><a href="#sec-1-3">1.3 Run It</a></li>
-<li><a href="#sec-1-4">1.4 Try It:</a></li>
+<li><a href="#sec-1-1">Code It</a></li>
+<li><a href="#sec-1-2">Save It</a></li>
+<li><a href="#sec-1-3">Run It</a></li>
+<li><a href="#sec-1-4">Try It:</a></li>
 </ul>
 </li>
-<li><a href="#sec-2">2 Creating a badges.js file</a>
+<li><a href="#sec-2">2. Creating a badges.js file</a>
 <ul>
-  <li><a href="#sec-2-1">2.1 Code It</a></li>
-<li><a href="#sec-2-2">2.2 Save It</a></li>
-<li><a href="#sec-2-3">2.3 Run It</a></li>
+<li><a href="#sec-2-1">Code It</a></li>
+<li><a href="#sec-2-2">Save It</a></li>
+<li><a href="#sec-2-3">Run It</a></li>
 </ul>
 </li>
-<li><a href="#sec-3">3 Using Arrays</a>
+<li><a href="#sec-3">3. Using Arrays</a>
 <ul>
-  <li><a href="#sec-3-1">3.1 Code It</a></li>
-<li><a href="#sec-3-2">3.2 Save It</a></li>
-<li><a href="#sec-3-3">3.3 Run It</a></li>
-<li><a href="#sec-3-4">3.4 Try It:</a></li>
-<li><a href="#sec-3-5">3.5 Code It</a></li>
+<li><a href="#sec-3-1">Code It</a></li>
+<li><a href="#sec-3-2">Save It</a></li>
+<li><a href="#sec-3-3">Run It</a></li>
+<li><a href="#sec-3-4">Try It:</a></li>
+<li><a href="#sec-3-5">Code It</a></li>
 </ul>
 </li>
-<li><a href="#sec-4">4 Counting the badges</a>
+<li><a href="#sec-4">4. Counting the badges</a>
 <ul>
-  <li><a href="#sec-4-1">4.1 Code It</a></li>
-<li><a href="#sec-4-2">4.2 Save It</a></li>
-<li><a href="#sec-4-3">4.3 Run It</a></li>
-<li><a href="#sec-4-4">4.4 Code It</a></li>
-<li><a href="#sec-4-5">4.5 Save It</a></li>
-<li><a href="#sec-4-6">4.6 Run It</a></li>
-<li><a href="#sec-4-7">4.7 Try It:</a></li>
+<li><a href="#sec-4-1">Code It</a></li>
+<li><a href="#sec-4-2">Save It</a></li>
+<li><a href="#sec-4-3">Run It</a></li>
+<li><a href="#sec-4-4">Code It</a></li>
+<li><a href="#sec-4-5">Save It</a></li>
+<li><a href="#sec-4-6">Run It</a></li>
+<li><a href="#sec-4-7">Try It:</a></li>
 </ul>
 </li>
-<li><a href="#sec-5">5 Filling the progress bar</a>
+<li><a href="#sec-5">5. Filling the progress bar</a>
 <ul>
-  <li><a href="#sec-5-1">5.1 Code It</a></li>
-<li><a href="#sec-5-2">5.2 Save It</a></li>
-<li><a href="#sec-5-3">5.3 Run It</a></li>
-<li><a href="#sec-5-4">5.4 Try It:</a></li>
-<li><a href="#sec-5-5">5.5 Code It</a></li>
-<li><a href="#sec-5-6">5.6 Save It</a></li>
-<li><a href="#sec-5-7">5.7 Run It</a></li>
+<li><a href="#sec-5-1">Code It</a></li>
+<li><a href="#sec-5-2">Save It</a></li>
+<li><a href="#sec-5-3">Run It</a></li>
+<li><a href="#sec-5-4">Try It:</a></li>
+<li><a href="#sec-5-5">Code It</a></li>
+<li><a href="#sec-5-6">Save It</a></li>
+<li><a href="#sec-5-7">Run It</a></li>
 </ul>
 </li>
-<li><a href="#sec-6">6 Animating the fill</a>
+<li><a href="#sec-6">6. Animating the fill</a>
 <ul>
-  <li><a href="#sec-6-1">6.1 Code It</a></li>
+<li><a href="#sec-6-1">Code It</a></li>
 </ul>
 </li>
-<li><a href="#sec-7">7 Badge It</a>
+<li><a href="#sec-7">7. Badge It</a>
 <ul>
-  <li><a href="#sec-7-1">7.1 Task</a></li>
+<li><a href="#sec-7-1">Task</a></li>
 </ul>
 </li>
 </ul>
 </div>
+</div>
+<div class=ribbon>
+<a href="https://github.com/MarcScott/KS3_Curriculum">Fork me on GitHub</a>
 </div>
 
-<div id="outline-container-1" class="outline-2 activity">
+<div id="outline-container-sec-1" class="outline-2 activity">
 <h2 id="sec-1"><span class="section-number-2">1</span> Introduction</h2>
 <div class="outline-text-2" id="text-1">
-
-<ul>
+<ul class="org-ul">
 <li>We're now going to use everything you've learned so far to create a special page for your JavaScript badges.
 </li>
 <li>So you're focusing on the HTML and CSS, they have been provided for you.
@@ -207,8 +218,7 @@ for the JavaScript code in this tag.
 <li>Download the CSS by <a href="file:///Users/scott/Curriculum/7-WD-JS/resources/6_resources/css/badges.css"><i>Right-Clicking here</i></a> and choosing to download the file.
 </li>
 </ul>
-
-<ul>
+<ul class="org-ul">
 <li>The first thing to do is to create a directory structure to store your work.
 </li>
 <li>Make a directory called <code>Badge-Page</code>
@@ -222,15 +232,11 @@ for the JavaScript code in this tag.
 <li>Place the badges you have been awarded so far into the badges directory.
 </li>
 </ul>
-
-
 </div>
-
-<div id="outline-container-1-1" class="outline-3 code">
-<h3 id="sec-1-1"><span class="section-number-3">1.1</span> Code It</h3>
+<div id="outline-container-sec-1-1" class="outline-3 code">
+<h3 id="sec-1-1">Code It</h3>
 <div class="outline-text-3" id="text-1-1">
-
-<ul>
+<ul class="org-ul">
 <li>Open up Badges.html in a text editor.
 </li>
 <li>Have a good luck through the html.
@@ -238,74 +244,58 @@ for the JavaScript code in this tag.
 <li>You'll notice that there is no css there at all, instead there is this line.
 </li>
 </ul>
+<div class="org-src-container">
 
-
-
-
-<pre class="example">&lt;link type="text/css" rel="stylesheet" href="css/badges.css"&gt;
+<pre class="src src-html">&lt;<span style="color: #98fb98;">link</span> <span style="color: #9acd32;">type</span>=<span style="color: #bdb76b;">"text/css"</span> <span style="color: #9acd32;">rel</span>=<span style="color: #bdb76b;">"stylesheet"</span> <span style="color: #9acd32;">href</span>=<span style="color: #bdb76b;">"css/badges.css"</span>&gt;
 </pre>
-
-<ul>
-<li>This line tells the web browser that all the css can be found on a seperate file.
+</div>
+<ul class="org-ul">
+<li>This line tells the web browser that all the css can be found on a separate file.
 </li>
 <li>The file is called <code>badges.css</code> and is located in the <code>css</code> directory.
 </li>
 <li>This is a much neater way of creating web pages. First it tidies up your html and secondly it makes sure that lots of different pages can all access the same css file.
 </li>
-<li>Let's do the same for out JavaScript, and put it all in a seperate file.
+<li>Let's do the same for out JavaScript, and put it all in a separate file.
 </li>
 <li>Add this line to your html, jest below the link to the css.
 </li>
 </ul>
+<div class="org-src-container">
 
-
-
-
-<pre class="example">&lt;script language="javascript" type="text/javascript" src="js/badges.js"&gt;&lt;/script&gt;
+<pre class="src src-html">&lt;<span style="color: #98fb98;">script</span> <span style="color: #9acd32;">language</span>=<span style="color: #bdb76b;">"javascript"</span> <span style="color: #9acd32;">type</span>=<span style="color: #bdb76b;">"text/javascript"</span> <span style="color: #9acd32;">src</span>=<span style="color: #bdb76b;">"js/badges.js"</span>&gt;&lt;/<span style="color: #98fb98;">script</span>&gt;
 </pre>
-
-<ul>
+</div>
+<ul class="org-ul">
 <li>This tells the browser that all the JavaScript can be found in the <code>js</code> directory and is called <code>badges.js</code>
 </li>
 </ul>
-
 </div>
-
 </div>
-
-<div id="outline-container-1-2" class="outline-3 save">
-<h3 id="sec-1-2"><span class="section-number-3">1.2</span> Save It</h3>
+<div id="outline-container-sec-1-2" class="outline-3 save">
+<h3 id="sec-1-2">Save It</h3>
 <div class="outline-text-3" id="text-1-2">
-
-<ul>
+<ul class="org-ul">
 <li>Save the file.
 </li>
 </ul>
-
 </div>
-
 </div>
-
-<div id="outline-container-1-3" class="outline-3 run">
-<h3 id="sec-1-3"><span class="section-number-3">1.3</span> Run It</h3>
+<div id="outline-container-sec-1-3" class="outline-3 run">
+<h3 id="sec-1-3">Run It</h3>
 <div class="outline-text-3" id="text-1-3">
-
-<ul>
+<ul class="org-ul">
 <li>Run the file in the browser.
 </li>
 <li>Nothing much should be displayed at the moment, so let's fix that.
 </li>
 </ul>
-
 </div>
-
 </div>
-
-<div id="outline-container-1-4" class="outline-3 try">
-<h3 id="sec-1-4"><span class="section-number-3">1.4</span> Try It:</h3>
+<div id="outline-container-sec-1-4" class="outline-3 try">
+<h3 id="sec-1-4">Try It:</h3>
 <div class="outline-text-3" id="text-1-4">
-
-<ul>
+<ul class="org-ul">
 <li>At the moment there is a div in your HTML with the id <code>badges1</code>
 </li>
 <li>Inside this div are some <code>&lt;img&gt;</code> tags that don't really link to anything at the moment.
@@ -315,17 +305,13 @@ for the JavaScript code in this tag.
 <li>Make sure the page looks okay in a browser.
 </li>
 </ul>
-
 </div>
 </div>
-
 </div>
-
-<div id="outline-container-2" class="outline-2 activity">
+<div id="outline-container-sec-2" class="outline-2 activity">
 <h2 id="sec-2"><span class="section-number-2">2</span> Creating a badges.js file</h2>
 <div class="outline-text-2" id="text-2">
-
-<ul>
+<ul class="org-ul">
 <li>Open up your web pages in a browser and then open the developers console.
 </li>
 <li>You should see an error message, along the lines that the javascript file can't be found.
@@ -333,63 +319,46 @@ for the JavaScript code in this tag.
 <li>Let's fix that now.
 </li>
 </ul>
-
-
 </div>
-
-<div id="outline-container-2-1" class="outline-3 code">
-<h3 id="sec-2-1"><span class="section-number-3">2.1</span> Code It</h3>
+<div id="outline-container-sec-2-1" class="outline-3 code">
+<h3 id="sec-2-1">Code It</h3>
 <div class="outline-text-3" id="text-2-1">
-
-<ul>
+<ul class="org-ul">
 <li>In your text editor save a blank file as <code>badges.js</code> in the <code>js</code> directory you created earlier.
 </li>
 <li>We'll test that it's all working correctly with a quick <code>console.log()</code>
 </li>
 </ul>
+<div class="org-src-container">
 
-
-
-
-<pre class="example">console.log('JavaScript loaded succesfully')
+<pre class="src src-javascript">console.log(<span style="color: #bdb76b;">'JavaScript loaded successfully'</span>)
 </pre>
-
 </div>
-
 </div>
-
-<div id="outline-container-2-2" class="outline-3 save">
-<h3 id="sec-2-2"><span class="section-number-3">2.2</span> Save It</h3>
+</div>
+<div id="outline-container-sec-2-2" class="outline-3 save">
+<h3 id="sec-2-2">Save It</h3>
 <div class="outline-text-3" id="text-2-2">
-
-<ul>
+<ul class="org-ul">
 <li>Save the .js file
 </li>
 </ul>
-
 </div>
-
 </div>
-
-<div id="outline-container-2-3" class="outline-3 run">
-<h3 id="sec-2-3"><span class="section-number-3">2.3</span> Run It</h3>
+<div id="outline-container-sec-2-3" class="outline-3 run">
+<h3 id="sec-2-3">Run It</h3>
 <div class="outline-text-3" id="text-2-3">
-
-<ul>
+<ul class="org-ul">
 <li>Refresh your browser and make sure that the console.log is being displayed.
 </li>
 </ul>
-
 </div>
 </div>
-
 </div>
-
-<div id="outline-container-3" class="outline-2 activity">
+<div id="outline-container-sec-3" class="outline-2 activity">
 <h2 id="sec-3"><span class="section-number-2">3</span> Using Arrays</h2>
 <div class="outline-text-2" id="text-3">
-
-<ul>
+<ul class="org-ul">
 <li>The first thing we're going to want to do is to display the number of badges your have obtained.
 </li>
 <li>To do this you're going to need to know about <i>arrays</i>
@@ -398,26 +367,24 @@ for the JavaScript code in this tag.
 </li>
 </ul>
 
-<p><img src="img/shopping.png"  alt="img/shopping.png" />
-</p><ul>
+<div class="figure">
+<p><img src="img/shopping.png" alt="shopping.png" />
+</p>
+</div>
+<ul class="org-ul">
 <li>In JavaScript we'd represent the shopping list like this:
 </li>
 </ul>
+<div class="org-src-container">
 
-
-
-
-<pre class="example">shoppingList = ['Milk','Eggs','Bread','Rice','MacBook Pro']
+<pre class="src src-javascript">shoppingList = [<span style="color: #bdb76b;">'Milk'</span>,<span style="color: #bdb76b;">'Eggs'</span>,<span style="color: #bdb76b;">'Bread'</span>,<span style="color: #bdb76b;">'Rice'</span>,<span style="color: #bdb76b;">'MacBook Pro'</span>]
 </pre>
-
-
 </div>
-
-<div id="outline-container-3-1" class="outline-3 code">
-<h3 id="sec-3-1"><span class="section-number-3">3.1</span> Code It</h3>
+</div>
+<div id="outline-container-sec-3-1" class="outline-3 code">
+<h3 id="sec-3-1">Code It</h3>
 <div class="outline-text-3" id="text-3-1">
-
-<ul>
+<ul class="org-ul">
 <li>Let's create an Array and see what we can do with it.
 </li>
 <li>Delete the <code>console.log()</code> from your .js file
@@ -425,46 +392,35 @@ for the JavaScript code in this tag.
 <li>Now lest create a new array
 </li>
 </ul>
+<div class="org-src-container">
 
-
-
-
-<pre class="example">var listOfCats = ['Dave','Dee','Dozy','Beaky','Mick','Tich']
+<pre class="src src-javascript"><span style="color: #ffffff;">var</span> <span style="color: #9acd32;">listOfCats</span> = [<span style="color: #bdb76b;">'Dave'</span>,<span style="color: #bdb76b;">'Dee'</span>,<span style="color: #bdb76b;">'Dozy'</span>,<span style="color: #bdb76b;">'Beaky'</span>,<span style="color: #bdb76b;">'Mick'</span>,<span style="color: #bdb76b;">'Tich'</span>]
 </pre>
-
-<ul>
+</div>
+<ul class="org-ul">
 <li>You can find out what is at any position in an Array quite easily. Write this line below it.
 </li>
 </ul>
+<div class="org-src-container">
 
-
-
-
-<pre class="example">console.log(listOfCats[3])
+<pre class="src src-javascript">console.log(listOfCats[3])
 </pre>
-
 </div>
-
 </div>
-
-<div id="outline-container-3-2" class="outline-3 save">
-<h3 id="sec-3-2"><span class="section-number-3">3.2</span> Save It</h3>
+</div>
+<div id="outline-container-sec-3-2" class="outline-3 save">
+<h3 id="sec-3-2">Save It</h3>
 <div class="outline-text-3" id="text-3-2">
-
-<ul>
+<ul class="org-ul">
 <li>Save the .js file.
 </li>
 </ul>
-
 </div>
-
 </div>
-
-<div id="outline-container-3-3" class="outline-3 run">
-<h3 id="sec-3-3"><span class="section-number-3">3.3</span> Run It</h3>
+<div id="outline-container-sec-3-3" class="outline-3 run">
+<h3 id="sec-3-3">Run It</h3>
 <div class="outline-text-3" id="text-3-3">
-
-<ul>
+<ul class="org-ul">
 <li>Refresh your browser. (Don't forget to look at the console)
 </li>
 <li>Which cat is printed out in the console?
@@ -474,91 +430,71 @@ for the JavaScript code in this tag.
 <li>In JavaScript the first element of an array is indexed - 0. We often call it the zeroth (0th) element. So when counting positions, you <i>must</i> start counting from 0.
 </li>
 </ul>
-
 </div>
-
 </div>
-
-<div id="outline-container-3-4" class="outline-3 try">
-<h3 id="sec-3-4"><span class="section-number-3">3.4</span> Try It:</h3>
+<div id="outline-container-sec-3-4" class="outline-3 try">
+<h3 id="sec-3-4">Try It:</h3>
 <div class="outline-text-3" id="text-3-4">
-
-<ul>
+<ul class="org-ul">
 <li>Make sure you can console.log() all the cat names, using the array
 </li>
 </ul>
-
 </div>
-
 </div>
-
-<div id="outline-container-3-5" class="outline-3 code">
-<h3 id="sec-3-5"><span class="section-number-3">3.5</span> Code It</h3>
+<div id="outline-container-sec-3-5" class="outline-3 code">
+<h3 id="sec-3-5">Code It</h3>
 <div class="outline-text-3" id="text-3-5">
-
-<ul>
+<ul class="org-ul">
 <li>Now you have created and accessed an array, one thing that is really useful for a program to know, is the length of the array.
 </li>
 <li>This is actually really easy to do.
 </li>
 </ul>
+<div class="org-src-container">
 
-
-
-
-<pre class="example">console.log(listOfCats.length)
+<pre class="src src-javascript">console.log(listOfCats.length)
 </pre>
-
-<ul>
+</div>
+<ul class="org-ul">
 <li>Add this line to your code, and you should see the number 6 printed out in the console, when you save the code and refresh the page.
 </li>
 </ul>
-
 </div>
 </div>
-
 </div>
-
-<div id="outline-container-4" class="outline-2 activity">
+<div id="outline-container-sec-4" class="outline-2 activity">
 <h2 id="sec-4"><span class="section-number-2">4</span> Counting the badges</h2>
 <div class="outline-text-2" id="text-4">
-
-<ul>
-<li>We're now going to use an array to count the badges on your webpage.
+<ul class="org-ul">
+<li>We're now going to use an array to count the badges on your web-page.
 </li>
 <li>Before we start, let's have a quick look at the html of the web page again.
 </li>
 </ul>
+<div class="org-src-container">
 
-
-
-
-<pre class="example">&lt;div id = "badges1"&gt;
-    &lt;h3&gt;JavaScript Badges&lt;/h3&gt;
-    &lt;img src="badges/placeholder.png"&gt;
-    &lt;img src="badges/placeholder.png"&gt;
-    &lt;img src="badges/placeholder.png"&gt;
-    &lt;img src="badges/placeholder.png"&gt;
-    &lt;img src="badges/placeholder.png"&gt;
-&lt;/div&gt;
-&lt;input type="button" value="Calculate Progress" id='calcProgress'&gt;
-&lt;div id="progressSection"&gt;
-    &lt;div id="textCount"&gt;&lt;/div&gt;
+<pre class="src src-html">&lt;<span style="color: #98fb98;">div</span> id = <span style="color: #bdb76b;">"badges1"</span>&gt;
+    &lt;<span style="color: #98fb98;">h3</span>&gt;<span style="font-style: italic; text-decoration: underline;">JavaScript Badges</span>&lt;/<span style="color: #98fb98;">h3</span>&gt;
+    &lt;<span style="color: #98fb98;">img</span> <span style="color: #9acd32;">src</span>=<span style="color: #bdb76b;">"badges/placeholder.png"</span>&gt;
+    &lt;<span style="color: #98fb98;">img</span> <span style="color: #9acd32;">src</span>=<span style="color: #bdb76b;">"badges/placeholder.png"</span>&gt;
+    &lt;<span style="color: #98fb98;">img</span> <span style="color: #9acd32;">src</span>=<span style="color: #bdb76b;">"badges/placeholder.png"</span>&gt;
+    &lt;<span style="color: #98fb98;">img</span> <span style="color: #9acd32;">src</span>=<span style="color: #bdb76b;">"badges/placeholder.png"</span>&gt;
+    &lt;<span style="color: #98fb98;">img</span> <span style="color: #9acd32;">src</span>=<span style="color: #bdb76b;">"badges/placeholder.png"</span>&gt;
+&lt;/<span style="color: #98fb98;">div</span>&gt;
+&lt;<span style="color: #98fb98;">input</span> <span style="color: #9acd32;">type</span>=<span style="color: #bdb76b;">"button"</span> <span style="color: #9acd32;">value</span>=<span style="color: #bdb76b;">"Calculate Progress"</span> <span style="color: #9acd32;">id</span>='calcProgress'&gt;
+&lt;<span style="color: #98fb98;">div</span> <span style="color: #9acd32;">id</span>=<span style="color: #bdb76b;">"progressSection"</span>&gt;
+    &lt;<span style="color: #98fb98;">div</span> <span style="color: #9acd32;">id</span>=<span style="color: #bdb76b;">"textCount"</span>&gt;&lt;/<span style="color: #98fb98;">div</span>&gt;
 </pre>
-
-<ul>
+</div>
+<ul class="org-ul">
 <li>The three key areas we need to focus on are the <code>&lt;div id = "badges1"&gt;</code>, the <code>&lt;img&gt;</code> tags used to reference the images and lastly the <code>&lt;div id = "textCount"&gt;</code>. 
 </li>
 </ul>
-
-
 </div>
-
-<div id="outline-container-4-1" class="outline-3 code">
-<h3 id="sec-4-1"><span class="section-number-3">4.1</span> Code It</h3>
+<div id="outline-container-sec-4-1" class="outline-3 code">
+<h3 id="sec-4-1">Code It</h3>
 <div class="outline-text-3" id="text-4-1">
-
-<ul>
+<ul class="org-ul">
 <li>Delete everything from your .js file.
 </li>
 <li>Declare a variable called <code>imageArray</code> on the first line.
@@ -566,312 +502,234 @@ for the JavaScript code in this tag.
 <li>Next we'll need a function that is called when the window loads.
 </li>
 </ul>
+<div class="org-src-container">
 
-
-
-
-<pre class="example">window.onload = function()
+<pre class="src src-javascript">window.onload = <span style="color: #ffffff;">function</span>()
 {
 
 };
 </pre>
-
-<ul>
+</div>
+<ul class="org-ul">
 <li>For now, all your code goes between the <code>{}</code>
 </li>
 <li>To assign the images to the variable you created, add this line of code.
 </li>
 </ul>
+<div class="org-src-container">
 
-
-
-
-<pre class="example">imageArray = document.getElementById('badges1').getElementsByTagName('img');
+<pre class="src src-javascript">imageArray = document.getElementById(<span style="color: #bdb76b;">'badges1'</span>).getElementsByTagName(<span style="color: #bdb76b;">'img'</span>);
 </pre>
-
-<ul>
-<li>This code first accesses the <code>badges1</code> div and then gets <span style="text-decoration:underline;">all</span> the elements what use the <code>img</code> tag.
+</div>
+<ul class="org-ul">
+<li>This code first accesses the <code>badges1</code> div and then gets <span class="underline">all</span> the elements what use the <code>img</code> tag.
 </li>
 <li>Let's check this works by adding a <code>console.log(imageArray);</code>
 </li>
 </ul>
-
 </div>
-
 </div>
-
-<div id="outline-container-4-2" class="outline-3 save">
-<h3 id="sec-4-2"><span class="section-number-3">4.2</span> Save It</h3>
+<div id="outline-container-sec-4-2" class="outline-3 save">
+<h3 id="sec-4-2">Save It</h3>
 <div class="outline-text-3" id="text-4-2">
-
-<ul>
+<ul class="org-ul">
 <li>Save your .js file
 </li>
 </ul>
-
 </div>
-
 </div>
-
-<div id="outline-container-4-3" class="outline-3 run">
-<h3 id="sec-4-3"><span class="section-number-3">4.3</span> Run It</h3>
+<div id="outline-container-sec-4-3" class="outline-3 run">
+<h3 id="sec-4-3">Run It</h3>
 <div class="outline-text-3" id="text-4-3">
-
-<ul>
-<li>Open the Badges.html file in a browser and check the console. You'll see different things depending on which broiwser you're using, but you should see an array being displayed.
+<ul class="org-ul">
+<li>Open the Badges.html file in a browser and check the console. You'll see different things depending on which browser you're using, but you should see an array being displayed.
 </li>
 </ul>
-
 </div>
-
 </div>
-
-<div id="outline-container-4-4" class="outline-3 code">
-<h3 id="sec-4-4"><span class="section-number-3">4.4</span> Code It</h3>
+<div id="outline-container-sec-4-4" class="outline-3 code">
+<h3 id="sec-4-4">Code It</h3>
 <div class="outline-text-3" id="text-4-4">
-
-<ul>
+<ul class="org-ul">
 <li>We're now going to use the <code>textCount</code> div to display the number of badges (which is the length of the array.)
 </li>
 <li>Let's grab the <code>textCount</code> div. Put this code between the <code>{}</code>.
 </li>
 </ul>
+<div class="org-src-container">
 
-
-
-
-<pre class="example">var textCount = document.getElementById('textCount');
+<pre class="src src-javascript"><span style="color: #ffffff;">var</span> <span style="color: #9acd32;">textCount</span> = document.getElementById(<span style="color: #bdb76b;">'textCount'</span>);
 </pre>
-
-<ul>
+</div>
+<ul class="org-ul">
 <li>Now we can edit the innerHTML of the <code>textCount</code> div
 </li>
 </ul>
+<div class="org-src-container">
 
-
-
-
-<pre class="example">textCount.innerHTML = imageArray.length;
+<pre class="src src-javascript">textCount.innerHTML = imageArray.length;
 </pre>
-
 </div>
-
 </div>
-
-<div id="outline-container-4-5" class="outline-3 save">
-<h3 id="sec-4-5"><span class="section-number-3">4.5</span> Save It</h3>
+</div>
+<div id="outline-container-sec-4-5" class="outline-3 save">
+<h3 id="sec-4-5">Save It</h3>
 <div class="outline-text-3" id="text-4-5">
-
-<ul>
+<ul class="org-ul">
 <li>Save your .js file
 </li>
 </ul>
-
 </div>
-
 </div>
-
-<div id="outline-container-4-6" class="outline-3 run">
-<h3 id="sec-4-6"><span class="section-number-3">4.6</span> Run It</h3>
+<div id="outline-container-sec-4-6" class="outline-3 run">
+<h3 id="sec-4-6">Run It</h3>
 <div class="outline-text-3" id="text-4-6">
-
-<ul>
+<ul class="org-ul">
 <li>Open the Badges.html file in a browser and check that the number of badges is being displayed.
 </li>
 </ul>
-
 </div>
-
 </div>
-
-<div id="outline-container-4-7" class="outline-3 try">
-<h3 id="sec-4-7"><span class="section-number-3">4.7</span> Try It:</h3>
+<div id="outline-container-sec-4-7" class="outline-3 try">
+<h3 id="sec-4-7">Try It:</h3>
 <div class="outline-text-3" id="text-4-7">
-
-
-<ul>
+<ul class="org-ul">
 <li>Having the number on it's own doesn't give our user much information.
 </li>
-<li>Use <i>concatentaion</i> (joining) to add some text to the innerHTML of the <code>textCount</code>. Something along the lines of "Total Badges Gained", should do the trick.
+<li>Use <i>concatenation</i> (joining) to add some text to the innerHTML of the <code>textCount</code>. Something along the lines of "Total Badges Gained", should do the trick.
 </li>
 </ul>
-
 </div>
 </div>
-
 </div>
-
-<div id="outline-container-5" class="outline-2 activity">
+<div id="outline-container-sec-5" class="outline-2 activity">
 <h2 id="sec-5"><span class="section-number-2">5</span> Filling the progress bar</h2>
 <div class="outline-text-2" id="text-5">
-
-<ul>
+<ul class="org-ul">
 <li>Having a numerical indicator of progress is great, but a progress bar would be better.
 </li>
 <li>In the .html file there are the following lines of code.
 </li>
 </ul>
+<div class="org-src-container">
 
-
-
-
-<pre class="example">&lt;div id="progressBar"&gt;
-    &lt;div id="progressBarFill"&gt;&lt;/div&gt;
+<pre class="src src-html">&lt;<span style="color: #98fb98;">div</span> <span style="color: #9acd32;">id</span>=<span style="color: #bdb76b;">"progressBar"</span>&gt;
+    &lt;<span style="color: #98fb98;">div</span> <span style="color: #9acd32;">id</span>=<span style="color: #bdb76b;">"progressBarFill"</span>&gt;&lt;/<span style="color: #98fb98;">div</span>&gt;
 </pre>
-
-<ul>
+</div>
+<ul class="org-ul">
 <li><code>progressBar</code> is a container div and <code>progressBarFill</code> is a div inside it that has been coloured white, using css. 
 </li>
 </ul>
-
-
 </div>
-
-<div id="outline-container-5-1" class="outline-3 code">
-<h3 id="sec-5-1"><span class="section-number-3">5.1</span> Code It</h3>
+<div id="outline-container-sec-5-1" class="outline-3 code">
+<h3 id="sec-5-1">Code It</h3>
 <div class="outline-text-3" id="text-5-1">
-
-<ul>
+<ul class="org-ul">
 <li>Let's have a play with the <code>progressBarFill</code>, put this inside your <code>onload = function{}</code> code
 </li>
 </ul>
+<div class="org-src-container">
 
-
-
-
-<pre class="example">document.getElementById('progressBarFill').style.width = '25%';
+<pre class="src src-javascript">document.getElementById(<span style="color: #bdb76b;">'progressBarFill'</span>).style.width = <span style="color: #bdb76b;">'25%'</span>;
 </pre>
-
 </div>
-
 </div>
-
-<div id="outline-container-5-2" class="outline-3 save">
-<h3 id="sec-5-2"><span class="section-number-3">5.2</span> Save It</h3>
+</div>
+<div id="outline-container-sec-5-2" class="outline-3 save">
+<h3 id="sec-5-2">Save It</h3>
 <div class="outline-text-3" id="text-5-2">
-
-<ul>
+<ul class="org-ul">
 <li>Save the .js file
 </li>
 </ul>
-
 </div>
-
 </div>
-
-<div id="outline-container-5-3" class="outline-3 run">
-<h3 id="sec-5-3"><span class="section-number-3">5.3</span> Run It</h3>
+<div id="outline-container-sec-5-3" class="outline-3 run">
+<h3 id="sec-5-3">Run It</h3>
 <div class="outline-text-3" id="text-5-3">
-
-<ul>
+<ul class="org-ul">
 <li>Open the Badges.html in a browser.
 </li>
 </ul>
-
 </div>
-
 </div>
-
-<div id="outline-container-5-4" class="outline-3 try">
-<h3 id="sec-5-4"><span class="section-number-3">5.4</span> Try It:</h3>
+<div id="outline-container-sec-5-4" class="outline-3 try">
+<h3 id="sec-5-4">Try It:</h3>
 <div class="outline-text-3" id="text-5-4">
-
-<ul>
+<ul class="org-ul">
 <li>Play around with different percentages for the progress bar.
 </li>
 </ul>
-
 </div>
-
 </div>
-
-<div id="outline-container-5-5" class="outline-3 code">
-<h3 id="sec-5-5"><span class="section-number-3">5.5</span> Code It</h3>
+<div id="outline-container-sec-5-5" class="outline-3 code">
+<h3 id="sec-5-5">Code It</h3>
 <div class="outline-text-3" id="text-5-5">
-
-<ul>
+<ul class="org-ul">
 <li>Now we want the bar to actually represent the progress you've made.
 </li>
-<li>Add a new variable decleration to your first line, so it reads as follows.
+<li>Add a new variable declaration to your first line, so it reads as follows.
 </li>
 </ul>
+<div class="org-src-container">
 
-
-
-
-<pre class="example">var imageArray, progress
+<pre class="src src-javascript"><span style="color: #ffffff;">var</span> <span style="color: #9acd32;">imageArray</span>, <span style="color: #9acd32;">progress</span>
 </pre>
-
-<ul>
-<li>Decleraing multiple variable on a single line saves us a bit of space.
+</div>
+<ul class="org-ul">
+<li>Declaring multiple variable on a single line saves us a bit of space.
 </li>
 <li>Within the <code>onload</code> function, we now want to work out the percentage of badges you're received and then change the width of the <code>progressBarFill</code>. Edit your function so that it looks like the one below. 
 </li>
 </ul>
+<div class="org-src-container">
 
-
-
-
-<pre class="example">window.onload = function()
+<pre class="src src-javascript">window.onload = <span style="color: #ffffff;">function</span>()
 {
-    imageArray = document.getElementById('badges1').getElementsByTagName('img');
-    var textCount = document.getElementById('textCount');
-    textCount.innerHTML = 'Total Badges gained = ' + imageArray.length;
+    imageArray = document.getElementById(<span style="color: #bdb76b;">'badges1'</span>).getElementsByTagName(<span style="color: #bdb76b;">'img'</span>);
+    <span style="color: #ffffff;">var</span> <span style="color: #9acd32;">textCount</span> = document.getElementById(<span style="color: #bdb76b;">'textCount'</span>);
+    textCount.innerHTML = <span style="color: #bdb76b;">'Total Badges gained = '</span> + imageArray.length;
     progress = imageArray.length/6*100;
-    document.getElementById('progressBarFill').style.width = progress + '%';
+    document.getElementById(<span style="color: #bdb76b;">'progressBarFill'</span>).style.width = progress + <span style="color: #bdb76b;">'%'</span>;
 };
 </pre>
-
 </div>
-
 </div>
-
-<div id="outline-container-5-6" class="outline-3 save">
-<h3 id="sec-5-6"><span class="section-number-3">5.6</span> Save It</h3>
+</div>
+<div id="outline-container-sec-5-6" class="outline-3 save">
+<h3 id="sec-5-6">Save It</h3>
 <div class="outline-text-3" id="text-5-6">
-
-<ul>
+<ul class="org-ul">
 <li>Save your code.
 </li>
 </ul>
-
 </div>
-
 </div>
-
-<div id="outline-container-5-7" class="outline-3 run">
-<h3 id="sec-5-7"><span class="section-number-3">5.7</span> Run It</h3>
+<div id="outline-container-sec-5-7" class="outline-3 run">
+<h3 id="sec-5-7">Run It</h3>
 <div class="outline-text-3" id="text-5-7">
-
-<ul>
+<ul class="org-ul">
 <li>Run it in the browser and check that it works.
 </li>
 <li>Try removing some of the image tags from the html file and see whether the progress bar changes in size.
 </li>
 </ul>
-
 </div>
 </div>
-
 </div>
-
-<div id="outline-container-6" class="outline-2 activity">
+<div id="outline-container-sec-6" class="outline-2 activity">
 <h2 id="sec-6"><span class="section-number-2">6</span> Animating the fill</h2>
 <div class="outline-text-2" id="text-6">
-
-<ul>
+<ul class="org-ul">
 <li>We're now going to animate the fill bar.
 </li>
 </ul>
-
-
 </div>
-
-<div id="outline-container-6-1" class="outline-3 code">
-<h3 id="sec-6-1"><span class="section-number-3">6.1</span> Code It</h3>
+<div id="outline-container-sec-6-1" class="outline-3 code">
+<h3 id="sec-6-1">Code It</h3>
 <div class="outline-text-3" id="text-6-1">
-
-<ul>
+<ul class="org-ul">
 <li>The basic concept is going to be to increase the width of the fill bar by 1% every 20 milliseconds.
 </li>
 <li>We'll start by using a function to handle the timing.
@@ -881,61 +739,50 @@ for the JavaScript code in this tag.
 <li>Now, at the bottom of the .js file let's make a new function called <code>timer()</code>
 </li>
 </ul>
+<div class="org-src-container">
 
-
-
-
-<pre class="example">function timer()
+<pre class="src src-javascript"><span style="color: #ffffff;">function</span> <span style="color: #98fb98;">timer</span>()
 {
 
 };
 </pre>
-
-<ul>
+</div>
+<ul class="org-ul">
 <li>Inside the <code>timer()</code> function we're going to want to assign the variable fillPercent the value 0, as the bar will start off with a width of 0.
 </li>
 </ul>
+<div class="org-src-container">
 
-
-
-
-<pre class="example">fillPercent = 0
+<pre class="src src-javascript">fillPercent = 0
 </pre>
-
-<ul>
+</div>
+<ul class="org-ul">
 <li>Next we need a timing event inside the function. We'll use the timing event to call a function that we haven't written yet.
 </li>
 </ul>
+<div class="org-src-container">
 
-
-
-
-<pre class="example">setInterval(function(){fillIt()},20;
+<pre class="src src-javascript">setInterval(<span style="color: #ffffff;">function</span>(){fillIt()},20;
 </pre>
-
-<ul>
+</div>
+<ul class="org-ul">
 <li>You'll finish the rest of this off in the Badge It section
 </li>
 </ul>
-
 </div>
 </div>
-
 </div>
-
-<div id="outline-container-7" class="outline-2 activity">
+<div id="outline-container-sec-7" class="outline-2 activity">
 <h2 id="sec-7"><span class="section-number-2">7</span> Badge It</h2>
 <div class="outline-text-2" id="text-7">
-
-
 </div>
-
-<div id="outline-container-7-1" class="outline-3 badge">
-<h3 id="sec-7-1"><span class="section-number-3">7.1</span> Task</h3>
+<div id="outline-container-sec-7-1" class="outline-3 badge">
+<h3 id="sec-7-1">Task</h3>
 <div class="outline-text-3" id="text-7-1">
-
-<p>To earn your final <b>Blue JavaScript Badge</b>, complete the tasks below. Once you have finished, ask your teacher to check your code to make sure it runs correctly.
-</p><ul>
+<p>
+To earn your final <b>Blue JavaScript Badge</b>, complete the tasks below. Once you have finished, ask your teacher to check your code to make sure it runs correctly.
+</p>
+<ul class="org-ul">
 <li>Create a new function called fillIt()
 </li>
 <li>Inside the function the first thing that should happen is fillPercent is incremented up by 1 (++)
@@ -945,32 +792,23 @@ for the JavaScript code in this tag.
 <li>If the condition is true then you'll need the line:
 </li>
 </ul>
+<div class="org-src-container">
 
-
-
-
-<pre class="example">document.getElementById('progressBarFill').style.width = fillPercent+'%';
+<pre class="src src-javascript">document.getElementById(<span style="color: #bdb76b;">'progressBarFill'</span>).style.width = fillPercent+<span style="color: #bdb76b;">'%'</span>;
 </pre>
-
-<ul>
+</div>
+<ul class="org-ul">
 <li>Lastly, delete the line in the onload() function that fills the progress bar.
 </li>
 <li>Check that it's all working, and ask your teacher for your final badge.
 </li>
 </ul>
-
-
 </div>
 </div>
 </div>
 </div>
-
-<div id="postamble">
-<p class="date">Date: 2014-05-22T16:46+0100</p>
-<p class="author">Author: Marc Scott</p>
-<p class="creator"><a href="http://orgmode.org">Org</a> version 7.9.3f with <a href="http://www.gnu.org/software/emacs/">Emacs</a> version 24</p>
-
-
+<div id="postamble" class="status">
+<p class="validation"></p>
 </div>
 </body>
 </html>
