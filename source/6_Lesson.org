@@ -37,7 +37,7 @@
 - We're now going to use everything you've learned so far to create a special page for your JavaScript badges.
 - So you're focusing on the HTML and CSS, they have been provided for you.
 - Download the HTML by [[file:~/Curriculum/7-WD-JS/resources/6_resources/Badges.html][/Right-Clicking here/]] and choosing to download the file.
-- Download the CSS by [[file:~/Curriculum/7-WD-JS/resources/6_resources/css/badges.css][/Right-Clicking here/]] and choosing to download the file.
+- Download the CSS by [[file:~/Curriculum/7-WD-JS/resources/6_resources/css/badges.css][/Right-Clicking here/]]  and choosing to download the file.
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
