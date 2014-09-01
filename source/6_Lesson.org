@@ -1,4 +1,4 @@
-\#+STARTUP:indent
+#+STARTUP:indent
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/main.css"/>
 #+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="css/lesson.css"/>
 #+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil html-style:nil 
@@ -357,4 +357,5 @@ To earn your final *Blue JavaScript Badge*, complete the tasks below. Once you h
 #+END_SRC
 - Lastly, delete the line in the onload() function that fills the progress bar.
 - Check that it's all working, and ask your teacher for your final badge.
+
 
