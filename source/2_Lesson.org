@@ -1,6 +1,6 @@
 #+STARTUP:indent
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/main.css"/>
-#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="css/lesson.css"/>
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="css/styles.css"/>
 #+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil html-style:nil 
 #+TITLE: The Console and Conditionals
 #+AUTHOR: Marc Scott
